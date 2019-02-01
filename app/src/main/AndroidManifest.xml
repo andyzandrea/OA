@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.lania.oamtemplate">
+
+    <application
+        android:name=".OAMApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".View.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".View.MenuLessonActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuActivity" />
+        </activity>
+
+        <activity android:name=".View.LessonActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuLessonActivity" />
+        </activity>
+
+        <activity android:name=".View.MenuExerciseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuActivity" />
+        </activity>
+
+        <activity android:name=".View.ExerciseActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuExerciseActivity" />
+        </activity>
+
+        <activity android:name=".View.InvPerpetuo.InfInvPerpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuExerciseActivity" />
+        </activity>
+        <activity android:name=".View.InvPerpetuo.InstrInvPerpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.InvPerpetuo.InfInvPerpActivity" />
+        </activity>
+        <activity android:name=".View.InvPerpetuo.InvPerpetuoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.InvPerpetuo.InstrInvPerpActivity" />
+        </activity>
+        <activity android:name=".View.InvPerpetuo.ResultadoInvPerpetuoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.InvPerpetuo.InvPerpetuoActivity" />
+        </activity>
+        <activity android:name=".View.InvPerpetuoDos.InfInvPerpActivityDos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuExerciseActivity" />
+        </activity>
+        <activity android:name=".View.InvPerpetuoDos.InstrInvPerpActivityDos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.InvPerpetuoDos.InfInvPerpActivityDos" />
+        </activity>
+
+        <activity android:name=".View.MenuEvaluationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuActivity" />
+        </activity>
+
+        <activity android:name=".View.EvaluationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuEvaluationActivity" />
+        </activity>
+
+
+        <activity android:name=".View.Evaluacion.EvaluationInfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuEvaluationActivity" />
+        </activity>
+
+        <activity android:name=".View.Evaluacion.EvaluationInstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Evaluacion.EvaluationInfoActivity" />
+        </activity>
+
+
+        <activity android:name=".View.Evaluacion.EvaluationActivityUno">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Evaluacion.EvaluationInstActivity" />
+        </activity>
+
+        <activity android:name=".View.Evaluacion.ResultadoEvaluationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuEvaluationActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,323 @@
+<lom:lom>
+	<!-- Categoría general -->
+	<lom:general>
+		<!-- Identificador del objeto (0..1) -->
+		<lom:identifier>...</lom:identifier>
+		<!-- Título del objeto (0..1) -->
+		<lom:title>
+			<lom:langstring>...</lom:langstring>
+		</lom:title>
+		<!-- Entrada de catálogo (0..*) -->
+		<lom:catalogentry>
+			<!-- Nombre de catálogo -->
+			<lom:catalog>...</lom:catalog>
+			<!-- Nombre de entrada de catálogo -->
+			<lom:entry>
+				<lom:langstring>...</lom:langstring>
+			</lom:entry>
+		</lom:catalogentry>
+		<!-- Idioma del objeto (0..*) -->
+		<lom:language>...</lom:language>
+		<!-- Descripción del objeto (0..*) -->
+		<lom:description>...</lom:description>
+		<!-- Palabras clave (0..*) -->
+		<lom:keyword>
+			<lom:langstring>...</lom:langstring>
+		</lom:keyword>
+		<!-- Cobertura del objeto (0..*) -->
+		<lom:coverage>
+			<lom:langstring>...</lom:langstring>
+		</lom:coverage>
+		<!-- Estructura (0..1) -->
+		<lom:structure>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:structure>
+		<!-- Nivel de granularidad (0..1) -->
+		<lom:aggregationlevel>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring>...</lom:langstring>
+			</lom:value>
+		</lom:aggregationlevel>
+	</lom:general>
+	<!-- Categoría ciclo de vida -->
+	<lom:lifecycle>
+		<!-- Edición o versión del material (0..1) -->
+		<lom:version>
+			<lom:langstring>...</lom:langstring>
+		</lom:version>
+		<!-- Estado de producción del material (0..1) -->
+		<lom:status>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:status>
+		<!-- Información de contribuyente (0..*) -->
+		<lom:contribute>
+			<!-- Rol del contribuyente -->
+			<lom:role>
+				<lom:source>
+					<lom:langstring>LOMv1.0</lom:langstring>
+				</lom:source>
+				<lom:value>
+					<lom:langstring xml:lang="en">...</lom:langstring>
+				</lom:value>
+			</lom:role>
+			<!-- Identidad del contribuyente -->
+			<lom:centity>
+				<lom:vcard>...</lom:vcard>
+			</lom:centity>
+			<!-- Fecha de contribución -->
+			<lom:date>
+				<lim:datetime>...</lim:datetime>
+			</lom:date>
+		</lom:contribute>
+	</lom:lifecycle>
+	<!-- Categoría meta-metadatos -->
+	<lom:metametadata>
+		<!-- Identificador de metadatos externos (0..1) -->
+		<lom:identifier>...</lom:identifier>
+		<!-- Entrada de catálogo (0..*) -->
+		<lom:catalogentry>
+			<!-- Nombre de catálogo -->
+			<lom:catalog>...</lom:catalog>
+			<!-- Nombre de entrada de catálogo -->
+			<lom:entry>
+				<lom:langstring>...</lom:langstring>
+			</lom:entry>
+		</lom:catalogentry>
+		<!-- Información de contribuyente en la elaboración de los metadatos (0..*) -->
+		<lom:contribute>
+			<!-- Rol del contribuyente -->
+			<lom:role>
+				<lom:source>
+					<lom:langstring>LOMv1.0</lom:langstring>
+				</lom:source>
+				<lom:value>
+					<lom:langstring xml:lang="en">...</lom:langstring>
+				</lom:value>
+			</lom:role>
+			<!-- Identidad del contribuyente -->
+			<lom:centity>
+				<lom:vcard>...</lom:vcard>
+			</lom:centity>
+			<!-- Fecha de contribución -->
+			<lom:date>
+				<lim:datetime>...</lim:datetime>
+			</lom:date>
+		</lom:contribute>
+		<!-- Esquema de metadatos utilizado (0..*) -->
+		<lom:metadatascheme>LOMv1.0</lom:metadatascheme>
+		<!-- Idioma utilizado en los metadatos (0..1) -->
+		<lom:language>es</lom:language>
+	</lom:metametadata>
+	<!-- Categoría  técnica -->
+	<lom:technical>
+		<!-- Formato del material (0..*) -->
+		<lom:format>...</lom:format>
+		<!-- Tamaño en bytes del material (0..1) -->
+		<lom:size>...</lom:size>
+		<!-- Localización del material (0..*) -->
+		<lom:location>...</lom:location>
+		<!-- Requerimiento para utilización del material (0..*) -->
+		<lom:requirement>
+			<!-- Tipo de plataforma -->
+			<lom:type>
+				<lom:source>
+					<lom:langstring>LOMv1.0</lom:langstring>
+				</lom:source>
+				<lom:value>
+					<lom:langstring xml:lang="en">...</lom:langstring>
+				</lom:value>
+			</lom:type>
+			<!-- Nombre de plataforma -->
+			<lom:name>
+				<lom:source>
+					<lom:langstring>LOMv1.0</lom:langstring>
+				</lom:source>
+				<lom:value>
+					<lom:langstring xml:lang="en">...</lom:langstring>
+				</lom:value>
+			</lom:name>
+		</lom:requirement>
+		<!-- Indicaciones de instalación (0..1) -->
+		<lom:instalationremarks>
+			<lom:langstring>...</lom:langstring>
+		</lom:instalationremarks>
+		<!-- Otros requisitos para instalación (0..1) -->
+		<lom:otherplatformrequeriments>
+			<lom:langstring>...</lom:langstring>
+		</lom:otherplatformrequeriments>
+	</lom:technical>
+	<!-- Categoría educativa -->
+	<lom:educational>
+		<!-- Tipo de interacción del material (0..1) -->
+		<lom:interactivitytype>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:interactivitytype>
+		<!-- Tipo de material (0..*) -->
+		<lom:learningresourcetype>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:learningresourcetype>
+		<!-- Nivel de interacción (0..1) -->
+		<lom:interactivitylevel>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:interactivitylevel>
+		<!-- Utilidad educativa en comparación con tamaño y/o duración (0..1) -->
+		<lom:semanticdensity>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:semanticdensity>
+		<!-- Rol del usuario final (0..*) -->
+		<lom:intendedenduserrole>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:intendedenduserrole>
+		<!-- Entorno educativo de utilización de material (0..*) -->
+		<lom:context>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:context>
+		<!-- Rango de edades de usuario (0..*) -->
+		<lom:typicalagerange>
+			<lom:langstring>...</lom:langstring>
+		</lom:typicalagerange>
+		<!-- Grado de dificultad del material (0..1) -->
+		<lom:dificulty>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:dificulty>
+		<!-- Tiempo de aprendizaje asociado al material (0..1) -->
+		<lom:typicallearningtime>
+			<lom:description>
+				<lom:langstring>...</lom:langstring>
+			</lom:description>
+		</lom:typicallearningtime>
+		<!-- Comentarios sobre uso del material desde el punto de vista pedagógico (0..1) -->
+		<lom:description>
+			<lom:description>
+				<lom:langstring>...</lom:langstring>
+			</lom:description>
+		</lom:description>
+		<!-- Idioma del usuario final (0..*) -->
+		<lom:language>...</lom:language>
+	</lom:educational>
+	<!-- Categoría derechos -->
+	<lom:rights>
+		<!-- Establece si el recurso es o no de pago (0..1) -->
+		<lom:cost>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:cost>
+		<!-- Establece si el recurso está o no sujeto a derechos de copia y otras restricciones (0..1) -->
+		<lom:copyrightanddotherrestrictions>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:copyrightanddotherrestrictions>
+		<!-- Comentarios sobre condiciones y derechos de uso (0..1) -->
+		<lom:description>
+			<lom:langstring>...</lom:langstring>
+		</lom:description>
+	</lom:rights>
+	<!-- Categoría relación -->
+	<lom:relation>
+		<!-- Tipo de relación con otro material (0..1) -->
+		<lom:kind>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:kind>
+		<!-- Identificador del otro material (0..1) -->
+		<lom:resource>
+			<lom:identifier>...</lom:identifier>
+			<!-- Descripción del otro material -->
+			<lom:description>
+				<lom:langstring>...</lom:langstring>
+			</lom:description>
+		</lom:resource>
+	</lom:relation>
+	<!-- Categoría anotación -->
+	<lom:annotation>
+		<!-- Persona que realiza la anotación (0..1) -->
+		<lom:person>
+			<lom:vcard>...</lom:vcard>
+		</lom:person>
+		<!-- Fecha de anotación (0..1) -->
+		<lom:date>
+			<lom:datetime>...</lom:datetime>
+		</lom:date>
+		<!-- Texto de la anotación (0..1) -->
+		<lom:description>
+			<lom:langstring>...</lom:langstring>
+		</lom:description>
+	</lom:annotation>
+	<!-- Categoría clasificación -->
+	<lom:classification>
+		<!-- Propósito de la clasificación -->
+		<lom:purpose>
+			<lom:source>
+				<lom:langstring>LOMv1.0</lom:langstring>
+			</lom:source>
+			<lom:value>
+				<lom:langstring xml:lang="en">...</lom:langstring>
+			</lom:value>
+		</lom:purpose>
+		<!-- Descripción relativa al propósito de clasificación -->
+		<lom:description>
+			<lom:langstring>...</lom:langstring>
+		</lom:description>
+		<!-- Palabras clave relativas al propósito de clasificación -->
+	</lom:classification>
+</lom:lom>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <style type="text/css">
+                html {
+                    -webkit-text-size-adjust: none; /* Never autoresize text */
+                    word-wrap:break-word; /* break the word in an another line if it's too long */
+                }
+
+                .image-responsive {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .formula {
+                    background-color: #ddd;
+                    padding: 5px;
+                }
+            </style>
+    </head>
+    <body>
+        <div style="font-family:Helvetica; font-size:14px; line-height:18px; margin: 20px auto;">
+            <div style="text-align:justify; padding-left:15px; padding-right:15px;">
+                <p>La entrega por ordenamiento causal está basada en la relación de precedencia causal definida por Lamport (Leslie, 1978). La relación causal, denotada por  , es definida por las siguientes tres reglas:</p>
+                <ol>
+                    <li>Si dos eventos ocurrieron en el mismo proceso <i>p<sub>i</sub></i> (i = 1, 2, …, N) entonces ocurrieron en el orden observado por p<sub>i</sub>,</li>
+                    <li>Cuando un mensaje, <i>m</i> es enviado entre dos procesos, entonces el envío de <i>m</i> sucede antes del recibo de <i>m</i>,</li>
+                    <li>La relación es transitiva.</li>
+                </ol>
+                <div style="text-align: center;">
+                    <p class="formula" style="display:inline-block;">a <b>&#8594;</b> b (en <i>p<sub>1</sub></i>) c <b>&#8594;</b> d (en <i>p<sub>2</sub></i>)</p>
+                    <p class="formula" style="display:inline-block;">b <b>&#8594;</b> c debido a <i>m<sub>1</sub></i> </p>
+                    <p class="formula" style="display:inline-block;">d <b>&#8594;</b> f debido a <i>m<sub>2</sub></i> </p>
+
+                </div>
+                <div style="text-align: center;">
+                    <img class="image-responsive" src="figure1.png"/>
+                </div>
+                <p>La entrega causal se representa de la siguiente manera:</p>
+                <p class="formula"><i> Si send(m)→send(m'),then ∀ k∈c: delivery<sub>k</sub> (m)→ delivery<sub>k</sub> (m')</i></p>
+                <p>Esto asegura que si él envió de un mensaje <i>m</i> precede causalmente al envió de un mensaje <i>m'</i>, en un grupo <i>c</i>, entonces la entrega de <i>m</i> también precede causalmente a la entrega de <i>m'</i> para todo proceso <i>k</i> que pertenece a <i>c</i>.</p>
+                <p>El siguiente algoritmo propuesto por Birman (Kenneth, 1991) lleva a cabo la entrega en orden causal:</p>
+				<ol>
+					<li>Inicialmente, el vector de tiempo de cada proceso se iguala con 0 en cada una de sus posiciones.</li>
+						<div style="text-align: center;">
+						 	<p class="formula" style="display: inline-block;"><i>VT(p<sub>i</sub>)[j]=0 ∀ j=1…n</i></p>
+						</div>
+					<li>Para cada evento envío(<i>m</i>) de un proceso (<i>p<sub>i</sub></i>).
+						<ol>
+							<li>Se incrementa una unidad del vector de tiempo del proceso emisor (<i>p<sub>i</sub></i>) en la posición correspondiente del mismo (i).</li>
+							<div style="text-align: center;">
+						 		<p class="formula" style="display: inline-block;"><i>VT(p<sub>i</sub>)[i]=VT(p<sub>i</sub>)[i]+1</i></p>
+							</div>
+							<li>Cada mensaje enviado por el proceso emisor (<i>p<sub>i</sub></i>) es enviado con un vector de tiempo actualizado [VT(<i>p<sub>i</sub></i>)]. La estructura de un mensaje es la siguiente:</li>
+							<div style="text-align: center; margin-top: 10px;">
+                    			<img class="image-responsive" src="figure2.png"/>
+                			</div>
+						</ol>
+					</li>
+					<li>Para cada evento de recepción(m') en los procesos receptores (<i>p<sub>j</sub></i>), se evalúa la siguiente condición:</li>
+					<div style="text-align: center; margin-top: 10px;">
+            			<img class="image-responsive" src="figure3.png"/>
+        			</div>
+        			<li>Para cada evento de entrega(m'), el proceso receptor (<i>p<sub>j</sub></i>) modifica su vector de tiempo de la siguiente manera:</li>
+        			<div style="text-align: center;">
+					 	<p class="formula" style="display: inline-block;"><i>VT(<i>p<sub>j</sub></i>)[k]=VT(e') </i></p>
+					</div>
+				</ol>
+            </div>
+        </div>
+    </body>
+</html>
