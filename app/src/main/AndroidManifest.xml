@@ -11,7 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
         <activity android:name=".View.MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,33 +18,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".View.MenuLessonActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuActivity" />
         </activity>
-
         <activity android:name=".View.LessonActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuLessonActivity" />
         </activity>
-
         <activity android:name=".View.MenuExerciseActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuActivity" />
         </activity>
 
-        <activity android:name=".View.ExerciseActivity"
+        <activity
+            android:name=".View.ExerciseActivity"
             android:windowSoftInputMode="adjustResize|stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuExerciseActivity" />
         </activity>
-
         <activity android:name=".View.InvPerpetuo.InfInvPerpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -79,6 +74,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.InvPerpetuo.InstrInvPerpActivity" />
         </activity>
+
         <activity android:name=".View.InvPerpetuo.ResultadoInvPerpetuoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -112,18 +108,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.InvPerpetuoDos.InfInvPerpActivityDos" />
         </activity>
-
         <activity android:name=".View.MenuEvaluationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuActivity" />
         </activity>
-
         <activity android:name=".View.EvaluationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -135,8 +130,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuEvaluationActivity" />
         </activity>
-
-
         <activity android:name=".View.Evaluacion.EvaluationInfoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -148,7 +141,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuEvaluationActivity" />
         </activity>
-
         <activity android:name=".View.Evaluacion.EvaluationInstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -160,8 +152,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.Evaluacion.EvaluationInfoActivity" />
         </activity>
-
-
         <activity android:name=".View.Evaluacion.EvaluationActivityUno">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -173,7 +163,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.Evaluacion.EvaluationInstActivity" />
         </activity>
-
         <activity android:name=".View.Evaluacion.ResultadoEvaluationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -185,6 +174,64 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuEvaluationActivity" />
         </activity>
+
+
+
+
+
+
+
+        <activity android:name=".View.ejercicioParte2.Part2InfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MenuExerciseActivity" />
+        </activity>
+        <activity android:name=".View.ejercicioParte2.PArt2IntrActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.ejercicioParte2.Part2InfoActivity" />
+        </activity>
+        <activity android:name=".View.ejercicioParte2.Part2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.ejercicioParte2.PArt2IntrActivity" />
+        </activity>
+
+        <activity android:name=".View.ejercicioParte2.Part2ResulActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.ejercicioParte2.Part2Activity" />
+        </activity>
     </application>
 
+
+
+   <!-- <activity android:name=".View.ejercicioParte2.PArt2IntrActivity"></activity>
+    <activity android:name=".View.ejercicioParte2.Part2InfoActivity" />
+    <activity android:name=".View.ejercicioParte2.Part2ResulActivity" />
+    <activity android:name=".View.ejercicioParte2.Part2Activity" />-->
 </manifest>

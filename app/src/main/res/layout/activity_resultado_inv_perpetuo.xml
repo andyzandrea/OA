@@ -27,7 +27,7 @@
         </android.support.design.widget.AppBarLayout>
 
         <TextView
-            android:id="@+id/tvNombre1"
+            android:id="@+id/exercise_table_tittle1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -51,7 +51,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/tvImporteDesc1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNombre1" />
+            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle1" />
 
         <TextView
             android:id="@+id/tvCuenta1"
@@ -90,7 +90,7 @@
             android:layout_marginEnd="8dp"
             android:text="BANCO"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvNombre1"
+            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle1"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
         <TextView

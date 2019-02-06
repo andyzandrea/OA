@@ -11,8 +11,9 @@
     <string name="exercises">Ejercicios</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="evaluation">Evaluación</string>
+
     <string name="name_account1">Bancos</string>
-    <string name="name_account2">Clienttes</string>
+    <string name="name_account2">Clientes</string>
     <string name="name_account3">Almacén</string>
     <string name="name_account4">Edificios</string>
     <string name="name_account5">Maquinaria y equipo de trabajo</string>
@@ -21,6 +22,8 @@
     <string name="name_account8">Acreedores diversos</string>
     <string name="name_account9">Capital social</string>
     <string name="name_account10">Resultado ejercicio anterior</string>
+    <string name="name_account11">Costo de ventas</string>
+    <string name="name_account12">Ventas</string>
     <string name="name_account_value1">50,000.00</string>
     <string name="name_account_value2">125,000.00</string>
     <string name="name_account_value3">65,000.00</string>
@@ -31,14 +34,6 @@
     <string name="name_account_value8">63,750.00</string>
     <string name="name_account_value9">200,000.00</string>
     <string name="name_account_value10">10,000.00</string>
-
-    <string name="Step_1">Paso 1: Clasificación de las cuentas.</string>
-    <string name="Step_2">Paso 2: Registro de las operaciones en diario.</string>
-    <string name="Step_3">Paso 3: Pasar el registro de las operaciones a esquemas de mayor.</string>
-    <string name="Step_4">Paso 4. Elaborar balanza de comprobación.</string>
-    <string name="Step_5">Paso 5. Elaborar Estado de Resultados.</string>
-    <string name="Step_6">Paso 6. Elaborar Estado de Posición financiera.</string>
-    <string name="Step_tittle">Comercializadora UFM, S.A. de C.V.</string>
 
 
     <string name="name_account_titles1">Nombre de la cuenta</string>
@@ -64,6 +59,32 @@
     <string name="exercise_represents9">Registra los aumentos y disminuciones de las utilidades o pérdidas acumuladas de la entidad.</string>
     <string name="title_activity_evaluation_inst">activity_evaluation_inst</string>
     <string name="title_activity_evaluation1_activity">Evaluation1_activity</string>
+    <!--Parte 2-->
+    <string name="exercise_operation1">Compramos mercancías por $ 50,000; 30% de contado y 70 % a crédito.</string>
+    <string name="exercise_operation2">Devolvimos mercancías por el 25% de la venta a crédito.</string>
+    <string name="exercise_operation3">Derivado de la devolución nos realizaron una rebaja sobre la compra a crédito por $2,000.00.</string>
+    <string name="exercise_operation4">Vendimos mercancías por $ 50,000; 100% contador. El costo es de $ 25,000.00</string>
+    <string name="exercise_operation5">Un cliente nos devuelve mercancías por $ 3,500 que acreditamos en su saldo. El costo es de $ 1,750.00</string>
+
+    <string name="exercise_table_tittle1">Fecha</string>
+    <string name="exercise_table_tittle2">Concepto</string>
+    <string name="exercise_table_tittle3">Debe</string>
+    <string name="exercise_table_tittle4">Haber</string>
+    <string name="exercise_table_tittle5">Sumas iguales</string>
+
+    <string name="exercise_operation_tittle1">Operación 1.</string>
+    <string name="exercise_operation_tittle2">Operación 2.</string>
+    <string name="exercise_operation_tittle3">Operación 3.</string>
+    <string name="exercise_operation_tittle4">Operación 4.</string>
+    <string name="exercise_operation_tittle5">Operación 5.</string>
+
+    <string name="Step_1">Paso 1: Clasificación de las cuentas.</string>
+    <string name="Step_2">Paso 2: Registro de las operaciones en diario.</string>
+    <string name="Step_3">Paso 3: Pasar el registro de las operaciones a esquemas de mayor.</string>
+    <string name="Step_4">Paso 4. Elaborar balanza de comprobación.</string>
+    <string name="Step_5">Paso 5. Elaborar Estado de Resultados.</string>
+    <string name="Step_6">Paso 6. Elaborar Estado de Posición financiera.</string>
+    <string name="Step_tittle">Comercializadora UFM, S.A. de C.V.</string>
 
 
 </resources>

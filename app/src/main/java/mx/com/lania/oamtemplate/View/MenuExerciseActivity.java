@@ -12,6 +12,7 @@ import mx.com.lania.oamtemplate.View.Adapter.ExpandableListAdapter;
 import mx.com.lania.oamtemplate.View.InvPerpetuo.InfInvPerpActivity;
 import mx.com.lania.oamtemplate.View.InvPerpetuo.InstrInvPerpActivity;
 import mx.com.lania.oamtemplate.View.InvPerpetuoDos.InfInvPerpActivityDos;
+import mx.com.lania.oamtemplate.View.ejercicioParte2.Part2InfoActivity;
 
 public class MenuExerciseActivity extends AppCompatActivity {
 
@@ -38,7 +39,7 @@ public class MenuExerciseActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case 1:
-                    Intent intent2 = new Intent(this,InfInvPerpActivityDos.class);
+                    Intent intent2 = new Intent(this,Part2InfoActivity.class);
                     startActivity(intent2);
                     break;
             }
