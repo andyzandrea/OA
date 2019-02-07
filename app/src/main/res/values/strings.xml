@@ -24,6 +24,8 @@
     <string name="name_account10">Resultado ejercicio anterior</string>
     <string name="name_account11">Costo de ventas</string>
     <string name="name_account12">Ventas</string>
+    <string name="name_account13">Equipo de oficina</string>
+    <string name="name_account14">Depreciación equipo oficina</string>
     <string name="name_account_value1">50,000.00</string>
     <string name="name_account_value2">125,000.00</string>
     <string name="name_account_value3">65,000.00</string>
@@ -106,5 +108,19 @@
     <string name="evaluation_operation_tittle5">Operación 5.</string>
     <string name="evaluation_operation_tittle6">Operación 6.</string>
 
+    <string name="name_account_value1_evaluation">12,500.00</string>
+    <string name="name_account_value2_evaluation">55000.00</string>
+    <string name="name_account_value3_evaluation">125,000.00</string>
+    <string name="name_account_value4_evaluation">250,000.00</string>
+    <string name="name_account_value5_evaluation">45,000.00</string>
+    <string name="name_account_value6_evaluation">22,500.00</string>
+
+    <string name="name_account_value11_evaluation">6,500.00</string>
+    <string name="name_account_value12_evaluation">1,300.00</string>
+
+    <string name="name_account_value7_evaluation">58,200.00</string>
+    <string name="name_account_value8_evaluation">65,000.00</string>
+    <string name="name_account_value9_evaluation">150,000.00</string>
+    <string name="name_account_value10_evaluation">197,000.00</string>
 
 </resources>

@@ -38,7 +38,7 @@ public class EvaluationActivityUno extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inv_perpetuo);
+        setContentView(R.layout.activity_evaluation_uno);
         ButterKnife.bind(this);
         showToolbar();
     }
