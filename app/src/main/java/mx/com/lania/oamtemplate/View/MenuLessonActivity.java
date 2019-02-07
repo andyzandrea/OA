@@ -129,10 +129,7 @@ public class MenuLessonActivity extends AppCompatActivity {
             if (parent.getExpandableListAdapter().getChildrenCount(groupPosition) == 0) {
                 switch (groupPosition) {
                     case 0:
-                        intent.putExtra("LESSON_TITLE", "Antecedentes ");
-                        intent.putExtra("LESSON_HTML", "Background/antecedentes.html");
-                        break;
-                    case 1:
+
                         intent.putExtra("LESSON_TITLE", "5.- Inventarios");
                         intent.putExtra("LESSON_HTML", "Introduction/Introduction.html");
                         break;
@@ -148,7 +145,7 @@ public class MenuLessonActivity extends AppCompatActivity {
             return true;
         });
         lessonList.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
-            if (groupPosition == 2) {
+            if (groupPosition == 1) {
                 switch (childPosition) {
                     case 0:
                         // por dentro
@@ -185,7 +182,6 @@ public class MenuLessonActivity extends AppCompatActivity {
     private void fillThemes() {
         listDataHeader = new ArrayList<>();
         listThemeHeader = new HashMap<>();
-        listDataHeader.add("Antecedentes");
         listDataHeader.add("Introducción a inventarios");
         listDataHeader.add("Subtemas");
         List<String> listTheme3 = new ArrayList<>();
@@ -196,8 +192,8 @@ public class MenuLessonActivity extends AppCompatActivity {
         listTheme3.add("5.7 Método del Promedio");
         listTheme3.add("5.11 Reglas de presentación de inventarios y normas de control interno");
         listThemeHeader.put(listDataHeader.get(0), null);
-        listThemeHeader.put(listDataHeader.get(1), null);
-        listThemeHeader.put(listDataHeader.get(2), listTheme3); // se agrega a subtemas la sublista de subtemas
+
+        listThemeHeader.put(listDataHeader.get(1), listTheme3); // se agrega a subtemas la sublista de subtemas
 
     }
 
