@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -10,942 +9,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="233dp">
-
-
-        <TextView
-            android:id="@+id/exercise_operation_tittle5"
-            android:layout_width="wrap_content"
-            android:layout_height="27dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/exercise_operation_tittle5"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/view13"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_operation5"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/exercise_operation5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_operation5"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_operation_tittle5"
-            app:layout_constraintTop_toBottomOf="@+id/view13" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle21"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/exercise_table_tittle1"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle22"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation5"/>
-
-        <TextView
-            android:id="@+id/exercise_table_tittle22"
-            android:layout_width="71dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_table_tittle2"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle20"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle21"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation5" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle20"
-            android:layout_width="0dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="70dp"
-            android:text="@string/exercise_table_tittle3"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle23"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle22"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation5" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle23"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginEnd="60dp"
-            android:text="@string/exercise_table_tittle4"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle20"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation5" />
-
-
-        //////////////////////////////////////////////////////////////
-
-        <TextView
-            android:id="@+id/name_account12op5"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account12"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe1Op5"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle22"
-            tools:layout_editor_absoluteX="73dp" />
-
-        <EditText
-            android:id="@+id/ValorDebe1Op5"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="9dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber1Op5"
-            app:layout_constraintStart_toEndOf="@+id/name_account12op5"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle20" />
-        />
-
-        <EditText
-            android:id="@+id/ValorHaber1Op5"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe1Op5"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle23" />
-
-        <TextView
-            android:id="@+id/name_account3op5"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account3"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe2Op5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account12op5" />
-
-        <EditText
-            android:id="@+id/ValorDebe2Op5"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber2Op5"
-            app:layout_constraintStart_toEndOf="@+id/name_account3op5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe1Op5"  />
-
-        <EditText
-            android:id="@+id/ValorHaber2Op5"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe2Op5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber1Op5" />
-
-
-
-        <TextView
-            android:id="@+id/name_account2op5"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account2"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe2Op5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account3op5" />
-
-        <EditText
-            android:id="@+id/ValorDebe3Op5"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber3Op5"
-
-            app:layout_constraintStart_toEndOf="@+id/name_account2op5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe2Op5" />
-
-        <EditText
-            android:id="@+id/ValorHaber3Op5"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe3Op5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber2Op5" />
-
-        <TextView
-            android:id="@+id/name_account11op5"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account11"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe4Op5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account2op5" />
-
-        <EditText
-            android:id="@+id/ValorDebe4Op5"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber4Op5"
-            app:layout_constraintStart_toEndOf="@+id/name_account11op5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe3Op5" />
-
-        <EditText
-            android:id="@+id/ValorHaber4Op5"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe4Op5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber3Op5" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle24"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="33dp"
-            android:text="@string/exercise_table_tittle5"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/sumaDebe5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account11op5" />
-
-        <EditText
-            android:id="@+id/sumaDebe5"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/sumaHaber5"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle24"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe4Op5" />
-
-        <EditText
-            android:id="@+id/sumaHaber5"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/sumaDebe5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber4Op5"
-            />
-
-
-        <View
-            android:id="@+id/view13"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="45dp"
-            android:background="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle6" />
-
-
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        <TextView
-            android:id="@+id/exercise_operation_tittle"
-            android:layout_width="wrap_content"
-            android:layout_height="27dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/exercise_operation_tittle4"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_operation4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view12" />
-
-        <TextView
-            android:id="@+id/exercise_operation4"
-            android:layout_width="0dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_operation4"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_operation_tittle2"
-            app:layout_constraintTop_toBottomOf="@+id/view12" />
-
-        ////////////////////////////////////////////////////////////////////////////////////////////7
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////
-
-
-        <TextView
-            android:id="@+id/exercise_table_tittle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/exercise_table_tittle1"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle7"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation4" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle7"
-            android:layout_width="71dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_table_tittle2"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle8"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation4" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle8"
-            android:layout_width="0dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="70dp"
-            android:text="@string/exercise_table_tittle3"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle9"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle7"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation4" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle9"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginEnd="60dp"
-            android:text="@string/exercise_table_tittle4"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle8"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation4" />
-
-
-        /////////////////////////////////////////////////////////////////////////////////////////7
-
-
-        /////////////////////////////////////////////////////////////////////////////////////////////7
-
-        <TextView
-            android:id="@+id/name_account7op4"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account7"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe1Op4"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle7"
-            tools:layout_editor_absoluteX="73dp" />
-
-        <EditText
-            android:id="@+id/ValorDebe1Op4"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="9dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber1Op4"
-            app:layout_constraintStart_toEndOf="@+id/name_account7op4"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle8" />
-
-        <EditText
-            android:id="@+id/ValorHaber1Op4"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe1Op4"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle9" />
-
-        <TextView
-            android:id="@+id/name_account3op4"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account3"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe2Op4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account7op4" />
-
-        <EditText
-            android:id="@+id/ValorDebe2Op4"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber2Op4"
-            app:layout_constraintStart_toEndOf="@+id/name_account3op4"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe1Op4" />
-
-        <EditText
-            android:id="@+id/ValorHaber2Op4"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/sumaHaber4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe2Op4"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber1Op4"
-            app:layout_constraintVertical_bias="0.106" />
-
-
-        ///////////////////////////////////////////////////////////////////
-
-        <TextView
-            android:id="@+id/exercise_table_tittle6"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="33dp"
-            android:text="@string/exercise_table_tittle5"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/sumaDebe4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account3op4" />
-
-        <EditText
-            android:id="@+id/sumaDebe4"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/sumaHaber4"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle6"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe2Op4" />
-
-        <EditText
-            android:id="@+id/sumaHaber4"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/sumaDebe4"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber2Op4" />
-
-        ///////////////////////////////////////////////////////////////////
-
-        <View
-            android:id="@+id/view12"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="45dp"
-            android:background="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle18" />
-
-        <TextView
-            android:id="@+id/exercise_operation_tittle3"
-            android:layout_width="wrap_content"
-            android:layout_height="27dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_operation_tittle3"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_operation3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view11" />
-
-        <TextView
-            android:id="@+id/exercise_operation3"
-            android:layout_width="0dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_operation3"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_operation_tittle3"
-            app:layout_constraintTop_toBottomOf="@+id/view11"
-            tools:layout_editor_absoluteX="91dp" />
-        /////////////////////////////////////////////////////
-
-
-        <TextView
-            android:id="@+id/exercise_table_tittle15"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/exercise_table_tittle1"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle17"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation3" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle17"
-            android:layout_width="71dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_table_tittle2"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle16"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle15"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation3" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle16"
-            android:layout_width="0dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="70dp"
-            android:text="@string/exercise_table_tittle3"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle19"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle17"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation3" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle19"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginEnd="60dp"
-            android:text="@string/exercise_table_tittle4"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle16"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation3" />
-
-        /////////////////////////////////////////////////////////////////////////////////
-
-
-        <TextView
-            android:id="@+id/name_account3op3"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account3"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe1Op3"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle17"
-            tools:layout_editor_absoluteX="73dp" />
-
-        <EditText
-            android:id="@+id/ValorDebe1Op3"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="9dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber1Op3"
-            app:layout_constraintStart_toEndOf="@+id/name_account3op3"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle16" />
-
-        <EditText
-            android:id="@+id/ValorHaber1Op3"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe1Op3"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle19"
-            tools:layout_editor_absoluteX="302dp" />
-
-        <TextView
-            android:id="@+id/name_account1op3"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account1"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe2Op3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account3op3" />
-
-        <EditText
-            android:id="@+id/ValorDebe2Op3"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber2Op3"
-            app:layout_constraintStart_toEndOf="@+id/name_account1op3"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe1Op3" />
-
-        <EditText
-            android:id="@+id/ValorHaber2Op3"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/sumaHaber3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe2Op3"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber1Op3" />
-
-        ////////////////////////////////////////////////////////////////////////////////
-
-        <TextView
-            android:id="@+id/exercise_table_tittle18"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="33dp"
-            android:text="@string/exercise_table_tittle5"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/sumaDebe3"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account1op3" />
-
-        <EditText
-            android:id="@+id/sumaDebe3"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/sumaHaber3"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle18"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe2Op3" />
-
-        <EditText
-            android:id="@+id/sumaHaber3"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/sumaDebe3"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber2Op3" />
-
-        <View
-            android:id="@+id/view11"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="45dp"
-            android:background="@android:color/darker_gray"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle13"
-            tools:layout_editor_absoluteX="0dp" />
-
-        <TextView
-            android:id="@+id/exercise_operation_tittle2"
-            android:layout_width="wrap_content"
-            android:layout_height="27dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/exercise_operation_tittle2"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_operation2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view1" />
-
-        <TextView
-            android:id="@+id/exercise_operation2"
-            android:layout_width="0dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_operation2"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_operation_tittle2"
-            app:layout_constraintTop_toBottomOf="@+id/view1" />
-
-
-        ///////////////////////////////////////////////////////////////////////
-
-
-        ////////////////////////////////////////////////////////////////////////
-
-        <TextView
-            android:id="@+id/exercise_table_tittle10"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/exercise_table_tittle1"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle14"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation2" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle14"
-            android:layout_width="71dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_table_tittle2"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle11"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle10"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation2" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle11"
-            android:layout_width="0dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="70dp"
-            android:text="@string/exercise_table_tittle3"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle12"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle14"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation2" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle12"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginEnd="60dp"
-            android:text="@string/exercise_table_tittle4"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle11"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation2" />
-
-
-        ///////////////////////////////////////////////////////////////////////////7777
-
-
-        //////////////////////////////////////////////////////////////////////////////////
-
-        <TextView
-            android:id="@+id/name_account7op2"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account7"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe1Op2"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle14" />
-
-        <EditText
-            android:id="@+id/ValorDebe1Op2"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="9dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber1Op2"
-            app:layout_constraintStart_toEndOf="@+id/name_account7op2"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle11" />
-
-        <EditText
-            android:id="@+id/ValorHaber1Op2"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe1Op2"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle12" />
-
-        <TextView
-            android:id="@+id/name_account3op2"
-            android:layout_width="0dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/name_account3"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe2Op2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account7op2" />
-
-        <EditText
-            android:id="@+id/ValorDebe2Op2"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber2Op2"
-            app:layout_constraintStart_toEndOf="@+id/name_account3op2"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe1Op2" />
-
-        <EditText
-            android:id="@+id/ValorHaber2Op2"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/sumaHaber2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe2Op2"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber1Op2" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle13"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="33dp"
-            android:text="@string/exercise_table_tittle5"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/sumaDebe2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account3op2" />
-
-        <EditText
-            android:id="@+id/sumaDebe2"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/sumaHaber2"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle13"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe2Op2" />
-
-        <EditText
-            android:id="@+id/sumaHaber2"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/sumaDebe2"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber2Op2" />
+        android:layout_height="wrap_content">
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appBarLayout"
@@ -959,271 +23,1157 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
-
         </android.support.design.widget.AppBarLayout>
 
         <TextView
-            android:id="@+id/exercise_operation_tittle1"
+            android:id="@+id/tvOpUno"
             android:layout_width="wrap_content"
-            android:layout_height="27dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/exercise_operation_tittle1"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/exercise_table_tittle1"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_operation1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
         <TextView
-            android:id="@+id/exercise_operation1"
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/exercise_operation1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOpUno"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <TextView
+            android:id="@+id/tvFechaUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="57dp"
-            android:layout_marginEnd="9dp"
-            android:text="@string/exercise_operation1"
-            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:text="Fecha"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoUno"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvConceptoUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Concepto"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeUno"
+            app:layout_constraintStart_toEndOf="@+id/tvFechaUno"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvDebeUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Debe"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvHaberUno"
+            app:layout_constraintStart_toEndOf="@+id/tvConceptoUno"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvHaberUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Haber"
+            android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_operation_tittle1"
-            app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
+            app:layout_constraintStart_toEndOf="@+id/tvDebeUno"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/exercise_table_tittle1"
+            android:id="@+id/tvFechaDescUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/exercise_table_tittle1"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle2"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation1" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/exercise_table_tittle2"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/name_account3"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle3"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle1"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation1" />
-
-        <TextView
-            android:id="@+id/exercise_table_tittle3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/exercise_table_tittle3"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/ValorDebe1Op1"
-            app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle4"
+            android:text="01/02/2019"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlmacenUno"
+            app:layout_constraintEnd_toEndOf="@+id/tvFechaUno"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle2"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation1" />
+            app:layout_constraintStart_toStartOf="@+id/tvFechaUno" />
 
         <TextView
-            android:id="@+id/exercise_table_tittle4"
+            android:id="@+id/tvAlmacenUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="12dp"
-            android:text="@string/exercise_table_tittle4"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/ValorHaber1Op1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle3"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation1" />
-
-
-        <TextView
-            android:id="@+id/name_account3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/name_account3"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe1Op1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle2" />
-
-        <EditText
-            android:id="@+id/ValorDebe1Op1"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="9dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/ValorDebe2Op1"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber1Op1"
-            app:layout_constraintStart_toEndOf="@+id/name_account3"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle3" />
-
-        <EditText
-            android:id="@+id/ValorHaber1Op1"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/ValorHaber2Op1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe1Op1"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle4" />
-
-        <TextView
-            android:id="@+id/name_account1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/name_account1"
-            app:layout_constraintBottom_toTopOf="@+id/name_account7"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe2Op1"
+            android:text="Almacén"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeUno"
+            app:layout_constraintEnd_toEndOf="@+id/tvConceptoUno"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account3"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toStartOf="@+id/tvConceptoUno" />
 
         <EditText
-            android:id="@+id/ValorDebe2Op1"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="text"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/ValorDebe3Op1"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber2Op1"
-            app:layout_constraintStart_toEndOf="@+id/name_account1"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe1Op1" />
-
-        <EditText
-            android:id="@+id/ValorHaber2Op1"
-            android:layout_width="0dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/ValorHaber3Op1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe2Op1"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber1Op1" />
-
-        <TextView
-            android:id="@+id/name_account7"
+            android:id="@+id/etDebeUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="22dp"
-            android:text="@string/name_account7"
-            app:layout_constraintBottom_toTopOf="@+id/exercise_table_tittle5"
-            app:layout_constraintEnd_toStartOf="@+id/ValorDebe3Op1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account1" />
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvDebeUno"
+            app:layout_constraintStart_toStartOf="@+id/tvDebeUno"
+            app:layout_constraintTop_toBottomOf="@+id/tvDebeUno" />
 
         <EditText
-            android:id="@+id/ValorDebe3Op1"
+            android:id="@+id/etHaberUno"
             android:layout_width="0dp"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="40dp"
+            android:ems="10"
             android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/SumaDebe1"
-            app:layout_constraintEnd_toStartOf="@+id/ValorHaber3Op1"
-            app:layout_constraintStart_toEndOf="@+id/name_account7"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe2Op1" />
-
-        <EditText
-            android:id="@+id/ValorHaber3Op1"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="40dp"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/SumaHaber1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ValorDebe3Op1"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber2Op1" />
+            app:layout_constraintEnd_toEndOf="@+id/tvHaberUno"
+            app:layout_constraintStart_toStartOf="@+id/tvHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/tvHaberUno" />
 
         <TextView
-            android:id="@+id/exercise_table_tittle5"
+            android:id="@+id/tvBancosUno"
             android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="45dp"
-            android:text="@string/exercise_table_tittle5"
-            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Bancos"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeDos"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenUno" />
+
+        <EditText
+            android:id="@+id/etDebeDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberUno"
+            app:layout_constraintStart_toEndOf="@+id/tvAlmacenUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeUno" />
+
+        <EditText
+            android:id="@+id/etHaberDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberUno"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberUno" />
+
+        <TextView
+            android:id="@+id/tvProveedoresUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Proveedores"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeTres"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenUno" />
+
+        <EditText
+            android:id="@+id/etDebeTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvAlmacenUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeDos" />
+
+        <EditText
+            android:id="@+id/etHaberTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberDos" />
+
+        <TextView
+            android:id="@+id/tvSumasUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="SUMAS"
+            android:textAlignment="center"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/view1"
-            app:layout_constraintEnd_toStartOf="@+id/SumaDebe1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_account7" />
+            app:layout_constraintBottom_toBottomOf="@+id/etSumaDebeUno"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenUno" />
 
         <EditText
-            android:id="@+id/SumaDebe1"
+            android:id="@+id/etSumaDebeUno"
             android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/SumaHaber1"
-            app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle5"
-            app:layout_constraintTop_toBottomOf="@+id/ValorDebe3Op1" />
+            app:layout_constraintEnd_toStartOf="@+id/etHaberUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvAlmacenUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeTres" />
 
         <EditText
-            android:id="@+id/SumaHaber1"
+            android:id="@+id/etSumaHaberUno"
             android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="38dp"
-            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
             android:inputType="number"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/SumaDebe1"
-            app:layout_constraintTop_toBottomOf="@+id/ValorHaber3Op1" />
+            app:layout_constraintEnd_toEndOf="@+id/etHaberUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTres" />
 
         <View
             android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="24dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle5" />
+            app:layout_constraintTop_toBottomOf="@+id/etSumaDebeUno" />
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        <TextView
+            android:id="@+id/tvOpDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/exercise_operation_tittle2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
 
+        <TextView
+            android:id="@+id/tvOpDosDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/exercise_operation2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOpDos"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <TextView
+            android:id="@+id/tvFechaDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Fecha"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoDos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpDosDesc" />
+
+        <TextView
+            android:id="@+id/tvConceptoDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Concepto"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeDos"
+            app:layout_constraintStart_toEndOf="@+id/tvFechaDos"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpDosDesc" />
+
+        <TextView
+            android:id="@+id/tvDebeDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Debe"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvHaberDos"
+            app:layout_constraintStart_toEndOf="@+id/tvConceptoDos"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpDosDesc" />
+
+        <TextView
+            android:id="@+id/tvHaberDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Haber"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDebeDos"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpDosDesc" />
+
+        <TextView
+            android:id="@+id/tvFechaDescDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="02/02/2019"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProveedoresDos"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoDos"
+            app:layout_constraintStart_toStartOf="@+id/tvFechaDos" />
+
+        <TextView
+            android:id="@+id/tvProveedoresDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Proveedores"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeCuatro"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeDos"
+            app:layout_constraintStart_toStartOf="@+id/tvConceptoDos" />
+
+        <EditText
+            android:id="@+id/etDebeCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/tvHaberDos"
+            app:layout_constraintStart_toStartOf="@+id/tvDebeDos"
+            app:layout_constraintTop_toBottomOf="@+id/tvDebeDos" />
+
+        <EditText
+            android:id="@+id/etHaberCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvHaberDos"
+            app:layout_constraintStart_toStartOf="@+id/tvHaberDos"
+            app:layout_constraintTop_toBottomOf="@+id/tvHaberDos" />
+
+        <TextView
+            android:id="@+id/tvAlmacenDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Almacén"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeCinco"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvProveedoresDos" />
+
+        <EditText
+            android:id="@+id/etDebeCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberCuatro"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeCuatro" />
+
+        <EditText
+            android:id="@+id/etHaberCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberCuatro"
+            app:layout_constraintStart_toStartOf="@+id/etHaberCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCuatro" />
+
+        <TextView
+            android:id="@+id/tvSumasDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="SUMAS"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/etSumaDebeDos"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCinco"
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenDos" />
+
+        <EditText
+            android:id="@+id/etSumaDebeDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberCinco"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvSumasDos"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCinco" />
+
+        <EditText
+            android:id="@+id/etSumaHaberDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberCinco"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberCinco"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCinco" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSumaDebeDos" />
+
+        <TextView
+            android:id="@+id/tvOpTres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/exercise_operation_tittle3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/tvOpTresDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/exercise_operation3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOpTres"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+        <TextView
+            android:id="@+id/tvFechaTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Fecha"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoTres"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpTresDesc" />
+
+        <TextView
+            android:id="@+id/tvConceptoTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Concepto"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeTres"
+            app:layout_constraintStart_toEndOf="@+id/tvFechaTres"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpTresDesc" />
+
+        <TextView
+            android:id="@+id/tvDebeTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Debe"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvHaberTres"
+            app:layout_constraintStart_toEndOf="@+id/tvConceptoTres"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpTresDesc" />
+
+        <TextView
+            android:id="@+id/tvHaberTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Haber"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDebeTres"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpTresDesc" />
+
+        <TextView
+            android:id="@+id/tvFechaDescTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="03/02/2019"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProveedoresTres"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoTres"
+            app:layout_constraintStart_toStartOf="@+id/tvFechaTres" />
+
+        <TextView
+            android:id="@+id/tvProveedoresTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Proveedores"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeSeis"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeTres"
+            app:layout_constraintStart_toStartOf="@+id/tvConceptoTres" />
+
+        <EditText
+            android:id="@+id/etDebeSeis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/tvHaberTres"
+            app:layout_constraintStart_toStartOf="@+id/tvDebeTres"
+            app:layout_constraintTop_toBottomOf="@+id/tvDebeTres" />
+
+        <EditText
+            android:id="@+id/etHaberSeis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvHaberTres"
+            app:layout_constraintStart_toStartOf="@+id/tvHaberTres"
+            app:layout_constraintTop_toBottomOf="@+id/tvHaberTres" />
+
+        <TextView
+            android:id="@+id/tvAlmacenTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Almacén"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeSiete"
+            app:layout_constraintEnd_toEndOf="@+id/tvProveedoresTres"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProveedoresTres" />
+
+        <EditText
+            android:id="@+id/etDebeSiete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberSiete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeSeis"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeSeis" />
+
+        <EditText
+            android:id="@+id/etHaberSiete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberSeis"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberSeis" />
+
+        <TextView
+            android:id="@+id/tvSumasTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="SUMAS"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/etSumaDebeTres"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeSiete"
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenTres" />
+
+        <EditText
+            android:id="@+id/etSumaDebeTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberSiete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvSumasTres"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberSiete" />
+
+        <EditText
+            android:id="@+id/etSumaHaberTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberSiete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSiete"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberSiete" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSumaDebeTres" />
+
+        <TextView
+            android:id="@+id/tvOpCuatro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/exercise_operation_tittle4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/tvOpCuatroDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/exercise_operation4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOpCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/tvFechaCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Fecha"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoCuatro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCuatroDesc" />
+
+        <TextView
+            android:id="@+id/tvConceptoCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Concepto"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeCuatro"
+            app:layout_constraintStart_toEndOf="@+id/tvFechaCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCuatroDesc" />
+
+        <TextView
+            android:id="@+id/tvDebeCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Debe"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvHaberCuatro"
+            app:layout_constraintStart_toEndOf="@+id/tvConceptoCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCuatroDesc" />
+
+        <TextView
+            android:id="@+id/tvHaberCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Haber"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDebeCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCuatroDesc" />
+
+        <TextView
+            android:id="@+id/tvFechaDescCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="04/02/2019"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tvBancosCuatro"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvFechaCuatro" />
+
+        <TextView
+            android:id="@+id/tvBancosCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Bancos"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeOcho"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvConceptoCuatro" />
+
+        <EditText
+            android:id="@+id/etDebeOcho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvDebeCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvDebeCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/tvDebeCuatro" />
+
+        <EditText
+            android:id="@+id/etHaberOcho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvHaberCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvHaberCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/tvHaberCuatro" />
+
+        <TextView
+            android:id="@+id/tvCostoCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Costo de ventas"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeNueve"
+            app:layout_constraintEnd_toEndOf="@+id/tvBancosCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvBancosCuatro" />
+
+        <EditText
+            android:id="@+id/etDebeNueve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeOcho"
+            app:layout_constraintStart_toStartOf="@+id/etDebeOcho"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeOcho" />
+
+        <EditText
+            android:id="@+id/etHaberNueve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberOcho"
+            app:layout_constraintStart_toStartOf="@+id/etHaberOcho"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberOcho" />
+
+        <TextView
+            android:id="@+id/tvVentasCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ventas"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeDiez"
+            app:layout_constraintEnd_toEndOf="@+id/tvCostoCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvCostoCuatro" />
+
+        <EditText
+            android:id="@+id/etDebeDiez"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNueve"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNueve"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNueve" />
+
+        <EditText
+            android:id="@+id/etHaberDiez"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNueve"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNueve"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNueve" />
+
+        <TextView
+            android:id="@+id/tvAlmacenCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Almacén"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeOnce"
+            app:layout_constraintEnd_toEndOf="@+id/tvVentasCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvVentasCuatro" />
+
+        <EditText
+            android:id="@+id/etDebeOnce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeDiez"
+            app:layout_constraintStart_toStartOf="@+id/etDebeDiez"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeDiez" />
+
+        <EditText
+            android:id="@+id/etHaberOnce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberDiez"
+            app:layout_constraintStart_toStartOf="@+id/etHaberDiez"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberDiez" />
+
+        <TextView
+            android:id="@+id/tvSumasCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="SUMAS"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/etSumaDebeCuatro"
+            app:layout_constraintEnd_toEndOf="@+id/tvAlmacenCuatro"
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenCuatro" />
+
+        <EditText
+            android:id="@+id/etSumaDebeCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeOnce"
+            app:layout_constraintStart_toStartOf="@+id/etDebeOnce"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeOnce" />
+
+        <EditText
+            android:id="@+id/etSumaHaberCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberOnce"
+            app:layout_constraintStart_toStartOf="@+id/etHaberOnce"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberOnce" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSumaDebeCuatro" />
+        <TextView
+            android:id="@+id/tvOpCinco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/exercise_operation_tittle5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/tvOpCincoDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/exercise_operation5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvOpCinco"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/tvFechaCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Fecha"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoCinco"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCincoDesc" />
+
+        <TextView
+            android:id="@+id/tvConceptoCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Concepto"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeCinco"
+            app:layout_constraintStart_toEndOf="@+id/tvFechaCinco"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCincoDesc" />
+
+        <TextView
+            android:id="@+id/tvDebeCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Debe"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvHaberCinco"
+            app:layout_constraintStart_toEndOf="@+id/tvConceptoCinco"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCincoDesc" />
+
+        <TextView
+            android:id="@+id/tvHaberCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Haber"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDebeCinco"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpCincoDesc" />
+        <TextView
+            android:id="@+id/tvFechaDescCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="05/02/2019"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tvVentasCinco"
+            app:layout_constraintEnd_toStartOf="@+id/tvConceptoCinco"
+            app:layout_constraintStart_toStartOf="@+id/tvFechaCinco" />
+
+        <TextView
+            android:id="@+id/tvVentasCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ventas"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeDoce"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebeCinco"
+            app:layout_constraintStart_toStartOf="@+id/tvConceptoCinco" />
+
+        <EditText
+            android:id="@+id/etDebeDoce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvDebeCinco"
+            app:layout_constraintStart_toStartOf="@+id/tvDebeCinco"
+            app:layout_constraintTop_toBottomOf="@+id/tvDebeCinco" />
+
+        <EditText
+            android:id="@+id/etHaberDoce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvHaberCinco"
+            app:layout_constraintStart_toStartOf="@+id/tvHaberCinco"
+            app:layout_constraintTop_toBottomOf="@+id/tvHaberCinco" />
+
+        <TextView
+            android:id="@+id/tvAlmacenCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Almacén"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeTrece"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeDoce"
+            app:layout_constraintStart_toStartOf="@+id/tvVentasCinco" />
+
+        <EditText
+            android:id="@+id/etDebeTrece"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeDoce"
+            app:layout_constraintStart_toStartOf="@+id/etDebeDoce"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeDoce" />
+
+        <EditText
+            android:id="@+id/etHaberTrece"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberDoce"
+            app:layout_constraintStart_toStartOf="@+id/etHaberDoce"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberDoce" />
+        <TextView
+            android:id="@+id/tvClientesCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Clientes"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeCatorce"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeTrece"
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenCinco" />
+
+        <EditText
+            android:id="@+id/etDebeCatorce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeTrece"
+            app:layout_constraintStart_toStartOf="@+id/etDebeTrece"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeTrece" />
+
+        <EditText
+            android:id="@+id/etHaberCatorce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberTrece"
+            app:layout_constraintStart_toStartOf="@+id/etHaberTrece"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTrece" />
+        <TextView
+            android:id="@+id/tvCostoCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Costo de ventas"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/etDebeQuince"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCatorce"
+            app:layout_constraintStart_toStartOf="@+id/tvClientesCinco" />
+
+        <EditText
+            android:id="@+id/etDebeQuince"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeCatorce"
+            app:layout_constraintStart_toStartOf="@+id/etDebeCatorce"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeCatorce" />
+
+        <EditText
+            android:id="@+id/etHaberQuince"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberCatorce"
+            app:layout_constraintStart_toStartOf="@+id/etHaberCatorce"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCatorce" />
+        <TextView
+            android:id="@+id/tvSumasCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="SUMAS"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/etSumaDebeCinco"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeQuince"
+            app:layout_constraintStart_toStartOf="@+id/tvCostoCinco" />
+
+        <EditText
+            android:id="@+id/etSumaDebeCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeQuince"
+            app:layout_constraintStart_toStartOf="@+id/etDebeQuince"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeQuince" />
+
+        <EditText
+            android:id="@+id/etSumaHaberCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberQuince"
+            app:layout_constraintStart_toStartOf="@+id/etHaberQuince"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberQuince" />
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSumaDebeCinco" />
+
+        <Button
+            android:id="@+id/btnHacerSuma"
+            style="@style/Base.TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorBlue"
+            android:text="Hacer sumas"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
 
         <Button
             android:id="@+id/btnGuardarDatos"
@@ -1238,7 +1188,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNaturalezaDesc10" />
+            app:layout_constraintTop_toBottomOf="@+id/btnHacerSuma" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
 
