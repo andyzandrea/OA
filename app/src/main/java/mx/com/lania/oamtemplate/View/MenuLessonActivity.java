@@ -130,7 +130,7 @@ public class MenuLessonActivity extends AppCompatActivity {
                 switch (groupPosition) {
                     case 0:
 
-                        intent.putExtra("LESSON_TITLE", "5.- Inventarios");
+                        intent.putExtra("LESSON_TITLE", "Inventarios");
                         intent.putExtra("LESSON_HTML", "Introduction/Introduction.html");
                         break;
 
