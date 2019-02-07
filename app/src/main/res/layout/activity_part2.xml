@@ -13,13 +13,6 @@
         android:layout_height="wrap_content"
         android:minHeight="233dp">
 
-        <View
-            android:id="@+id/view14"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="1669dp" />
 
         <TextView
             android:id="@+id/exercise_operation_tittle5"
@@ -46,10 +39,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/exercise_operation_tittle5"
-            app:layout_constraintTop_toBottomOf="@+id/view13"" />
-
-
-        /////////////////////////////////////////////////////////////////
+            app:layout_constraintTop_toBottomOf="@+id/view13" />
 
         <TextView
             android:id="@+id/exercise_table_tittle21"
@@ -974,7 +964,7 @@
 
         <TextView
             android:id="@+id/exercise_operation_tittle1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="27dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
@@ -982,14 +972,15 @@
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/exercise_table_tittle1"
+            app:layout_constraintEnd_toStartOf="@+id/exercise_operation1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
         <TextView
             android:id="@+id/exercise_operation1"
             android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="57dp"
             android:layout_marginEnd="9dp"
             android:text="@string/exercise_operation1"
@@ -1002,7 +993,7 @@
         <TextView
             android:id="@+id/exercise_table_tittle1"
             android:layout_width="0dp"
-            android:layout_height="22dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/exercise_table_tittle1"
@@ -1011,12 +1002,13 @@
             app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle2"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/exercise_operation_tittle1" />
+            app:layout_constraintTop_toBottomOf="@+id/exercise_operation1" />
 
         <TextView
             android:id="@+id/exercise_table_tittle2"
             android:layout_width="0dp"
-            android:layout_height="26dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:text="@string/exercise_table_tittle2"
             android:textColor="@color/colorPrimaryDark"
@@ -1028,14 +1020,15 @@
 
         <TextView
             android:id="@+id/exercise_table_tittle3"
-            android:layout_width="96dp"
-            android:layout_height="25dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:text="@string/exercise_table_tittle3"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/VAlorConcepto1"
+            app:layout_constraintBottom_toTopOf="@+id/ValorDebe1Op1"
             app:layout_constraintEnd_toStartOf="@+id/exercise_table_tittle4"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle2"
@@ -1043,14 +1036,15 @@
 
         <TextView
             android:id="@+id/exercise_table_tittle4"
-            android:layout_width="100dp"
-            android:layout_height="23dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="12dp"
             android:text="@string/exercise_table_tittle4"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/VAlorConcepto2"
+            app:layout_constraintBottom_toTopOf="@+id/ValorHaber1Op1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle3"
             app:layout_constraintTop_toBottomOf="@+id/exercise_operation1" />
@@ -1059,16 +1053,16 @@
         <TextView
             android:id="@+id/name_account3"
             android:layout_width="0dp"
-            android:layout_height="19dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
             android:layout_marginTop="16dp"
             android:text="@string/name_account3"
-            app:layout_constraintEnd_toStartOf="@+id/VAlorConcepto1"
+            app:layout_constraintEnd_toStartOf="@+id/ValorDebe1Op1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle2" />
 
         <EditText
-            android:id="@+id/VAlorConcepto1"
+            android:id="@+id/ValorDebe1Op1"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginTop="8dp"
@@ -1076,13 +1070,13 @@
             android:layout_marginBottom="9dp"
             android:inputType="number"
             android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/VAlorConcepto3"
-            app:layout_constraintEnd_toStartOf="@+id/VAlorConcepto2"
+            app:layout_constraintBottom_toTopOf="@+id/ValorDebe2Op1"
+            app:layout_constraintEnd_toStartOf="@+id/ValorHaber1Op1"
             app:layout_constraintStart_toEndOf="@+id/name_account3"
             app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle3" />
 
         <EditText
-            android:id="@+id/VAlorConcepto2"
+            android:id="@+id/ValorHaber1Op1"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="8dp"
@@ -1091,20 +1085,20 @@
             android:layout_marginBottom="8dp"
             android:inputType="number"
             android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/VAlorConcepto4"
+            app:layout_constraintBottom_toTopOf="@+id/ValorHaber2Op1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/VAlorConcepto1"
+            app:layout_constraintStart_toEndOf="@+id/ValorDebe1Op1"
             app:layout_constraintTop_toBottomOf="@+id/exercise_table_tittle4" />
 
         <TextView
             android:id="@+id/name_account1"
             android:layout_width="0dp"
-            android:layout_height="23dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
             android:layout_marginTop="24dp"
             android:text="@string/name_account1"
             app:layout_constraintBottom_toTopOf="@+id/name_account7"
-            app:layout_constraintEnd_toStartOf="@+id/VAlorConcepto3"
+            app:layout_constraintEnd_toStartOf="@+id/ValorDebe2Op1"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
@@ -1112,20 +1106,20 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/VAlorConcepto3"
+            android:id="@+id/ValorDebe2Op1"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_marginTop="7dp"
             android:layout_marginEnd="8dp"
             android:inputType="text"
             android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/VAlorConcepto5"
-            app:layout_constraintEnd_toStartOf="@+id/VAlorConcepto4"
+            app:layout_constraintBottom_toTopOf="@+id/ValorDebe3Op1"
+            app:layout_constraintEnd_toStartOf="@+id/ValorHaber2Op1"
             app:layout_constraintStart_toEndOf="@+id/name_account1"
-            app:layout_constraintTop_toBottomOf="@+id/VAlorConcepto1" />
+            app:layout_constraintTop_toBottomOf="@+id/ValorDebe1Op1" />
 
         <EditText
-            android:id="@+id/VAlorConcepto4"
+            android:id="@+id/ValorHaber2Op1"
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginStart="8dp"
@@ -1133,25 +1127,25 @@
             android:layout_marginEnd="8dp"
             android:inputType="number"
             android:textAlignment="viewStart"
-            app:layout_constraintBottom_toTopOf="@+id/VAlorConcepto6"
+            app:layout_constraintBottom_toTopOf="@+id/ValorHaber3Op1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/VAlorConcepto3"
-            app:layout_constraintTop_toBottomOf="@+id/VAlorConcepto2" />
+            app:layout_constraintStart_toEndOf="@+id/ValorDebe2Op1"
+            app:layout_constraintTop_toBottomOf="@+id/ValorHaber1Op1" />
 
         <TextView
             android:id="@+id/name_account7"
             android:layout_width="0dp"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
             android:layout_marginTop="22dp"
             android:text="@string/name_account7"
             app:layout_constraintBottom_toTopOf="@+id/exercise_table_tittle5"
-            app:layout_constraintEnd_toStartOf="@+id/VAlorConcepto5"
+            app:layout_constraintEnd_toStartOf="@+id/ValorDebe3Op1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name_account1" />
 
         <EditText
-            android:id="@+id/VAlorConcepto5"
+            android:id="@+id/ValorDebe3Op1"
             android:layout_width="0dp"
             android:layout_height="36dp"
             android:layout_marginTop="8dp"
@@ -1160,12 +1154,12 @@
             android:inputType="number"
             android:textAlignment="viewStart"
             app:layout_constraintBottom_toTopOf="@+id/SumaDebe1"
-            app:layout_constraintEnd_toStartOf="@+id/VAlorConcepto6"
+            app:layout_constraintEnd_toStartOf="@+id/ValorHaber3Op1"
             app:layout_constraintStart_toEndOf="@+id/name_account7"
-            app:layout_constraintTop_toBottomOf="@+id/VAlorConcepto3" />
+            app:layout_constraintTop_toBottomOf="@+id/ValorDebe2Op1" />
 
         <EditText
-            android:id="@+id/VAlorConcepto6"
+            android:id="@+id/ValorHaber3Op1"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="8dp"
@@ -1176,8 +1170,8 @@
             android:textAlignment="viewStart"
             app:layout_constraintBottom_toTopOf="@+id/SumaHaber1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/VAlorConcepto5"
-            app:layout_constraintTop_toBottomOf="@+id/VAlorConcepto4" />
+            app:layout_constraintStart_toEndOf="@+id/ValorDebe3Op1"
+            app:layout_constraintTop_toBottomOf="@+id/ValorHaber2Op1" />
 
         <TextView
             android:id="@+id/exercise_table_tittle5"
@@ -1204,7 +1198,7 @@
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@+id/SumaHaber1"
             app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle5"
-            app:layout_constraintTop_toBottomOf="@+id/VAlorConcepto5" />
+            app:layout_constraintTop_toBottomOf="@+id/ValorDebe3Op1" />
 
         <EditText
             android:id="@+id/SumaHaber1"
@@ -1216,7 +1210,7 @@
             android:textAlignment="viewStart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/SumaDebe1"
-            app:layout_constraintTop_toBottomOf="@+id/VAlorConcepto6" />
+            app:layout_constraintTop_toBottomOf="@+id/ValorHaber3Op1" />
 
         <View
             android:id="@+id/view1"

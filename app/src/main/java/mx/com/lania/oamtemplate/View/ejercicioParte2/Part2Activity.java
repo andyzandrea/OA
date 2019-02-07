@@ -45,12 +45,12 @@ public class Part2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part2);
-        ButterKnife.bind(this);
+        //ButterKnife.bind(this);
         showToolbar();
     }
 
 
-    @OnClick(R.id.btnGuardarDatos)
+    //@OnClick(R.id.btnGuardarDatos)
     public void setBtnGuardarDatos() {
         if (validarDatos()) {
             Bundle bundle = new Bundle();
