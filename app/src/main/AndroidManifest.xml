@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".View.EvaluacionParte2.ResultadoEvaluationActivity"></activity>
+        <activity android:name=".View.EvaluacionParte2.EvaluationInstActivity2" />
+        <activity android:name=".View.EvaluacionParte2.EvaluationInfoActivity2" />
+        <activity android:name=".View.EvaluacionParte2.EvaluationActivityDos" />
         <activity android:name=".View.MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +36,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuActivity" />
         </activity>
-
         <activity
             android:name=".View.ExerciseActivity"
             android:windowSoftInputMode="adjustResize|stateHidden">
@@ -74,7 +76,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.InvPerpetuo.InstrInvPerpActivity" />
         </activity>
-
         <activity android:name=".View.InvPerpetuo.ResultadoInvPerpetuoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -174,13 +175,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MenuEvaluationActivity" />
         </activity>
-
-
-
-
-
-
-
         <activity android:name=".View.ejercicioParte2.Part2InfoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -214,7 +208,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.ejercicioParte2.PArt2IntrActivity" />
         </activity>
-
         <activity android:name=".View.ejercicioParte2.Part2ResulActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -228,10 +221,4 @@
         </activity>
     </application>
 
-
-
-   <!-- <activity android:name=".View.ejercicioParte2.PArt2IntrActivity"></activity>
-    <activity android:name=".View.ejercicioParte2.Part2InfoActivity" />
-    <activity android:name=".View.ejercicioParte2.Part2ResulActivity" />
-    <activity android:name=".View.ejercicioParte2.Part2Activity" />-->
 </manifest>

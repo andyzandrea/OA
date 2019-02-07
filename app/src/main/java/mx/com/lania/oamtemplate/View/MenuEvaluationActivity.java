@@ -10,8 +10,8 @@ import java.util.List;
 import mx.com.lania.oamtemplate.R;
 import mx.com.lania.oamtemplate.View.Adapter.ExpandableListAdapter;
 import mx.com.lania.oamtemplate.View.Evaluacion.EvaluationInfoActivity;
-import mx.com.lania.oamtemplate.View.Evaluacion.EvaluationInstActivity;
-import mx.com.lania.oamtemplate.View.InvPerpetuo.InfInvPerpActivity;
+import mx.com.lania.oamtemplate.View.EvaluacionParte2.EvaluationInfoActivity2;
+
 
 public class MenuEvaluationActivity extends AppCompatActivity {
 
@@ -34,11 +34,11 @@ public class MenuEvaluationActivity extends AppCompatActivity {
             switch (groupPosition) {
                 //TODO: Write the code to set the exercise clicked to EvaluationActivity
                 case 0:
-                    Intent intent = new Intent(this, EvaluationInstActivity.class);
+                    Intent intent = new Intent(this, EvaluationInfoActivity.class);
                     startActivity(intent);
                     break;
                 case 1:
-                    Intent intent2 = new Intent(this, EvaluationInfoActivity.class);
+                    Intent intent2 = new Intent(this, EvaluationInfoActivity2.class);
                     startActivity(intent2);
                     break;
             }
