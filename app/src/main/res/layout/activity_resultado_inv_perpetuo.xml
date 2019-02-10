@@ -11,6 +11,104 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <EditText
+            android:id="@+id/tvCuentaDesc13"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:textAlignment="viewStart"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="1758dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            tools:layout_editor_absoluteY="1671dp" />
+
+        <EditText
+            android:id="@+id/tvNaturalezaDesc13"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="1815dp" />
+
+        <TextView
+            android:id="@+id/tvNaturaleza13"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Naturaleza:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="1823dp" />
+
+        <TextView
+            android:id="@+id/tvRepresenta"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Representa:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="1868dp" />
+
+        <TextView
+            android:id="@+id/tvImporteDesc13"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name_account_value6"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="1731dp" />
+
+        <TextView
+            android:id="@+id/tvNombre13"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la cuenta:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="1692dp" />
+
+        <TextView
+            android:id="@+id/tvCuenta13"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Cuenta:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="1770dp" />
+
+        <TextView
+            android:id="@+id/tvRepresentaDesc"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_represents5"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="1868dp" />
+
+        <TextView
+            android:id="@+id/tvImporte13"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Importe:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="1715dp" />
+
+        <TextView
+            android:id="@+id/tvNombreDesc13"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name_account6"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="1692dp" />
+
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
@@ -88,7 +186,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="BANCO"
+            android:text="@string/name_account1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/exercise_table_tittle1"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
@@ -178,6 +276,17 @@
             app:layout_constraintTop_toBottomOf="@+id/view1" />
 
         <TextView
+            android:id="@+id/tvNombreDesc2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/name_account2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvNombre2"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <TextView
             android:id="@+id/tvImporte2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -218,17 +327,6 @@
             app:layout_constraintEnd_toStartOf="@+id/tvNaturalezaDesc2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvNaturalezaDesc2" />
-
-        <TextView
-            android:id="@+id/tvNombreDesc2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="CLIENTES"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvNombre2"
-            app:layout_constraintTop_toBottomOf="@+id/view1" />
 
         <TextView
             android:id="@+id/tvImporteDesc2"
@@ -362,7 +460,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="ALMACEN"
+            android:text="@string/name_account3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre3"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
@@ -498,7 +596,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="EDIFICIOS"
+            android:text="@string/name_account4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre4"
             app:layout_constraintTop_toBottomOf="@+id/view3" />
@@ -634,7 +732,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="BANCO"
+            android:text="@string/name_account5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre5"
             app:layout_constraintTop_toBottomOf="@+id/view4" />
@@ -770,7 +868,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="BANCO"
+            android:text="@string/name_account6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre6"
             app:layout_constraintTop_toBottomOf="@+id/view5" />
@@ -838,7 +936,7 @@
             android:id="@+id/view6"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="320dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -906,7 +1004,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="BANCO"
+            android:text="@string/name_account7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre7"
             app:layout_constraintTop_toBottomOf="@+id/view6" />
@@ -1042,7 +1140,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="BANCO"
+            android:text="@string/name_account8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre8"
             app:layout_constraintTop_toBottomOf="@+id/view7" />
@@ -1178,7 +1276,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="BANCO"
+            android:text="@string/name_account9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre9"
             app:layout_constraintTop_toBottomOf="@+id/view8" />
@@ -1314,7 +1412,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="BANCO"
+            android:text="@string/name_account10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvNombre10"
             app:layout_constraintTop_toBottomOf="@+id/view9" />

@@ -13,6 +13,7 @@ import mx.com.lania.oamtemplate.View.InvPerpetuo.InfInvPerpActivity;
 import mx.com.lania.oamtemplate.View.InvPerpetuo.InstrInvPerpActivity;
 import mx.com.lania.oamtemplate.View.InvPerpetuoDos.InfInvPerpActivityDos;
 import mx.com.lania.oamtemplate.View.ejercicioParte2.Part2InfoActivity;
+import mx.com.lania.oamtemplate.View.ejercicioParte2.Part2ResulActivity;
 
 public class MenuExerciseActivity extends AppCompatActivity {
 
@@ -42,6 +43,10 @@ public class MenuExerciseActivity extends AppCompatActivity {
                     Intent intent2 = new Intent(this,Part2InfoActivity.class);
                     startActivity(intent2);
                     break;
+                case 2:
+                    Intent intent22 = new Intent(this,Part2ResulActivity.class);
+                    startActivity(intent22);
+                    break;
             }
 
             return true;
@@ -59,6 +64,7 @@ public class MenuExerciseActivity extends AppCompatActivity {
         //TODO: Add exercise titles
         listExerciseHeader.add("Ejercicio 1.1");
         listExerciseHeader.add("Ejercicio 1.2");
+        listExerciseHeader.add("diseño");
     }
 
     private void showToolbar() {

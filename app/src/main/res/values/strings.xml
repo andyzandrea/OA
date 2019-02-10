@@ -25,7 +25,7 @@
     <string name="name_account11">Costo de ventas</string>
     <string name="name_account12">Ventas</string>
     <string name="name_account13">Equipo de oficina</string>
-    <string name="name_account14">Depreciación equipo oficina</string>
+    <string name="name_account14">Depreciación de equipo oficina</string>
     <string name="name_account_value1">50,000.00</string>
     <string name="name_account_value2">125,000.00</string>
     <string name="name_account_value3">65,000.00</string>
@@ -59,6 +59,8 @@
     <string name="exercise_represents7">Registra los aumentos y disminuciones derivados de las compras a crédito distintos de mercancías.</string>
     <string name="exercise_represents8">Registra los aumentos y disminuciones derivados de las aportaciones a la sociedad.</string>
     <string name="exercise_represents9">Registra los aumentos y disminuciones de las utilidades o pérdidas acumuladas de la entidad.</string>
+    <string name="exercise_represents10">Registra los aumentos y disminuciones relativos a mobiliario y equipo de oficina adquiridos o vendidos propiedad de la entidad.</string>
+    <string name="exercise_represents11">Registra los aumentos y disminuciones relativos a la depreciación de la equipo de oficina propiedad de la entidad.</string>
     <string name="title_activity_evaluation_inst">activity_evaluation_inst</string>
     <string name="title_activity_evaluation1_activity">Evaluation1_activity</string>
     <!--Parte 2-->
@@ -109,7 +111,7 @@
     <string name="evaluation_operation_tittle6">Operación 6.</string>
 
     <string name="name_account_value1_evaluation">12,500.00</string>
-    <string name="name_account_value2_evaluation">55000.00</string>
+    <string name="name_account_value2_evaluation">55,000.00</string>
     <string name="name_account_value3_evaluation">125,000.00</string>
     <string name="name_account_value4_evaluation">250,000.00</string>
     <string name="name_account_value5_evaluation">45,000.00</string>

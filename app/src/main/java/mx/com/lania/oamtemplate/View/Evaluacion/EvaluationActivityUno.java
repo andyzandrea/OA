@@ -32,7 +32,9 @@ public class EvaluationActivityUno extends AppCompatActivity {
             R.id.tvCuentaDesc7, R.id.tvNaturalezaDesc7,
             R.id.tvCuentaDesc8, R.id.tvNaturalezaDesc8,
             R.id.tvCuentaDesc9, R.id.tvNaturalezaDesc9,
-            R.id.tvCuentaDesc10, R.id.tvNaturalezaDesc10})
+            R.id.tvCuentaDesc10, R.id.tvNaturalezaDesc10,
+            R.id.tvCuentaDesc11, R.id.tvNaturalezaDesc11,
+            R.id.tvCuentaDesc12, R.id.tvNaturalezaDesc12})
     List<EditText> editTexts;
 
     @Override
@@ -69,6 +71,11 @@ public class EvaluationActivityUno extends AppCompatActivity {
             String tvCuentaDesc10 = editTexts.get(18).getText().toString();
             String tvNaturalezaDesc10 = editTexts.get(19).getText().toString();
 
+            String tvCuentaDesc11 = editTexts.get(20).getText().toString();
+            String tvNaturalezaDesc11 = editTexts.get(21).getText().toString();
+            String tvCuentaDesc12 = editTexts.get(22).getText().toString();
+            String tvNaturalezaDesc12 = editTexts.get(23).getText().toString();
+
             bundle.putString("tvCuentaDesc1", tvCuentaDesc1);
             bundle.putString("tvNaturalezaDesc1", tvNaturalezaDesc1);
             bundle.putString("tvCuentaDesc2", tvCuentaDesc2);
@@ -89,7 +96,10 @@ public class EvaluationActivityUno extends AppCompatActivity {
             bundle.putString("tvNaturalezaDesc9", tvNaturalezaDesc9);
             bundle.putString("tvCuentaDesc10", tvCuentaDesc10);
             bundle.putString("tvNaturalezaDesc10", tvNaturalezaDesc10);
-
+            bundle.putString("tvCuentaDesc11", tvCuentaDesc11);
+            bundle.putString("tvNaturalezaDesc11", tvNaturalezaDesc11);
+            bundle.putString("tvCuentaDesc12", tvCuentaDesc12);
+            bundle.putString("tvNaturalezaDesc12", tvNaturalezaDesc12);
             Intent validacion = new Intent(EvaluationActivityUno.this, ResultadoEvaluationActivity.class);
             validacion.putExtras(bundle);
             startActivity(validacion);
@@ -119,7 +129,10 @@ public class EvaluationActivityUno extends AppCompatActivity {
         String tvNaturalezaDesc9 = editTexts.get(17).getText().toString();
         String tvCuentaDesc10 = editTexts.get(18).getText().toString();
         String tvNaturalezaDesc10 = editTexts.get(19).getText().toString();
-
+        String tvCuentaDesc11 = editTexts.get(20).getText().toString();
+        String tvNaturalezaDesc11 = editTexts.get(21).getText().toString();
+        String tvCuentaDesc12 = editTexts.get(22).getText().toString();
+        String tvNaturalezaDesc12 = editTexts.get(23).getText().toString();
 
         boolean a = esValido(tvCuentaDesc1, 0);
         boolean b = esValido(tvNaturalezaDesc1, 1);
@@ -141,9 +154,13 @@ public class EvaluationActivityUno extends AppCompatActivity {
         boolean r = esValido(tvNaturalezaDesc9, 17);
         boolean s = esValido(tvCuentaDesc10, 18);
         boolean t = esValido(tvNaturalezaDesc10, 19);
+        boolean u = esValido(tvCuentaDesc11, 20);
+        boolean w = esValido(tvNaturalezaDesc11, 21);
+        boolean x = esValido(tvCuentaDesc12, 22);
+        boolean y = esValido(tvNaturalezaDesc12, 23);
 
         if (a && b && c && d && e && f && g && h && i && j
-                && k && l && m && n && o && p && q && r && s && t) {
+                && k && l && m && n && o && p && q && r && s && t && u && w && x && y) {
             estado = true;
         } else {
             Toasty.error(this, "Faltan datos por completar.", Toast.LENGTH_SHORT, true).show();

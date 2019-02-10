@@ -30,7 +30,9 @@ public  class ResultadoEvaluationActivity extends AppCompatActivity {
                 R.id.tvCuentaDesc7, R.id.tvNaturalezaDesc7,
                 R.id.tvCuentaDesc8, R.id.tvNaturalezaDesc8,
                 R.id.tvCuentaDesc9, R.id.tvNaturalezaDesc9,
-                R.id.tvCuentaDesc10, R.id.tvNaturalezaDesc10})
+                R.id.tvCuentaDesc10, R.id.tvNaturalezaDesc10,
+                R.id.tvCuentaDesc11, R.id.tvNaturalezaDesc11,
+                R.id.tvCuentaDesc12, R.id.tvNaturalezaDesc12})
         List<EditText> editTexts;
 
         Bundle bundleInicial = new Bundle();
@@ -68,6 +70,11 @@ public  class ResultadoEvaluationActivity extends AppCompatActivity {
             editTexts.get(17).setText(bundleInicial.getString("tvNaturalezaDesc9"));
             editTexts.get(18).setText(bundleInicial.getString("tvCuentaDesc10"));
             editTexts.get(19).setText(bundleInicial.getString("tvNaturalezaDesc10"));
+            editTexts.get(20).setText(bundleInicial.getString("tvCuentaDesc11"));
+            editTexts.get(21).setText(bundleInicial.getString("tvNaturalezaDesc11"));
+            editTexts.get(22).setText(bundleInicial.getString("tvCuentaDesc12"));
+            editTexts.get(23).setText(bundleInicial.getString("tvNaturalezaDesc12"));
+
         }
 
         public void cargarValidacion() {
@@ -82,6 +89,10 @@ public  class ResultadoEvaluationActivity extends AppCompatActivity {
                 editTexts.get(0).setBackgroundColor(getResources().getColor(R.color.colorRed));
             }
 
+
+
+
+
             /*------------------------------------------------------------------------------------*/
             if (editTexts.get(1).getText().toString().equals("Deudor")
                     || editTexts.get(1).getText().toString().equals("deudor")) {
@@ -90,6 +101,7 @@ public  class ResultadoEvaluationActivity extends AppCompatActivity {
             } else {
                 editTexts.get(1).setBackgroundColor(getResources().getColor(R.color.colorRed));
             }
+
 
             /*------------------------------------------------------------------------------------*/
             if (editTexts.get(2).getText().toString().equals("Activo circulante")
@@ -283,7 +295,54 @@ public  class ResultadoEvaluationActivity extends AppCompatActivity {
             } else {
                 editTexts.get(19).setBackgroundColor(getResources().getColor(R.color.colorRed));
             }
+
+
             /*------------------------------------------------------------------------------------*/
+            if (editTexts.get(20).getText().toString().equals("Activo no circulante")
+                    || editTexts.get(20).getText().toString().equals("Activo No Circulante")
+                    || editTexts.get(20).getText().toString().equals("activo no Circulante")
+                    || editTexts.get(20).getText().toString().equals("activo No Circulante")
+                    || editTexts.get(20).getText().toString().equals("activo No circulante")) {
+
+                editTexts.get(20).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            } else {
+                editTexts.get(20).setBackgroundColor(getResources().getColor(R.color.colorRed));
+            }
+
+
+            /*------------------------------------------------------------------------------------*/
+            if (editTexts.get(21).getText().toString().equals("Deudor")
+                    || editTexts.get(21).getText().toString().equals("deudor")) {
+
+                editTexts.get(21).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            } else {
+                editTexts.get(21).setBackgroundColor(getResources().getColor(R.color.colorRed));
+            }
+
+            /*------------------------------------------------------------------------------------*/
+            if (editTexts.get(22).getText().toString().equals("Activo no circulante")
+                    || editTexts.get(22).getText().toString().equals("Activo No Circulante")
+                    || editTexts.get(22).getText().toString().equals("activo no Circulante")
+                    || editTexts.get(22).getText().toString().equals("activo No Circulante")
+                    || editTexts.get(22).getText().toString().equals("activo No circulante")) {
+
+                editTexts.get(22).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            } else {
+                editTexts.get(22).setBackgroundColor(getResources().getColor(R.color.colorRed));
+            }
+            /*------------------------------------------------------------------------------------*/
+            if (editTexts.get(23).getText().toString().equals("Acreedor")
+                    || editTexts.get(23).getText().toString().equals("acreedor")) {
+
+                editTexts.get(23).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            } else {
+                editTexts.get(23).setBackgroundColor(getResources().getColor(R.color.colorRed));
+            }
+
+
+            /*------------------------------------------------------------------------------------*/
+
+
 
         }
 

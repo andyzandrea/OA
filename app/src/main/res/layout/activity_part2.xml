@@ -30,25 +30,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/exercise_operation_tittle1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPaso2" />
+
+        <TextView
+            android:id="@+id/tvAlmacen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/exercise_operation1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvOpUno"
+            app:layout_constraintTop_toBottomOf="@+id/tvPaso2" />
+
+        <TextView
+            android:id="@+id/tvPaso2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/Step_2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/Step_tittle"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/exercise_operation1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvOpUno"
-            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
-
-        <TextView
-            android:id="@+id/tvFechaUno"
+            android:id="@+id/tvvacio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -56,36 +86,36 @@
             android:text="Fecha"
             android:textAlignment="center"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/tvConceptoUno"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebe"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/tvAlmacen" />
 
         <TextView
-            android:id="@+id/tvConceptoUno"
+            android:id="@+id/tvDebe"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Concepto"
             android:textAlignment="center"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/tvDebeUno"
-            app:layout_constraintStart_toEndOf="@+id/tvFechaUno"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintEnd_toStartOf="@+id/tvHaber"
+            app:layout_constraintStart_toEndOf="@+id/tvvacio"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlmacen" />
 
         <TextView
-            android:id="@+id/tvDebeUno"
+            android:id="@+id/tvHaber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Debe"
             android:textAlignment="center"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/tvHaberUno"
-            app:layout_constraintStart_toEndOf="@+id/tvConceptoUno"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintEnd_toStartOf="@+id/tvVacioDer"
+            app:layout_constraintStart_toEndOf="@+id/tvDebe"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlmacen" />
 
         <TextView
-            android:id="@+id/tvHaberUno"
+            android:id="@+id/tvVacioDer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -94,8 +124,8 @@
             android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvDebeUno"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintStart_toEndOf="@+id/tvHaber"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlmacen" />
 
         <TextView
             android:id="@+id/tvFechaDescUno"
@@ -104,9 +134,9 @@
             android:text="01/02/2019"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="@+id/tvAlmacenUno"
-            app:layout_constraintEnd_toEndOf="@+id/tvFechaUno"
+            app:layout_constraintEnd_toEndOf="@+id/tvvacio"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvFechaUno" />
+            app:layout_constraintStart_toStartOf="@+id/tvvacio" />
 
         <TextView
             android:id="@+id/tvAlmacenUno"
@@ -116,9 +146,9 @@
             android:text="Almacén"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="@+id/etDebeUno"
-            app:layout_constraintEnd_toEndOf="@+id/tvConceptoUno"
+            app:layout_constraintEnd_toEndOf="@+id/tvDebe"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvConceptoUno" />
+            app:layout_constraintStart_toStartOf="@+id/tvDebe" />
 
         <EditText
             android:id="@+id/etDebeUno"
@@ -127,9 +157,9 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/tvDebeUno"
-            app:layout_constraintStart_toStartOf="@+id/tvDebeUno"
-            app:layout_constraintTop_toBottomOf="@+id/tvDebeUno" />
+            app:layout_constraintEnd_toEndOf="@+id/tvHaber"
+            app:layout_constraintStart_toStartOf="@+id/tvHaber"
+            app:layout_constraintTop_toBottomOf="@+id/tvHaber" />
 
         <EditText
             android:id="@+id/etHaberUno"
@@ -138,9 +168,9 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/tvHaberUno"
-            app:layout_constraintStart_toStartOf="@+id/tvHaberUno"
-            app:layout_constraintTop_toBottomOf="@+id/tvHaberUno" />
+            app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
+            app:layout_constraintStart_toStartOf="@+id/tvVacioDer"
+            app:layout_constraintTop_toBottomOf="@+id/tvVacioDer" />
 
         <TextView
             android:id="@+id/tvBancosUno"
@@ -235,7 +265,9 @@
             app:layout_constraintEnd_toStartOf="@+id/etHaberUno"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/tvAlmacenUno"
-            app:layout_constraintTop_toBottomOf="@+id/etDebeTres" />
+            app:layout_constraintTop_toBottomOf="@+id/etDebeTres"
+            android:editable="false"
+             />
 
         <EditText
             android:id="@+id/etSumaHaberUno"
