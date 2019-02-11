@@ -225,7 +225,7 @@ public class Part2Activity extends AppCompatActivity {
     resultadoetSumaDebeCinco.setText(resudebe5);
     resultadoetSumaHaberCinco.setText(resuhaber5);
 
-
+        cargarValidacion();
     }
 
 
@@ -236,39 +236,38 @@ public class Part2Activity extends AppCompatActivity {
        public void setBtnGuardarDatos() {
         if (validarDatos()) {
             Bundle bundle = new Bundle();
-
             String etDebeUno = editTexts.get(0).getText().toString();
-            String etDebeDos = editTexts.get(1).getText().toString();
-            String etDebeTres = editTexts.get(2).getText().toString();
-            String etHaberUno = editTexts.get(3).getText().toString();
-            String etHaberDos = editTexts.get(4).getText().toString();
+            String etHaberUno = editTexts.get(1).getText().toString();
+            String etDebeDos = editTexts.get(2).getText().toString();
+            String etHaberDos = editTexts.get(3).getText().toString();
+            String etDebeTres = editTexts.get(4).getText().toString();
             String etHaberTres = editTexts.get(5).getText().toString();
             String etDebeCuatro = editTexts.get(6).getText().toString();
-            String etDebeCinco = editTexts.get(7).getText().toString();
-            String etHaberCuatro = editTexts.get(8).getText().toString();
+            String etHaberCuatro = editTexts.get(7).getText().toString();
+            String etDebeCinco = editTexts.get(8).getText().toString();
             String etHaberCinco = editTexts.get(9).getText().toString();
             String etDebeSeis = editTexts.get(10).getText().toString();
-            String etDebeSiete = editTexts.get(11).getText().toString();
-            String etHaberSeis = editTexts.get(12).getText().toString();
+            String etHaberSeis = editTexts.get(11).getText().toString();
+            String etDebeSiete = editTexts.get(12).getText().toString();
             String etHaberSiete = editTexts.get(13).getText().toString();
             String etDebeOcho = editTexts.get(14).getText().toString();
-            String etDebeNueve = editTexts.get(15).getText().toString();
-            String etDebeDiez = editTexts.get(16).getText().toString();
-            String etDebeOnce = editTexts.get(17).getText().toString();
-            String etHaberOcho = editTexts.get(18).getText().toString();
-            String etHaberNueve = editTexts.get(19).getText().toString();
-            String etHaberDiez = editTexts.get(20).getText().toString();
+            String etHaberOcho = editTexts.get(15).getText().toString();
+            String etDebeNueve = editTexts.get(16).getText().toString();
+            String etHaberNueve = editTexts.get(17).getText().toString();
+            String etDebeDiez = editTexts.get(18).getText().toString();
+            String etHaberDiez = editTexts.get(19).getText().toString();
+            String etDebeOnce = editTexts.get(20).getText().toString();
             String etHaberOnce = editTexts.get(21).getText().toString();
             String etDebeDoce = editTexts.get(22).getText().toString();
-            String etDebeTrece = editTexts.get(23).getText().toString();
-            String etDebeCatorce = editTexts.get(24).getText().toString();
-            String etDebeQuince = editTexts.get(25).getText().toString();
-            String etHaberDoce = editTexts.get(26).getText().toString();
-            String etHaberTrece = editTexts.get(27).getText().toString();
-            String etHaberCatorce = editTexts.get(28).getText().toString();
+            String etHaberDoce = editTexts.get(23).getText().toString();
+            String etDebeTrece = editTexts.get(24).getText().toString();
+            String etHaberTrece = editTexts.get(25).getText().toString();
+            String etDebeCatorce = editTexts.get(26).getText().toString();
+            String etHaberCatorce = editTexts.get(27).getText().toString();
+            String etDebeQuince = editTexts.get(28).getText().toString();
             String etHaberQuince = editTexts.get(29).getText().toString();
 
-            String etSumaDebeUno = editTexts.get(30).getText().toString();
+          /*  String etSumaDebeUno = editTexts.get(30).getText().toString();
             String etSumaHaberUno = editTexts.get(31).getText().toString();
             String etSumaDebeDos = editTexts.get(32).getText().toString();
             String etSumaHaberDos = editTexts.get(33).getText().toString();
@@ -277,7 +276,7 @@ public class Part2Activity extends AppCompatActivity {
             String etSumaDebeCuatro = editTexts.get(36).getText().toString();
             String etSumaHaberCuatro = editTexts.get(37).getText().toString();
             String etSumaDebeCinco = editTexts.get(38).getText().toString();
-            String etSumaHaberCinco = editTexts.get(39).getText().toString();
+            String etSumaHaberCinco = editTexts.get(39).getText().toString();*/
 
 
             bundle.putString("etDebeUno", etDebeUno);
@@ -311,7 +310,7 @@ public class Part2Activity extends AppCompatActivity {
             bundle.putString("etDebeQuince", etDebeQuince);
             bundle.putString("etHaberQuince", etHaberQuince);
 
-            bundle.putString("etSumaDebeUno", etSumaDebeUno);
+            /*bundle.putString("etSumaDebeUno", etSumaDebeUno);
             bundle.putString("etSumaHaberUno", etSumaHaberUno);
             bundle.putString("etSumaDebeDos", etSumaDebeDos);
             bundle.putString("etSumaHaberDos", etSumaHaberDos);
@@ -321,7 +320,7 @@ public class Part2Activity extends AppCompatActivity {
             bundle.putString("etSumaHaberCuatro", etSumaHaberCuatro);
             bundle.putString("etSumaDebeCinco", etSumaDebeCinco);
             bundle.putString("etSumaHaberCinco", etSumaHaberCinco);
-
+*/
 
             Intent validacion = new Intent(Part2Activity.this, Part2ResulActivity.class);
             validacion.putExtras(bundle);
@@ -335,53 +334,53 @@ public class Part2Activity extends AppCompatActivity {
 
 
         String etDebeUno = editTexts.get(0).getText().toString();
-        String etDebeDos = editTexts.get(1).getText().toString();
-        String etDebeTres = editTexts.get(2).getText().toString();
-        String etHaberUno = editTexts.get(3).getText().toString();
-        String etHaberDos = editTexts.get(4).getText().toString();
+        String etHaberUno = editTexts.get(1).getText().toString();
+        String etDebeDos = editTexts.get(2).getText().toString();
+        String etHaberDos = editTexts.get(3).getText().toString();
+        String etDebeTres = editTexts.get(4).getText().toString();
         String etHaberTres = editTexts.get(5).getText().toString();
         String etDebeCuatro = editTexts.get(6).getText().toString();
-        String etDebeCinco = editTexts.get(7).getText().toString();
-        String etHaberCuatro = editTexts.get(8).getText().toString();
+        String etHaberCuatro = editTexts.get(7).getText().toString();
+        String etDebeCinco = editTexts.get(8).getText().toString();
         String etHaberCinco = editTexts.get(9).getText().toString();
         String etDebeSeis = editTexts.get(10).getText().toString();
-        String etDebeSiete = editTexts.get(11).getText().toString();
-        String etHaberSeis = editTexts.get(12).getText().toString();
+        String etHaberSeis = editTexts.get(11).getText().toString();
+        String etDebeSiete = editTexts.get(12).getText().toString();
         String etHaberSiete = editTexts.get(13).getText().toString();
         String etDebeOcho = editTexts.get(14).getText().toString();
-        String etDebeNueve = editTexts.get(15).getText().toString();
-        String etDebeDiez = editTexts.get(16).getText().toString();
-        String etDebeOnce = editTexts.get(17).getText().toString();
-        String etHaberOcho = editTexts.get(18).getText().toString();
-        String etHaberNueve = editTexts.get(19).getText().toString();
-        String etHaberDiez = editTexts.get(20).getText().toString();
+        String etHaberOcho = editTexts.get(15).getText().toString();
+        String etDebeNueve = editTexts.get(16).getText().toString();
+        String etHaberNueve = editTexts.get(17).getText().toString();
+        String etDebeDiez = editTexts.get(18).getText().toString();
+        String etHaberDiez = editTexts.get(19).getText().toString();
+        String etDebeOnce = editTexts.get(20).getText().toString();
         String etHaberOnce = editTexts.get(21).getText().toString();
         String etDebeDoce = editTexts.get(22).getText().toString();
-        String etDebeTrece = editTexts.get(23).getText().toString();
-        String etDebeCatorce = editTexts.get(24).getText().toString();
-        String etDebeQuince = editTexts.get(25).getText().toString();
-        String etHaberDoce = editTexts.get(26).getText().toString();
-        String etHaberTrece = editTexts.get(27).getText().toString();
-        String etHaberCatorce = editTexts.get(28).getText().toString();
+        String etHaberDoce = editTexts.get(23).getText().toString();
+        String etDebeTrece = editTexts.get(24).getText().toString();
+        String etHaberTrece = editTexts.get(25).getText().toString();
+        String etDebeCatorce = editTexts.get(26).getText().toString();
+        String etHaberCatorce = editTexts.get(27).getText().toString();
+        String etDebeQuince = editTexts.get(28).getText().toString();
         String etHaberQuince = editTexts.get(29).getText().toString();
 
 
-        boolean a = esValido(etDebeDos , 0);
-        boolean b = esValido(etDebeTres , 1);
-        boolean c = esValido(etHaberUno , 2);
+        boolean a = esValido(etDebeUno , 0);
+        boolean b = esValido(etHaberUno, 1);
+        boolean c = esValido(etDebeDos , 2);
         boolean d = esValido(etHaberDos , 3);
         boolean e = esValido(etHaberTres , 4);
-        boolean f = esValido(etDebeCuatro , 5);
-        boolean g = esValido(etDebeCinco , 6);
+        boolean f = esValido(etDebeTres , 5);
+        boolean g = esValido(etDebeCuatro, 6);
         boolean h = esValido(etHaberCuatro , 7);
         boolean i = esValido(etHaberCinco , 8);
-        boolean j = esValido(etDebeSeis , 9);
-        boolean k = esValido(etDebeSiete , 10);
+        boolean j = esValido(etDebeCinco, 9);
+        boolean k = esValido(etDebeSeis, 10);
         boolean l = esValido(etHaberSeis , 11);
         boolean m = esValido(etHaberSiete , 12);
-        boolean n = esValido(etDebeOcho , 13);
-        boolean p = esValido(etDebeNueve , 14);
-        boolean o = esValido(etDebeUno , 15);
+        boolean n = esValido(etDebeSiete , 13);
+        boolean p = esValido(etDebeOcho , 14);
+        boolean o = esValido(etDebeNueve , 15);
         boolean q = esValido(etDebeDiez , 16);
         boolean r = esValido(etDebeOnce , 17);
         boolean s = esValido(etHaberOcho , 18);
@@ -400,7 +399,7 @@ public class Part2Activity extends AppCompatActivity {
 
 
 
-        if (a && b && c && d && e && f && g && h && i && j
+        if ((a || b)&&( c || d) && (e || f) && (g || h) && (i || j)
                 && k && l && m && n && o && p && q && r && s && t && u && w && x && y && z && aa && bb && cc && dd  && ee) {
             estado = true;
 

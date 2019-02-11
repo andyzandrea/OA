@@ -565,16 +565,16 @@
             android:layout_height="wrap_content"
             android:text="03/02/2019"
             android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="@+id/tvProveedoresTres"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlmacenTres"
             app:layout_constraintEnd_toStartOf="@+id/tvConceptoTres"
             app:layout_constraintStart_toStartOf="@+id/tvFechaTres" />
 
         <TextView
-            android:id="@+id/tvProveedoresTres"
+            android:id="@+id/tvAlmacenTres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Proveedores"
+            android:text="Almacén"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="@+id/etDebeSeis"
             app:layout_constraintEnd_toStartOf="@+id/tvDebeTres"
@@ -603,16 +603,16 @@
             app:layout_constraintTop_toBottomOf="@+id/tvHaberTres" />
 
         <TextView
-            android:id="@+id/tvAlmacenTres"
+            android:id="@+id/tvBancosTres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Almacén"
+            android:text="Bancos"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="@+id/etDebeSiete"
-            app:layout_constraintEnd_toEndOf="@+id/tvProveedoresTres"
+            app:layout_constraintEnd_toEndOf="@+id/tvAlmacenTres"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvProveedoresTres" />
+            app:layout_constraintStart_toStartOf="@+id/tvAlmacenTres" />
 
         <EditText
             android:id="@+id/etDebeSiete"
@@ -647,7 +647,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/etSumaDebeTres"
             app:layout_constraintEnd_toStartOf="@+id/etDebeSiete"
-            app:layout_constraintStart_toStartOf="@+id/tvAlmacenTres" />
+            app:layout_constraintStart_toStartOf="@+id/tvBancosTres" />
 
         <EditText
             android:id="@+id/etSumaDebeTres"

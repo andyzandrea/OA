@@ -19,6 +19,7 @@ import mx.com.lania.oamtemplate.View.MenuExerciseActivity;
 public class ResultadoInvPerpetuoActivity extends AppCompatActivity {
     @BindView(R.id.btnGuardarDatos)
     Button btnGuardarDatos;
+    EditText a;
 
     @BindViews({R.id.tvCuentaDesc1, R.id.tvNaturalezaDesc1,
             R.id.tvCuentaDesc2, R.id.tvNaturalezaDesc2,
@@ -47,6 +48,7 @@ public class ResultadoInvPerpetuoActivity extends AppCompatActivity {
     }
 
     public void cargarDatos() {
+
         editTexts.get(0).setText(bundleInicial.getString("tvCuentaDesc1"));
         editTexts.get(1).setText(bundleInicial.getString("tvNaturalezaDesc1"));
         editTexts.get(2).setText(bundleInicial.getString("tvCuentaDesc2"));

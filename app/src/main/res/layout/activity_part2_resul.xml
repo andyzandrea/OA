@@ -13,8 +13,6 @@
         android:layout_height="wrap_content">
 
 
-
-
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
@@ -29,6 +27,1394 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
         </android.support.design.widget.AppBarLayout>
 
+        <EditText
+            android:id="@+id/etDebeNumTres6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumDos6"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumDos6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumDos6" />
+
+        <EditText
+            android:id="@+id/etHaberNumDos6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno6"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumUno6" />
+
+        <EditText
+            android:id="@+id/etHaberDiez"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberTres6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres6"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorTres6" />
+
+        <EditText
+            android:id="@+id/etDebeNumCuatro6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeDiez"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumDos6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumTres6" />
+
+        <EditText
+            android:id="@+id/etDebeValorDos6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorUno6" />
+
+        <EditText
+            android:id="@+id/etHaberDoce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumCuatro6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberDiez"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberDiez" />
+
+        <EditText
+            android:id="@+id/etDebeNumCinco6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeDiez"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumCuatro6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumCuatro6" />
+
+        <EditText
+            android:id="@+id/etHaberNumCuatro6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno6"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTres6" />
+
+        <EditText
+            android:id="@+id/etDebeDiez"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorTres6" />
+
+        <EditText
+            android:id="@+id/etHaberCinco6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumCuatro6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumCuatro6"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumCuatro6" />
+
+        <EditText
+            android:id="@+id/etHaberValorTres6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberValorDos6"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorDos6" />
+
+        <EditText
+            android:id="@+id/etHaberTres6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumDos6" />
+
+        <EditText
+            android:id="@+id/etHaberValorDos6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno6"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno6" />
+
+        <EditText
+            android:id="@+id/etDebeValorTres6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorDos6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumDos6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorDos6" />
+
+        <EditText
+            android:id="@+id/etDebeDoce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeDiez"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumCuatro6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeDiez" />
+
+        <EditText
+            android:id="@+id/etDebeNumDos6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno6"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumUno6" />
+
+        <EditText
+            android:id="@+id/etHaberNumCuatro5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTres5" />
+
+        <EditText
+            android:id="@+id/etHaberQuince"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumCuatro5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNueve"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNueve" />
+
+        <EditText
+            android:id="@+id/etHaberCinco5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumCuatro5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumCuatro5"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumCuatro5" />
+
+        <EditText
+            android:id="@+id/etHaberNueve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberSiete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSiete"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorTres5" />
+
+        <EditText
+            android:id="@+id/etDebeNumDos5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etSumaDebeFinalUno7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumUno5" />
+
+        <EditText
+            android:id="@+id/etDebeNumTres5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeValorDos5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumDos5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumDos5" />
+
+        <EditText
+            android:id="@+id/etHaberValorTres5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberValorDos5"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorDos5" />
+
+        <EditText
+            android:id="@+id/etHaberNumDos5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumUno5" />
+
+        <EditText
+            android:id="@+id/etHaberTres5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumDos5" />
+
+        <EditText
+            android:id="@+id/etDebeValorDos5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorUno5" />
+
+        <EditText
+            android:id="@+id/etDebeNueve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorTres5" />
+
+        <EditText
+            android:id="@+id/etDebeValorTres5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorDos5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumDos5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorDos5" />
+
+        <EditText
+            android:id="@+id/etHaberValorDos5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumDos5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno5" />
+
+        <EditText
+            android:id="@+id/etDebeQuince"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNueve"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumCuatro5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNueve" />
+
+        <EditText
+            android:id="@+id/etDebeNumCuatro5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumTres5" />
+
+        <EditText
+            android:id="@+id/etDebeNumCinco5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeValorTres5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumCuatro5"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumCuatro5" />
+
+        <EditText
+            android:id="@+id/etDebeValorUno4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/tvDebe"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/viewA15" />
+
+        <EditText
+            android:id="@+id/etDebeCatorce"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorDos4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeValorUno4"
+            app:layout_constraintTop_toTopOf="@+id/etHaberCatorce" />
+
+        <EditText
+            android:id="@+id/etHaberNumUno4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvVacioDer"
+            app:layout_constraintTop_toBottomOf="@+id/viewA15" />
+
+        <EditText
+            android:id="@+id/etDebeNumDos4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno4"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumUno4" />
+
+        <EditText
+            android:id="@+id/etHaberNumCuatro4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTres4" />
+
+        <EditText
+            android:id="@+id/etHaberCinco4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumCuatro4" />
+
+        <EditText
+            android:id="@+id/etHaberValorDos4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberValorUno4"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno4" />
+
+        <EditText
+            android:id="@+id/etDebeNumCuatro4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumTres4" />
+
+        <EditText
+            android:id="@+id/etDebeValorTres4"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintTop_toTopOf="@+id/etDebeNumTres4"
+            tools:layout_editor_absoluteX="122dp" />
+
+        <EditText
+            android:id="@+id/etHaberTres4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumDos4" />
+
+        <EditText
+            android:id="@+id/etHaberNumDos4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumUno4" />
+
+        <EditText
+            android:id="@+id/etDebeNumCinco4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumCuatro4" />
+
+        <EditText
+            android:id="@+id/etDebeNumTres4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCinco"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumDos"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumDos4" />
+
+        <EditText
+            android:id="@+id/etHaberCatorce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberOcho"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorCuatro4" />
+
+        <EditText
+            android:id="@+id/etDebeNumUno4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:background="@color/colorGreen"
+            android:editable="false"
+
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumCinco2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProveedores"
+            app:layout_constraintTop_toBottomOf="@+id/viewA15" />
+
+        <EditText
+            android:id="@+id/etHaberValorTres4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberCinco"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorDos4" />
+
+        <EditText
+            android:id="@+id/etDebeValorDos4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorUno4" />
+
+        <EditText
+            android:id="@+id/etDebeValorCinco4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeOcho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintTop_toTopOf="@+id/etHaberValorCuatro4" />
+
+        <EditText
+            android:id="@+id/etHaberValorCuatro4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberSiete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSiete"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorTres4" />
+
+        <EditText
+            android:id="@+id/etDebeNumCinco3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="364dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumCuatro2" />
+
+        <EditText
+            android:id="@+id/etDebeValorCuatro3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorTres3" />
+
+        <EditText
+            android:id="@+id/etHaberTres3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCuatro" />
+
+        <EditText
+            android:id="@+id/etDebeNumTres3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCinco"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumDos3"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumDos3" />
+
+        <EditText
+            android:id="@+id/etHaberNumDos3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toTopOf="@+id/etHaberCuatro" />
+
+        <EditText
+            android:id="@+id/etHaberNumCuatro3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toTopOf="@+id/etHaberValorCuatro3" />
+
+        <EditText
+            android:id="@+id/etHaberCinco3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintTop_toTopOf="@+id/etHaberValorCinco3" />
+
+        <EditText
+            android:id="@+id/etHaberValorCinco3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberOcho"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorCuatro3" />
+
+        <EditText
+            android:id="@+id/etHaberValorCuatro3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberSiete"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSiete"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorTres3" />
+
+        <EditText
+            android:id="@+id/etDebeNumDos3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumUno3" />
+
+        <EditText
+            android:id="@+id/etDebeNumCuatro3"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCuatro"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumTres3"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorTres3" />
+
+        <EditText
+            android:id="@+id/etHaberCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberDos"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTres" />
+
+        <EditText
+            android:id="@+id/etHaberValorTres3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberCinco"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCuatro" />
+
+        <EditText
+            android:id="@+id/etDebeValorCinco3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="364dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeOcho"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeOcho" />
+
+        <EditText
+            android:id="@+id/etDebeCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toTopOf="@+id/etDebeNumDos3" />
+
+        <EditText
+            android:id="@+id/etDebeValorTres3"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeCuatro"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumTres3"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumDos3" />
+
+        <EditText
+            android:id="@+id/etHaberTres2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumDos2" />
+
+        <EditText
+            android:id="@+id/etDebeOcho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeSiete" />
+
+        <EditText
+            android:id="@+id/etHaberOcho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberSiete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSiete"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberSiete" />
+
+        <EditText
+            android:id="@+id/etHaberSiete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberCinco"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorDos2" />
+
+        <EditText
+            android:id="@+id/etHaberCinco2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumCuatro2" />
+
+        <EditText
+            android:id="@+id/etDebeValorCinco2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeOcho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeOcho" />
+
+        <EditText
+            android:id="@+id/etDebeNumCinco2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumCuatro2"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumCuatro2" />
+
+        <EditText
+            android:id="@+id/etHaberNumCuatro2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTres2" />
+
+        <EditText
+            android:id="@+id/etDebeSiete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeCinco"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumDos"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeValorDos2" />
+
+        <EditText
+            android:id="@+id/etHaberValorCinco2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumCuatro2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberOcho"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberOcho" />
+
+        <EditText
+            android:id="@+id/etDebeNumCuatro2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumTres2" />
+
+        <EditText
+            android:id="@+id/etDebeNumTres2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCinco"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumDos"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumDos2" />
+
+        <EditText
+            android:id="@+id/etHaberNumCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberNumCuatro" />
+
+        <EditText
+            android:id="@+id/etDebeTrece"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeCinco"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumDos"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeOnce" />
+
+        <EditText
+            android:id="@+id/etHaberTrece"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberCinco"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberOnce" />
+
+        <EditText
+            android:id="@+id/etHaberOnce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberSeis" />
+
+        <EditText
+            android:id="@+id/etDebeNumCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumTres" />
+
+        <EditText
+            android:id="@+id/etDebeOnce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeSeis" />
+
+        <EditText
+            android:id="@+id/etHaberNumCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHabernumTres" />
+
+        <EditText
+            android:id="@+id/etDebeNumCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGreen"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCinco"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumDos"
+            app:layout_constraintTop_toBottomOf="@+id/etDebeNumCuatro" />
 
         <!--&gt;>>>>>>>>>>>>>>>>>                       Comienzo                       >>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
 
@@ -85,8 +1471,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/tvDebe"
             app:layout_constraintStart_toStartOf="parent"
@@ -127,8 +1514,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textEnd"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvAlmacen"
             app:layout_constraintStart_toEndOf="@+id/tvHaber"
@@ -152,14 +1539,21 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toStartOf="@+id/tvDebe"
             app:layout_constraintStart_toStartOf="@+id/tvvacio"
             app:layout_constraintTop_toBottomOf="@+id/viewA1" />
 
         <EditText
-            android:id="@+id/etDebeValorUno"
+            android:id="@+id/etDebeUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -171,7 +1565,7 @@
             app:layout_constraintTop_toBottomOf="@+id/viewA1" />
 
         <EditText
-            android:id="@+id/etHaberValorUno"
+            android:id="@+id/etHaberUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -189,8 +1583,14 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
             app:layout_constraintStart_toStartOf="@+id/tvVacioDer"
             app:layout_constraintTop_toBottomOf="@+id/viewA1" />
@@ -201,26 +1601,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
             app:layout_constraintStart_toStartOf="@+id/etDebeNumUno"
             app:layout_constraintTop_toBottomOf="@+id/etDebeNumUno" />
 
         <EditText
-            android:id="@+id/etDebeValorDos"
+            android:id="@+id/etDebeCinco"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeUno"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
-            app:layout_constraintTop_toBottomOf="@+id/etDebeValorUno" />
+            app:layout_constraintTop_toBottomOf="@+id/etDebeUno" />
 
         <EditText
-            android:id="@+id/etHaberValorDos"
+            android:id="@+id/etHaberCinco"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -228,8 +1634,8 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno" />
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberUno" />
 
         <EditText
             android:id="@+id/etHaberNumDos"
@@ -237,8 +1643,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
             app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
             app:layout_constraintTop_toBottomOf="@+id/etHaberNumUno" />
@@ -249,26 +1661,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etDebeValorDos"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeCinco"
             app:layout_constraintStart_toStartOf="@+id/etDebeNumDos"
             app:layout_constraintTop_toBottomOf="@+id/etDebeNumDos" />
 
         <EditText
-            android:id="@+id/etDebeValorTres"
+            android:id="@+id/etDebeSeis"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorDos"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeCinco"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumDos"
-            app:layout_constraintTop_toBottomOf="@+id/etDebeValorDos" />
+            app:layout_constraintTop_toBottomOf="@+id/etDebeCinco" />
 
         <EditText
-            android:id="@+id/etHaberValorTres"
+            android:id="@+id/etHaberSeis"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -276,17 +1694,23 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorDos"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorDos" />
+            app:layout_constraintStart_toStartOf="@+id/etHaberCinco"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCinco" />
 
         <EditText
-            android:id="@+id/etHaberTres"
+            android:id="@+id/etHabernumTres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
@@ -301,7 +1725,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorTres" />
+            app:layout_constraintTop_toBottomOf="@+id/etHaberTrece" />
 
         <EditText
             android:id="@+id/etVacioSumaDebe"
@@ -322,7 +1746,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA2" />
@@ -334,9 +1758,9 @@
 
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumCuatro"
             app:layout_constraintHorizontal_bias="0.46"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
             app:layout_constraintTop_toTopOf="@+id/etSumaDebeUnoUno" />
 
         <EditText
@@ -382,7 +1806,7 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA3" />
@@ -396,9 +1820,9 @@
 
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumCuatro"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
             app:layout_constraintTop_toBottomOf="@+id/viewA3" />
 
         <EditText
@@ -441,10 +1865,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="viewStart"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebe"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvDebe2" />
@@ -455,13 +1879,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
-            android:text="Debe"
 
+            android:text="Debe"
             android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvDebe"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintStart_toStartOf="@+id/tvDebe"
             app:layout_constraintTop_toBottomOf="@+id/tvBanco" />
 
         <TextView
@@ -472,7 +1896,7 @@
             android:text="Haber"
             android:textAlignment="center"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
+            app:layout_constraintEnd_toStartOf="@+id/tvVacioDer"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvHaber"
             app:layout_constraintTop_toTopOf="@+id/tvDebe2" />
@@ -483,12 +1907,12 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textEnd"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etVacioSumaHaberTotal"
+            app:layout_constraintStart_toStartOf="@+id/tvVacioDer"
             app:layout_constraintTop_toTopOf="@+id/tvHaber2" />
 
         <View
@@ -507,15 +1931,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/tvvacio2"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/etSumaDebeFinalUno"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvvacio"
-            app:layout_constraintTop_toTopOf="@+id/etDebeValorUno2" />
+            app:layout_constraintTop_toTopOf="@+id/etDebeDos" />
 
         <EditText
-            android:id="@+id/etDebeValorUno2"
+            android:id="@+id/etDebeDos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -528,7 +1958,7 @@
             app:layout_constraintTop_toBottomOf="@+id/viewA4" />
 
         <EditText
-            android:id="@+id/etHaberValorUno2"
+            android:id="@+id/etHaberDos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
@@ -537,27 +1967,39 @@
             app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvHaber"
-            app:layout_constraintTop_toTopOf="@+id/etDebeValorUno2" />
+            app:layout_constraintTop_toTopOf="@+id/etDebeDos" />
 
         <EditText
             android:id="@+id/etHaberNumUno2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tvHaber2"
-            app:layout_constraintTop_toTopOf="@+id/etHaberValorUno2" />
+            app:layout_constraintStart_toStartOf="@+id/etVacioSumaHaberTotal"
+            app:layout_constraintTop_toTopOf="@+id/etHaberDos" />
 
         <EditText
             android:id="@+id/etDebeNumDos2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/etDebeNumUno"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/etDebeNumUno"
@@ -571,10 +2013,10 @@
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeUno"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
-            app:layout_constraintTop_toBottomOf="@+id/etDebeValorUno2" />
+            app:layout_constraintTop_toBottomOf="@+id/etDebeDos" />
 
         <EditText
             android:id="@+id/etHaberValorDos2"
@@ -583,9 +2025,9 @@
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etHaberValorUno2"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberDos"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno"
+            app:layout_constraintStart_toStartOf="@+id/etHaberUno"
             app:layout_constraintTop_toTopOf="@+id/etDebeValorDos2" />
 
         <EditText
@@ -593,8 +2035,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/etHaberNumUno"
@@ -609,7 +2057,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorDos2" />
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorCinco2" />
 
         <EditText
             android:id="@+id/etVacioSumaDebe2"
@@ -630,7 +2078,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA5" />
@@ -642,9 +2090,9 @@
 
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberValorCinco2"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
             app:layout_constraintTop_toTopOf="@+id/etSumaDebeUnoUno2" />
 
         <EditText
@@ -690,7 +2138,7 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA6" />
@@ -702,9 +2150,9 @@
 
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberValorCinco2"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
             app:layout_constraintTop_toTopOf="@+id/etSumaDebeFinalUno2" />
 
         <EditText
@@ -748,7 +2196,7 @@
             android:textAppearance="@android:style/TextAppearance.StatusBar.Icon"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etSumaHaberFinalUno2"
             tools:background="@color/colorBlue" />
@@ -773,9 +2221,9 @@
 
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toStartOf="@+id/etVacioSumaHaber3"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
             app:layout_constraintTop_toBottomOf="@+id/viewA12" />
 
         <EditText
@@ -784,7 +2232,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA12" />
@@ -796,8 +2244,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textEnd"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -810,23 +2258,22 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/etVacioSumaDebeTotal2"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebe2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvDebe3" />
 
         <EditText
-            android:id="@+id/etHaberValorUno3"
+            android:id="@+id/etHaberTres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintBaseline_toBaselineOf="@+id/scrollView2"
             app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/tvHaber"
@@ -836,14 +2283,21 @@
             android:id="@+id/etDebeNumUno3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
+
             android:background="@color/colorGreen"
+            android:editable="false"
+
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/tvDebe"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvvacio"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeNumCinco2"
+            app:layout_constraintStart_toStartOf="@+id/tvProveedores"
             app:layout_constraintTop_toBottomOf="@+id/viewA11" />
 
         <View
@@ -889,7 +2343,7 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA13" />
@@ -911,17 +2365,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
-            android:text="Debe"
 
+            android:text="Debe"
             android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvDebe2"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/tvDebe2"
             app:layout_constraintTop_toBottomOf="@+id/tvProveedores" />
 
         <EditText
-            android:id="@+id/etDebeValorUno3"
+            android:id="@+id/etDebeTres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -940,8 +2393,14 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/tvVacioDer"
@@ -951,12 +2410,12 @@
             android:id="@+id/viewA12"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno3" />
+            app:layout_constraintTop_toBottomOf="@+id/etHaberValorCinco3" />
 
         <EditText
             android:id="@+id/etVacioSumaDebe3"
@@ -979,9 +2438,9 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toStartOf="@+id/etVacioSumaHaber3"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etSumaHaberUnoUno3"
             app:layout_constraintTop_toBottomOf="@+id/viewA13" />
 
 
@@ -1017,7 +2476,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvHaber3"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno3"
+            app:layout_constraintStart_toStartOf="@+id/etHaberTres"
             app:layout_constraintTop_toBottomOf="@+id/tvClientes" />
 
         <EditText
@@ -1037,12 +2496,12 @@
             android:id="@+id/viewA14"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno7" />
+            app:layout_constraintTop_toBottomOf="@+id/etHaberCatorce" />
 
         <EditText
             android:id="@+id/etVacioSumaHaberTotal7"
@@ -1058,19 +2517,6 @@
             app:layout_constraintStart_toEndOf="@+id/etHaberValorDos2"
             app:layout_constraintTop_toBottomOf="@+id/viewA16" />
 
-        <EditText
-            android:id="@+id/etHaberNumUno7"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:background="@color/colorGreen"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/tvVacioDer"
-            app:layout_constraintTop_toTopOf="@+id/etHaberValorUno7" />
-
         <View
             android:id="@+id/viewA15"
             android:layout_width="match_parent"
@@ -1083,21 +2529,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvDebe7" />
 
         <EditText
-            android:id="@+id/etDebeValorUno7"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorGreen"
-            android:ems="10"
-
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/tvDebe7"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
-            app:layout_constraintTop_toBottomOf="@+id/viewA15" />
-
-        <EditText
-            android:id="@+id/etHaberValorUno7"
+            android:id="@+id/etHaberValorUno4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -1110,28 +2542,15 @@
             app:layout_constraintTop_toBottomOf="@+id/viewA15" />
 
         <EditText
-            android:id="@+id/etDebeNumUno7"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="32dp"
-            android:background="@color/colorGreen"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/tvDebe"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/tvvacio"
-            app:layout_constraintTop_toTopOf="@+id/etDebeValorUno7" />
-
-        <EditText
             android:id="@+id/etSumaHaberUnoUno7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberCinco4"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etHaberValorCuatro4"
             app:layout_constraintTop_toBottomOf="@+id/viewA14" />
 
         <EditText
@@ -1166,13 +2585,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
-            android:text="Debe"
 
+            android:text="Debe"
             android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/etSumaDebeFinalUno3"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/etSumaDebeFinalUno3"
+            app:layout_constraintStart_toStartOf="@+id/tvDebe3"
             app:layout_constraintTop_toBottomOf="@+id/tvClientes" />
 
         <EditText
@@ -1183,9 +2602,9 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberValorCuatro4"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
             app:layout_constraintTop_toBottomOf="@+id/viewA16" />
 
         <EditText
@@ -1194,7 +2613,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toTopOf="@+id/etVacioSumaDebe7" />
@@ -1206,7 +2625,7 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorTres"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeSeis"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA16" />
@@ -1217,10 +2636,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/etSumaDebeFinalUno3"
+            app:layout_constraintEnd_toStartOf="@+id/tvDebe3"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvDebe7" />
@@ -1232,8 +2651,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textEnd"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -1255,14 +2674,14 @@
 
 
         <EditText
-            android:id="@+id/etHaberValorUno8"
+            android:id="@+id/etHaberValorUno6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno8"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno6"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvHaber"
             app:layout_constraintTop_toBottomOf="@+id/viewA17" />
@@ -1276,10 +2695,10 @@
             android:text="Haber"
             android:textAlignment="center"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/tvVacioDer8"
+            app:layout_constraintEnd_toStartOf="@+id/tvVacioDer6"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvHaber7"
-            app:layout_constraintTop_toBottomOf="@+id/tvCostoDeVentas" />
+            app:layout_constraintTop_toBottomOf="@+id/tvVentas" />
 
         <View
             android:id="@+id/viewA17"
@@ -1293,15 +2712,21 @@
             app:layout_constraintTop_toBottomOf="@+id/tvDebe8" />
 
         <EditText
-            android:id="@+id/etDebeNumUno8"
+            android:id="@+id/etDebeNumUno6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/tvDebe"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/etVacioSumaDebe9"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvvacio"
             app:layout_constraintTop_toBottomOf="@+id/viewA17" />
@@ -1317,15 +2742,15 @@
             app:layout_constraintTop_toBottomOf="@+id/etSumaHaberUnoUno8" />
 
         <TextView
-            android:id="@+id/tvvacio8"
+            android:id="@+id/tvvacio6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/tvvacio7"
+            app:layout_constraintEnd_toEndOf="@+id/tvvacio9"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvDebe8" />
@@ -1338,7 +2763,7 @@
             android:ems="10"
             android:enabled="false"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno8"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno6"
             app:layout_constraintStart_toStartOf="@+id/etVacioSumaHaber8"
             app:layout_constraintTop_toTopOf="@+id/etSumaHaberFinalUno8" />
 
@@ -1346,12 +2771,12 @@
             android:id="@+id/viewA19"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno8" />
+            app:layout_constraintTop_toBottomOf="@+id/etDebeDoce" />
 
         <TextView
             android:id="@+id/tvDebe8"
@@ -1365,21 +2790,21 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvDebe7"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tvvacio8"
-            app:layout_constraintTop_toBottomOf="@+id/tvCostoDeVentas" />
+            app:layout_constraintStart_toEndOf="@+id/tvvacio6"
+            app:layout_constraintTop_toBottomOf="@+id/tvVentas" />
 
         <TextView
-            android:id="@+id/tvVacioDer8"
+            android:id="@+id/tvVacioDer6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textEnd"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/etHaberValorUno7"
+            app:layout_constraintStart_toStartOf="@+id/tvVacioDer9"
             app:layout_constraintTop_toTopOf="@+id/tvHaber8" />
 
         <EditText
@@ -1390,7 +2815,7 @@
             android:ems="10"
             android:enabled="false"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etSumaDebeFinalUno7"
+            app:layout_constraintEnd_toStartOf="@+id/etDebeDoce"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/etDebeNumTres"
             app:layout_constraintTop_toBottomOf="@+id/viewA19" />
@@ -1416,25 +2841,32 @@
 
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno8"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno8"
-            tools:layout_editor_absoluteY="1236dp" />
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno6"
+            app:layout_constraintTop_toBottomOf="@+id/viewA19" />
 
         <EditText
-            android:id="@+id/etHaberNumUno8"
+            android:id="@+id/etHaberNumUno6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etSumaHaberFinalUno7"
             app:layout_constraintTop_toBottomOf="@+id/viewA17" />
 
         <EditText
-            android:id="@+id/etDebeValorUno8"
+            android:id="@+id/etDebeValorUno6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -1443,7 +2875,7 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="@+id/tvDebe"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumDos6"
             app:layout_constraintTop_toBottomOf="@+id/viewA17" />
 
         <EditText
@@ -1452,177 +2884,10 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno8"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno6"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno8"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno6"
             app:layout_constraintTop_toBottomOf="@+id/viewA19" />
-
-        <TextView
-            android:id="@+id/tvCostoDeVentas"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Costo de Ventas"
-            android:textAlignment="center"
-            android:textAppearance="@android:style/TextAppearance.StatusBar.Icon"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberFinalUno7"
-            tools:background="@color/colorBlue" />
-
-        <EditText
-            android:id="@+id/etVacioSumaHaber8"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:editable="false"
-            android:ems="10"
-            android:enabled="false"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno8"
-            app:layout_constraintTop_toBottomOf="@+id/viewA19" />
-
-        <EditText
-            android:id="@+id/etSumaDebeFinalUno8"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etSumaDebeFinalUno7"
-            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno8"
-            app:layout_constraintTop_toBottomOf="@+id/viewA18" />
-
-        <EditText
-            android:id="@+id/etSumaHaberFinalUno8"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
-            app:layout_constraintTop_toBottomOf="@+id/viewA18" />
-
-
-        <!--&gt;>>>>>>>>>>>>>>>>>                       Comienzo          Ventas            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-
-        <EditText
-            android:id="@+id/etSumaHaberFinalUno9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberTres"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorTres"
-            app:layout_constraintTop_toTopOf="@+id/etSumaDebeFinalUno9" />
-
-        <EditText
-            android:id="@+id/etVacioSumaHaber9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:editable="false"
-            android:ems="10"
-            android:enabled="false"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno8"
-            app:layout_constraintTop_toTopOf="@+id/etSumaHaberUnoUno9" />
-
-        <EditText
-            android:id="@+id/etSumaHaberUnoUno9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno8"
-            app:layout_constraintTop_toBottomOf="@+id/viewA20" />
-
-        <EditText
-            android:id="@+id/etVacioSumaHaberTotal9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:editable="false"
-            android:ems="10"
-            android:enabled="false"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etVacioSumaHaber8"
-            app:layout_constraintTop_toBottomOf="@+id/viewA22" />
-
-        <EditText
-            android:id="@+id/etSumaDebeFinalUno9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etSumaDebeFinalUno7"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno8"
-            app:layout_constraintTop_toBottomOf="@+id/viewA22" />
-
-        <EditText
-            android:id="@+id/etSumaDebeUnoUno9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno8"
-            app:layout_constraintTop_toBottomOf="@+id/viewA20" />
-
-        <View
-            android:id="@+id/viewA20"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="16dp"
-            android:background="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etHaberValorUno9" />
-
-        <EditText
-            android:id="@+id/etVacioSumaDebeTotal9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:editable="false"
-            android:ems="10"
-            android:enabled="false"
-            android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etSumaDebeUnoUno8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/etDebeNumTres"
-            app:layout_constraintTop_toBottomOf="@+id/viewA22" />
-
-        <View
-            android:id="@+id/viewA21"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDebe9" />
 
         <TextView
             android:id="@+id/tvVentas"
@@ -1638,32 +2903,204 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberFinalUno8"
+            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberFinalUno9"
+            tools:background="@color/colorBlue" />
+
+        <EditText
+            android:id="@+id/etVacioSumaHaber8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno6"
+            app:layout_constraintTop_toBottomOf="@+id/viewA19" />
+
+        <EditText
+            android:id="@+id/etSumaDebeFinalUno8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etSumaDebeFinalUno7"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumUno6"
+            app:layout_constraintTop_toBottomOf="@+id/viewA18" />
+
+        <EditText
+            android:id="@+id/etSumaHaberFinalUno8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberCinco6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
+            app:layout_constraintTop_toBottomOf="@+id/viewA18" />
+
+
+        <!--&gt;>>>>>>>>>>>>>>>>>                       Comienzo          Ventas            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+        <EditText
+            android:id="@+id/etSumaHaberFinalUno9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNueve"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberSeis"
+            app:layout_constraintTop_toTopOf="@+id/etSumaDebeFinalUno9" />
+
+        <EditText
+            android:id="@+id/etVacioSumaHaber9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberNumUno6"
+            app:layout_constraintTop_toTopOf="@+id/etSumaHaberUnoUno9" />
+
+        <EditText
+            android:id="@+id/etSumaHaberUnoUno9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etHaberValorUno6"
+            app:layout_constraintTop_toBottomOf="@+id/viewA20" />
+
+        <EditText
+            android:id="@+id/etVacioSumaHaberTotal9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etHaberNumUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etVacioSumaHaber8"
+            app:layout_constraintTop_toBottomOf="@+id/viewA22" />
+
+        <EditText
+            android:id="@+id/etSumaDebeFinalUno9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etSumaDebeFinalUno7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etVacioSumaDebeTotal9"
+            app:layout_constraintTop_toBottomOf="@+id/viewA22" />
+
+        <EditText
+            android:id="@+id/etSumaDebeUnoUno9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorUno6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/etDebeNumCuatro5"
+            app:layout_constraintTop_toBottomOf="@+id/viewA20" />
+
+        <View
+            android:id="@+id/viewA20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etHaberQuince" />
+
+        <EditText
+            android:id="@+id/etVacioSumaDebeTotal9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/etVacioSumaDebe9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etDebeNumTres"
+            app:layout_constraintTop_toBottomOf="@+id/viewA22" />
+
+        <View
+            android:id="@+id/viewA21"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvvacio9" />
+
+        <TextView
+            android:id="@+id/tvCostoDeVentass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="Costo de Ventas"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.StatusBar.Icon"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberFinalUno7"
             tools:background="@color/colorBlue" />
 
         <View
             android:id="@+id/viewA22"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="232dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberUnoUno8" />
+            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberUnoUno9" />
 
         <EditText
-            android:id="@+id/etDebeNumUno9"
+            android:id="@+id/etDebeNumUno5"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="24dp"
             android:layout_marginEnd="32dp"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toStartOf="@+id/tvDebe"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvvacio"
-            app:layout_constraintTop_toTopOf="@+id/etDebeValorUno9" />
+            app:layout_constraintTop_toTopOf="@+id/etDebeValorUno5" />
 
         <TextView
             android:id="@+id/tvvacio9"
@@ -1672,13 +3109,13 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textStart"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvvacio7"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvVentas" />
+            app:layout_constraintTop_toBottomOf="@+id/tvCostoDeVentass" />
 
         <TextView
             android:id="@+id/tvHaber9"
@@ -1689,10 +3126,10 @@
             android:text="Haber"
             android:textAlignment="center"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/tvVacioDer8"
+            app:layout_constraintEnd_toStartOf="@+id/tvVacioDer6"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvHaber7"
-            app:layout_constraintTop_toBottomOf="@+id/tvVentas" />
+            app:layout_constraintTop_toBottomOf="@+id/tvCostoDeVentass" />
 
         <EditText
             android:id="@+id/etVacioSumaDebe9"
@@ -1708,26 +3145,32 @@
             app:layout_constraintTop_toTopOf="@+id/etSumaDebeUnoUno9" />
 
         <EditText
-            android:id="@+id/etHaberNumUno9"
+            android:id="@+id/etHaberNumUno5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
+            android:editable="false"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@+id/tvVacioDer"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etSumaHaberFinalUno7"
-            app:layout_constraintTop_toTopOf="@+id/etHaberValorUno9" />
+            app:layout_constraintTop_toTopOf="@+id/etHaberValorUno5" />
 
         <EditText
-            android:id="@+id/etHaberValorUno9"
+            android:id="@+id/etHaberValorUno5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno8"
+            app:layout_constraintEnd_toStartOf="@+id/etHaberNumUno6"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvHaber"
             app:layout_constraintTop_toBottomOf="@+id/viewA21" />
@@ -1739,13 +3182,13 @@
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"
             android:text="Debe"
-            android:textAlignment="center"
 
+            android:textAlignment="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvDebe7"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tvvacio8"
-            app:layout_constraintTop_toBottomOf="@+id/tvVentas" />
+            app:layout_constraintStart_toEndOf="@+id/tvvacio7"
+            app:layout_constraintTop_toBottomOf="@+id/tvCostoDeVentass" />
 
         <TextView
             android:id="@+id/tvVacioDer9"
@@ -1754,16 +3197,16 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@color/colorGreen"
-            android:text=" "
-            android:textAlignment="center"
+            android:text="Operación"
+            android:textAlignment="textEnd"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/etHaberValorUno7"
-            app:layout_constraintTop_toBottomOf="@+id/tvVentas" />
+            app:layout_constraintStart_toStartOf="@+id/tvVacioDer7"
+            app:layout_constraintTop_toBottomOf="@+id/tvCostoDeVentass" />
 
         <EditText
-            android:id="@+id/etDebeValorUno9"
+            android:id="@+id/etDebeValorUno5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
@@ -1772,14 +3215,14 @@
             app:layout_constraintEnd_toEndOf="@+id/tvDebe"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/etDebeNumUno"
-            app:layout_constraintTop_toTopOf="@+id/etHaberValorUno9" />
+            app:layout_constraintTop_toTopOf="@+id/etHaberValorUno5" />
 
         <Button
             android:id="@+id/btnHacerSuma"
             style="@style/Base.TextAppearance.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="80dp"
             android:background="@color/colorBlue"
             android:text="Hacer sumas"
             android:textColor="@android:color/white"
@@ -1787,14 +3230,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberFinalUno9" />
+            app:layout_constraintTop_toBottomOf="@+id/etSumaHaberUnoUno8" />
 
         <Button
             android:id="@+id/btnGuardarDatos"
             style="@style/Base.TextAppearance.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             android:background="@color/colorGreenDark"
             android:text="Guardar Datos"
             android:textColor="@android:color/white"
@@ -1803,6 +3246,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnHacerSuma" />
+
+        <android.support.constraint.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
 
