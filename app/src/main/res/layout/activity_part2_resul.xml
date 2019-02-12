@@ -552,7 +552,7 @@
 
         <EditText
             android:id="@+id/etDebeCatorce"
-            android:layout_width="171dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
             android:ems="10"
@@ -674,13 +674,14 @@
 
         <EditText
             android:id="@+id/etDebeValorTres4"
-            android:layout_width="171dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/colorGreen"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintTop_toTopOf="@+id/etDebeNumTres4"
-            tools:layout_editor_absoluteX="122dp" />
+            app:layout_constraintEnd_toEndOf="@+id/etDebeValorDos4"
+            app:layout_constraintStart_toStartOf="@+id/etDebeValorDos4"
+            app:layout_constraintTop_toTopOf="@+id/etDebeNumTres4" />
 
         <EditText
             android:id="@+id/etHaberTres4"
@@ -1016,7 +1017,7 @@
 
         <EditText
             android:id="@+id/etDebeNumCuatro3"
-            android:layout_width="106dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/colorGreen"

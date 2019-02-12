@@ -35,7 +35,6 @@ public class Part2Activity extends AppCompatActivity {
     EditText resultadoetSumaHaberCinco;
 
 
-
     @BindView(R.id.btnGuardarDatos)
     Button btnGuardarDatos;
 
@@ -66,6 +65,8 @@ public class Part2Activity extends AppCompatActivity {
             R.id.etSumaDebeCinco, R.id.etSumaHaberCinco})
     List<EditText> editTexts;
 
+    @BindViews({R.id.etSumaDebeUno,R.id.etSumaDebeDos})
+    List<EditText> editTextsSumas;
 
 
     @Override
@@ -73,12 +74,8 @@ public class Part2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part2);
         ButterKnife.bind(this);
-        ButterKnife.bind(this);
         showToolbar();
     }
-
-
-
 
 
     @OnClick(R.id.btnHacerSuma)
@@ -117,123 +114,194 @@ public class Part2Activity extends AppCompatActivity {
         String etDebeQuince = editTexts.get(28).getText().toString();
         String etHaberQuince = editTexts.get(29).getText().toString();
 
+        long etDebeUno1=0;
+        long etDebeDos2=0;
+        long etDebeTres3=0;
+        long etHaberUno1=0;
+        long etHaberDos2=0;
+        long etHaberTres3=0;
+        long etDebeCuatro4=0;
+        long etDebeCinco5=0;
+        long etHaberCuatro4=0;
+        long etHaberCinco5=0;
+        long etDebeSeis6=0;
+        long etDebeSiete7=0;
+        long etHaberSeis6=0;
+        long etHaberSiete7=0;
+        long etDebeOcho8=0;
+        long etDebeNueve9=0;
+        long etDebeDiez10=0;
+        long etDebeOnce11=0;
+        long etHaberOcho8=0;
+        long etHaberNueve9=0;
+        long etHaberDiez10=0;
+        long etHaberOnce11=0;
+        long etDebeDoce12 =0;
+        long etDebeTrece13=0;
+        long etDebeCatorce14=0;
+        long etDebeQuince15=0;
+        long etHaberDoce12 =0;
+        long etHaberTrece13=0;
+        long etHaberCatorce14=0;
+        long etHaberQuince15=0;
 
-            //bundle.putLong("etHaberCatorce14", etHaberQuince15);
-        //suma1
-        long etDebeUno1 = Long.parseLong(etDebeUno);
-        long etDebeDos2 = Long.parseLong(etDebeDos);
-        long etDebeTres3 = Long.parseLong(etDebeTres);
-        //suma1
-        long etHaberUno1 = Long.parseLong(etHaberUno);
-        long etHaberDos2 = Long.parseLong(etHaberDos);
-        long etHaberTres3 = Long.parseLong(etHaberTres);
 
-        //suma2
-        long etDebeCuatro4 = Long.parseLong(etDebeCuatro);
-        long etDebeCinco5 = Long.parseLong(etDebeCinco);
-        //suma2
-        long etHaberCuatro4 = Long.parseLong(etHaberCuatro);
-        long etHaberCinco5 = Long.parseLong(etHaberCinco);
+        //suma1
+        if(!etDebeUno.isEmpty()) {
+            etDebeUno1 = Long.parseLong(etDebeUno);
+        }
+        if(!etDebeDos.isEmpty()) {
+            etDebeDos2 = Long.parseLong(etDebeDos);
+        }
+        if(!etDebeTres.isEmpty()) {
+            etDebeTres3 = Long.parseLong(etDebeTres);
+        }
+        if(!etHaberUno.isEmpty()) {
+            etHaberUno1 = Long.parseLong(etHaberUno);
+        }
+        if(!etHaberDos.isEmpty()) {
+            etHaberDos2 = Long.parseLong(etHaberDos);
+        }
+        if(!etHaberTres.isEmpty()) {
+            etHaberTres3 = Long.parseLong(etHaberTres);
+
+
+            //suma2
+        }
+        if(!etDebeCuatro.isEmpty()) {
+            etDebeCuatro4 = Long.parseLong(etDebeCuatro);
+        }
+        if(!etDebeCinco.isEmpty()) {
+            etDebeCinco5 = Long.parseLong(etDebeCinco);
+        }
+        if(!etHaberCuatro.isEmpty()) {
+            etHaberCuatro4 = Long.parseLong(etHaberCuatro);
+        }
+        if(!etHaberCinco.isEmpty()) {
+            etHaberCinco5 = Long.parseLong(etHaberCinco);
+        }
+
 
         //suma3
-        long etDebeSeis6 = Long.parseLong(etDebeSeis);
-        long etDebeSiete7 = Long.parseLong(etDebeSiete);
-        //suma3
-        long etHaberSeis6 = Long.parseLong(etHaberSeis);
-        long etHaberSiete7 = Long.parseLong(etHaberSiete);
+        if(!etDebeSeis.isEmpty()) {
+            etDebeSeis6 = Long.parseLong(etDebeSeis);
+        }
+        if(!etDebeSiete.isEmpty()) {
+            etDebeSiete7 = Long.parseLong(etDebeSiete);
+        }
+        if(!etHaberSeis.isEmpty()) {
+            etHaberSeis6 = Long.parseLong(etHaberSeis);
+        }
+        if(!etHaberSiete.isEmpty()) {
+            etHaberSiete7 = Long.parseLong(etHaberSiete);
+        }
 
         //suma4
-        long etDebeOcho8 = Long.parseLong(etDebeOcho);
-        long etDebeNueve9 = Long.parseLong(etDebeNueve);
-        long etDebeDiez10 = Long.parseLong(etDebeDiez);
-        long etDebeOnce11 = Long.parseLong(etDebeOnce);
-        //suma4
-        long etHaberOcho8 = Long.parseLong(etHaberOcho);
-        long etHaberNueve9 = Long.parseLong(etHaberNueve);
-        long etHaberDiez10 = Long.parseLong(etHaberDiez);
-        long etHaberOnce11 = Long.parseLong(etHaberOnce);
+        if(!etDebeOcho.isEmpty()) {
+            etDebeOcho8 = Long.parseLong(etDebeOcho);
+        }
+        if(!etDebeNueve.isEmpty()) {
+            etDebeNueve9 = Long.parseLong(etDebeNueve);
+        }
+        if(!etDebeDiez.isEmpty()) {
+            etDebeDiez10 = Long.parseLong(etDebeDiez);
+        }
+        if(!etDebeOnce.isEmpty()) {
+            etDebeOnce11 = Long.parseLong(etDebeOnce);
+        }
+        if(!etHaberOcho.isEmpty()) {
+            etHaberOcho8 = Long.parseLong(etHaberOcho);
+                 }
+        if(!etHaberNueve.isEmpty()) {
+            etHaberNueve9 = Long.parseLong(etHaberNueve);
+        }
+        if(!etHaberDiez.isEmpty()) {
+            etHaberDiez10 = Long.parseLong(etHaberDiez);
+        }
+        if(!etHaberOnce.isEmpty()) {
+            etHaberOnce11 = Long.parseLong(etHaberOnce);
+        }
 
 
         //suma5
-        long etDebeDoce12 = Long.parseLong(etDebeDoce);
-        long etDebeTrece13 = Long.parseLong(etDebeTrece);
-        long etDebeCatorce14 = Long.parseLong(etDebeCatorce);
-        long etDebeQuince15 = Long.parseLong(etDebeQuince);
-        //suma5
-        long etHaberDoce12 = Long.parseLong(etHaberDoce);
-        long etHaberTrece13 = Long.parseLong(etHaberTrece);
-        long etHaberCatorce14 = Long.parseLong(etHaberCatorce);
-        long etHaberQuince15 = Long.parseLong(etHaberQuince);
+        if(!etDebeDoce.isEmpty()) {
+            etDebeDoce12 = Long.parseLong(etDebeDoce);
+                    }
+        if(!etDebeTrece.isEmpty()) {
+            etDebeTrece13 = Long.parseLong(etDebeTrece);
+                    }
+        if(!etDebeCatorce.isEmpty()) {
+            etDebeCatorce14 = Long.parseLong(etDebeCatorce);
+                    }
+        if(!etDebeQuince.isEmpty()) {
+            etDebeQuince15 = Long.parseLong(etDebeQuince);
+        }
+        if(!etHaberDoce.isEmpty()) {
+            etHaberDoce12 = Long.parseLong(etHaberDoce);
+
+        }
+        if(!etHaberTrece.isEmpty()) {
+            etHaberTrece13 = Long.parseLong(etHaberTrece);
+
+        }
+        if(!etHaberCatorce.isEmpty()) {
+            etHaberCatorce14 = Long.parseLong(etHaberCatorce);
+
+        }
+        if(!etHaberQuince.isEmpty()) {
+            etHaberQuince15 = Long.parseLong(etHaberQuince);
+        }
 
 
-        //   bundle.putLong("etHaberQuince15", etHaberCatorce14);
+        long sumadebe1 = etDebeTres3 + etDebeDos2 + etDebeUno1;
+        long sumahaber1 = etHaberUno1 + etHaberDos2 + etHaberTres3;
+
+        long sumadebe2 = etDebeCuatro4 + etDebeCinco5;
+        long sumahaber2 = etHaberCuatro4 + etHaberCinco5;
+
+        long sumadebe3 = etDebeSeis6 + etDebeSiete7;
+        long sumahaber3 = etHaberSeis6 + etHaberSiete7;
+
+        long sumadebe4 = etDebeOcho8 + etDebeNueve9 + etDebeDiez10 + etDebeOnce11;
+        long sumahaber4 = etHaberOcho8 + etHaberNueve9 + etHaberDiez10 + etHaberOnce11;
+
+        long sumadebe5 = etDebeDoce12 + etDebeTrece13 + etDebeCatorce14 + etDebeQuince15;
+        long sumahaber5 = etHaberDoce12 + etHaberTrece13 + etHaberCatorce14 + etHaberQuince15;
 
 
+        String resudebe1 = String.valueOf(sumadebe1);
+        String resuhaber1 = String.valueOf(sumahaber1);
 
-    long sumadebe1=etDebeTres3+etDebeDos2+etDebeUno1;
-    long sumahaber1=etHaberUno1+etHaberDos2+etHaberTres3;
+        String resudebe2 = String.valueOf(sumadebe2);
+        String resuhaber2 = String.valueOf(sumahaber2);
 
-    long sumadebe2=etDebeCuatro4+etDebeCinco5;
-    long sumahaber2=etHaberCuatro4+etHaberCinco5;
+        String resudebe3 = String.valueOf(sumadebe3);
+        String resuhaber3 = String.valueOf(sumahaber3);
 
-    long sumadebe3=etDebeSeis6+etDebeSiete7;
-    long sumahaber3=etHaberSeis6+etHaberSiete7;
+        String resudebe4 = String.valueOf(sumadebe4);
+        String resuhaber4 = String.valueOf(sumahaber4);
 
-    long sumadebe4=etDebeOcho8+etDebeNueve9+etDebeDiez10+etDebeOnce11;
-    long sumahaber4=etHaberOcho8+etHaberNueve9+etHaberDiez10+etHaberOnce11;
-
-    long sumadebe5=etDebeDoce12+etDebeTrece13+etDebeCatorce14+etDebeQuince15;
-    long sumahaber5=etHaberDoce12+etHaberTrece13+etHaberCatorce14+etHaberQuince15;
-
-
-    String resudebe1=String.valueOf(sumadebe1);
-    String resuhaber1=String.valueOf(sumahaber1);
-
-    String resudebe2=String.valueOf(sumadebe2);
-    String resuhaber2=String.valueOf(sumahaber2);
-
-    String resudebe3=String.valueOf(sumadebe3);
-    String resuhaber3=String.valueOf(sumahaber3);
-
-    String resudebe4=String.valueOf(sumadebe4);
-    String resuhaber4=String.valueOf(sumahaber4);
-
-    String resudebe5=String.valueOf(sumadebe5);
-    String resuhaber5=String.valueOf(sumahaber5);
+        String resudebe5 = String.valueOf(sumadebe5);
+        String resuhaber5 = String.valueOf(sumahaber5);
 
 
-    resultadoetSumaDebeUno = findViewById(R.id.etSumaDebeUno) ;
-    resultadoetSumaHaberUno = findViewById(R.id.etSumaHaberUno) ;
-    resultadoetSumaDebeDos = findViewById(R.id.etSumaDebeDos) ;
-    resultadoetSumaHaberDos = findViewById(R.id.etSumaHaberDos) ;
-    resultadoetSumaDebeTres = findViewById(R.id.etSumaDebeTres) ;
-    resultadoetSumaHaberTres = findViewById(R.id.etSumaHaberTres) ;
-    resultadoetSumaDebeCuatro = findViewById(R.id.etSumaDebeCuatro) ;
-    resultadoetSumaHaberCuatro = findViewById(R.id.etSumaHaberCuatro) ;
-    resultadoetSumaDebeCinco = findViewById(R.id.etSumaDebeCinco) ;
-    resultadoetSumaHaberCinco = findViewById(R.id.etSumaHaberCinco) ;
-
-
-    resultadoetSumaDebeUno.setText(resudebe1);
-    resultadoetSumaHaberUno.setText(resuhaber1);
-    resultadoetSumaDebeDos.setText(resudebe2);
-    resultadoetSumaHaberDos.setText(resuhaber2);
-    resultadoetSumaDebeTres.setText(resudebe3);
-    resultadoetSumaHaberTres.setText(resuhaber3);
-    resultadoetSumaDebeCuatro.setText(resudebe4);
-    resultadoetSumaHaberCuatro.setText(resuhaber4);
-    resultadoetSumaDebeCinco.setText(resudebe5);
-    resultadoetSumaHaberCinco.setText(resuhaber5);
+        editTexts.get(30).setText(resudebe1);
+        editTexts.get(31).setText(resuhaber1);
+        editTexts.get(32).setText(resudebe2);
+        editTexts.get(33).setText(resuhaber2);
+        editTexts.get(34).setText(resudebe3);
+        editTexts.get(35).setText(resuhaber3);
+        editTexts.get(36).setText(resudebe4);
+        editTexts.get(37).setText(resuhaber4);
+        editTexts.get(38).setText(resudebe5);
+        editTexts.get(39).setText(resuhaber5);
 
         cargarValidacion();
     }
 
 
-
-
-
     @OnClick(R.id.btnGuardarDatos)
-       public void setBtnGuardarDatos() {
+    public void setBtnGuardarDatos() {
         if (validarDatos()) {
             Bundle bundle = new Bundle();
             String etDebeUno = editTexts.get(0).getText().toString();
@@ -365,43 +433,43 @@ public class Part2Activity extends AppCompatActivity {
         String etHaberQuince = editTexts.get(29).getText().toString();
 
 
-        boolean a = esValido(etDebeUno , 0);
+        boolean a = esValido(etDebeUno, 0);
         boolean b = esValido(etHaberUno, 1);
-        boolean c = esValido(etDebeDos , 2);
-        boolean d = esValido(etHaberDos , 3);
-        boolean e = esValido(etHaberTres , 4);
-        boolean f = esValido(etDebeTres , 5);
+        boolean c = esValido(etDebeDos, 2);
+        boolean d = esValido(etHaberDos, 3);
+        boolean e = esValido(etHaberTres, 4);
+        boolean f = esValido(etDebeTres, 5);
         boolean g = esValido(etDebeCuatro, 6);
-        boolean h = esValido(etHaberCuatro , 7);
-        boolean i = esValido(etHaberCinco , 8);
-        boolean j = esValido(etDebeCinco, 9);
+        boolean h = esValido(etHaberCuatro, 7);
+        boolean i = esValido(etDebeCinco, 8);
+        boolean j = esValido(etHaberCinco, 9);
         boolean k = esValido(etDebeSeis, 10);
-        boolean l = esValido(etHaberSeis , 11);
-        boolean m = esValido(etHaberSiete , 12);
-        boolean n = esValido(etDebeSiete , 13);
-        boolean p = esValido(etDebeOcho , 14);
-        boolean o = esValido(etDebeNueve , 15);
-        boolean q = esValido(etDebeDiez , 16);
-        boolean r = esValido(etDebeOnce , 17);
-        boolean s = esValido(etHaberOcho , 18);
-        boolean t = esValido(etHaberNueve , 19);
-        boolean u = esValido(etHaberDiez , 20);
-        boolean w = esValido(etHaberOnce , 21);
-        boolean x = esValido(etDebeDoce , 22);
-        boolean y = esValido(etDebeTrece , 23);
-        boolean z = esValido(etDebeCatorce , 24);
-        boolean aa = esValido(etDebeQuince , 25);
-        boolean bb = esValido(etHaberDoce , 26);
-        boolean cc = esValido(etHaberTrece , 27);
-        boolean dd = esValido(etHaberCatorce , 28);
-        boolean ee = esValido(etHaberQuince  , 29);
+        boolean l = esValido(etHaberSeis, 11);
+        boolean m = esValido(etDebeSiete, 12);
+        boolean n = esValido(etHaberSiete, 13);
+        boolean o = esValido(etDebeOcho, 14);
+        boolean p = esValido(etHaberOcho, 15);
+        boolean q = esValido(etDebeNueve, 16);
+        boolean r = esValido(etHaberNueve, 17);
+        boolean s = esValido(etDebeDiez, 18);
+        boolean t = esValido(etHaberDiez, 19);
+        boolean u = esValido(etDebeOnce, 20);
+        boolean w = esValido(etHaberOnce, 21);
+        boolean x = esValido(etDebeDoce, 22);
+        boolean y = esValido(etHaberDoce, 23);
+        boolean z = esValido(etDebeTrece, 24);
+        boolean aa = esValido(etHaberTrece, 25);
+        boolean bb = esValido(etDebeCatorce, 26);
+        boolean cc = esValido(etHaberCatorce, 27);
+        boolean dd = esValido(etDebeQuince, 28);
+        boolean ee = esValido(etHaberQuince, 29);
 
 
-
-
-        if ((a || b)&&( c || d) && (e || f) && (g || h) && (i || j)
-                && k && l && m && n && o && p && q && r && s && t && u && w && x && y && z && aa && bb && cc && dd  && ee) {
+        if ((a || b) && (c || d) && (e || f) && (g || h) && (i || j)
+                &&( k || l) && (m || n) && (o || p) && (q || r) && (s || t) && (u || w) && (x || y)
+                && (z || aa) &&(bb || cc) && (dd || ee)) {
             estado = true;
+
 
 
 
@@ -476,8 +544,6 @@ public class Part2Activity extends AppCompatActivity {
         /*------------------------------------------------------------------------------------*/
 
 
-
-
     }
 
     private void showToolbar() {
@@ -486,9 +552,6 @@ public class Part2Activity extends AppCompatActivity {
         getSupportActionBar().setTitle("Inventario Perpetuo");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
-
-
 
 
 }
