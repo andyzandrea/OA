@@ -14,12 +14,10 @@ import android.view.ViewGroup;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import mx.com.lania.oamtemplate.Database.Entity.Evaluation;
-import mx.com.lania.oamtemplate.Database.Entity.Exercise;
+import mx.com.lania.oamtemplate.Database.Entities.Evaluation;
 import mx.com.lania.oamtemplate.OAMApplication;
 import mx.com.lania.oamtemplate.R;
 import mx.com.lania.oamtemplate.ViewModel.EvaluationViewModel;
-import mx.com.lania.oamtemplate.ViewModel.ExerciseViewModel;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -42,7 +40,7 @@ public class IndicationEvaluationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_indication_evaluation, container, false);
         showToolbar(view);
         ((OAMApplication) getActivity().getApplication()).getAppComponent().inject(this);
-        evaluationViewModel = ViewModelProviders.of(this,viewModelFactory).get(EvaluationViewModel.class);
+        evaluationViewModel = ViewModelProviders.of(this, viewModelFactory).get(EvaluationViewModel.class);
         evaluationViewModel.getEvaluation(evaluationId).observe(this, evaluation -> {
             this.evaluation = evaluation;
         });

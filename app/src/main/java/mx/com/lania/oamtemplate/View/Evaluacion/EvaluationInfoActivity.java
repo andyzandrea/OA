@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.Evaluacion;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -20,27 +20,28 @@ public class EvaluationInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evaluation_info);
-            ButterKnife.bind(this);
-            showToolbar();
-            setEvaluationView();
-        }
-        @OnClick(R.id.btnSiguiente)
-        public void btnSiguiente(){
-            Intent intent = new Intent(EvaluationInfoActivity.this, EvaluationInstActivity.class);
-            startActivity(intent);
-        }
+        ButterKnife.bind(this);
+        showToolbar();
+        setEvaluationView();
+    }
 
-        private void setEvaluationView() {
-            evaluationView = findViewById(R.id.evaluation_view);
-            evaluationView.setWebViewClient(new WebViewClient());
-            evaluationView.loadUrl(EvaluationinfoUrl);
-            evaluationView.getSettings().setJavaScriptEnabled(true);
-        }
+    @OnClick(R.id.btnSiguiente)
+    public void btnSiguiente() {
+        Intent intent = new Intent(EvaluationInfoActivity.this, EvaluationInstActivity.class);
+        startActivity(intent);
+    }
 
-        private void showToolbar () {
-            Toolbar toolbar = findViewById(R.id.toolbar);
-            setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle("Información");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    private void setEvaluationView() {
+        evaluationView = findViewById(R.id.evaluation_view);
+        evaluationView.setWebViewClient(new WebViewClient());
+        evaluationView.loadUrl(EvaluationinfoUrl);
+        evaluationView.getSettings().setJavaScriptEnabled(true);
+    }
+
+    private void showToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Información");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

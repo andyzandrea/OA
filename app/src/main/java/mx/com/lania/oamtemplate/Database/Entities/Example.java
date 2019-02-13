@@ -1,4 +1,4 @@
-package mx.com.lania.oamtemplate.Database.Entity;
+package mx.com.lania.oamtemplate.Database.Entities;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -6,10 +6,10 @@ import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 
-@Entity(tableName = "lesson", indices = {@Index(value = "learning_object_id")}, foreignKeys = @ForeignKey(entity = LearningObject.class, parentColumns = "id", childColumns = "learning_object_id"))
-public class Lesson {
+@Entity(tableName = "example", indices = {@Index(value = "learning_object_id")}, foreignKeys = @ForeignKey(entity = LearningObject.class, parentColumns = "id", childColumns = "learning_object_id"))
+public class Example {
 
-    //TODO: Add or remove field´s for the Lesson entity
+    //TODO: Add or remove field´s for the Example entity
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")

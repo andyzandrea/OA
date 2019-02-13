@@ -7,9 +7,8 @@ import android.support.annotation.NonNull;
 import javax.inject.Inject;
 
 import mx.com.lania.oamtemplate.Repository.EvaluationRepository;
-import mx.com.lania.oamtemplate.Repository.ExerciseRepository;
 
-public class EvaluationViewModelFactory implements ViewModelProvider.Factory{
+public class EvaluationViewModelFactory implements ViewModelProvider.Factory {
 
 
     @Inject

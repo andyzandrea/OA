@@ -6,7 +6,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 
-import mx.com.lania.oamtemplate.Database.Entity.LearningObject;
+import mx.com.lania.oamtemplate.Database.Entities.LearningObject;
 
 
 @Dao

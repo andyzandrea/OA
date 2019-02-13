@@ -1,7 +1,7 @@
 package mx.com.lania.oamtemplate.View.InvPerpetuoDos;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import mx.com.lania.oamtemplate.R;
 

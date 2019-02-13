@@ -10,30 +10,36 @@ import mx.com.lania.oamtemplate.Database.Dao.LearningObjectDao;
 import mx.com.lania.oamtemplate.Database.Dao.LessonDao;
 import mx.com.lania.oamtemplate.Database.Dao.QuestionDao;
 import mx.com.lania.oamtemplate.Database.Dao.ResultDao;
-import mx.com.lania.oamtemplate.Database.Entity.Evaluation;
-import mx.com.lania.oamtemplate.Database.Entity.Example;
-import mx.com.lania.oamtemplate.Database.Entity.Exercise;
-import mx.com.lania.oamtemplate.Database.Entity.LearningObject;
-import mx.com.lania.oamtemplate.Database.Entity.Lesson;
-import mx.com.lania.oamtemplate.Database.Entity.Question;
-import mx.com.lania.oamtemplate.Database.Entity.Result;
+import mx.com.lania.oamtemplate.Database.Entities.Evaluation;
+import mx.com.lania.oamtemplate.Database.Entities.Example;
+import mx.com.lania.oamtemplate.Database.Entities.Exercise;
+import mx.com.lania.oamtemplate.Database.Entities.LearningObject;
+import mx.com.lania.oamtemplate.Database.Entities.Lesson;
+import mx.com.lania.oamtemplate.Database.Entities.Question;
+import mx.com.lania.oamtemplate.Database.Entities.Result;
 
 
 /**
  * Created by macbook on 05/03/18.
  */
 
-@Database(entities = {LearningObject.class, Lesson.class, Example.class, Exercise.class, Result.class, Evaluation.class, Question.class},version = 1)
+@Database(entities = {LearningObject.class, Lesson.class, Example.class, Exercise.class, Result.class, Evaluation.class, Question.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     public static final String DB_NAME = "app_db";
 
     public abstract LearningObjectDao getLearningObjectDao();
+
     public abstract LessonDao getLessonDao();
+
     public abstract ExampleDao getExampleDao();
+
     public abstract ExerciseDao getExerciseDao();
+
     public abstract ResultDao getResultDao();
+
     public abstract EvaluationDao getEvaluationDao();
+
     public abstract QuestionDao getQuestionDao();
 
 }

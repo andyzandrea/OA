@@ -1,12 +1,14 @@
 package mx.com.lania.oamtemplate.View;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ExpandableListView;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import mx.com.lania.oamtemplate.R;
 import mx.com.lania.oamtemplate.View.Adapter.ExpandableListAdapter;
 import mx.com.lania.oamtemplate.View.Evaluacion.EvaluationInfoActivity;
@@ -49,7 +51,7 @@ public class MenuEvaluationActivity extends AppCompatActivity {
 
     private void initMenu() {
         evaluationList = findViewById(R.id.evaluation_list);
-        evaluationListAdapter = new ExpandableListAdapter(this,listEvaluationHeader,null);
+        evaluationListAdapter = new ExpandableListAdapter(this, listEvaluationHeader, null);
         evaluationList.setAdapter(evaluationListAdapter);
     }
 

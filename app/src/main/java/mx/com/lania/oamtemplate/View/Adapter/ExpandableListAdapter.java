@@ -17,11 +17,11 @@ import mx.com.lania.oamtemplate.R;
  * Created by macbook on 12/02/18.
  */
 
-public class ExpandableListAdapter extends BaseExpandableListAdapter{
+public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context context;
     private List<String> listDataHeader;
-    private HashMap<String,List<String>> listHashMap;
+    private HashMap<String, List<String>> listHashMap;
 
     public ExpandableListAdapter(Context context, List<String> listDataHeader, HashMap<String, List<String>> listHashMap) {
         this.context = context;
@@ -72,7 +72,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter{
         String headerTitle = (String) getGroup(groupPosition);
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.list_group,null);
+            convertView = inflater.inflate(R.layout.list_group, null);
         }
         TextView lblListHeader = convertView.findViewById(R.id.theme_item_header);
         lblListHeader.setTypeface(null, Typeface.BOLD);
@@ -82,10 +82,10 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter{
 
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        final String childText = (String) getChild(groupPosition,childPosition);
+        final String childText = (String) getChild(groupPosition, childPosition);
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.list_item,null);
+            convertView = inflater.inflate(R.layout.list_item, null);
         }
         TextView lblListChild = convertView.findViewById(R.id.theme_item_title);
         lblListChild.setText(childText);

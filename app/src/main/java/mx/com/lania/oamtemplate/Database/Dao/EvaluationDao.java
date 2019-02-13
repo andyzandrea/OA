@@ -7,7 +7,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 
-import mx.com.lania.oamtemplate.Database.Entity.Evaluation;
+import mx.com.lania.oamtemplate.Database.Entities.Evaluation;
 
 /**
  * Created by macbook on 21/02/18.

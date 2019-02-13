@@ -11,6 +11,7 @@ import java.util.concurrent.Executors;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
 import mx.com.lania.oamtemplate.AppDatabase;
@@ -29,7 +30,6 @@ import mx.com.lania.oamtemplate.Repository.LearningObjectRepository;
 import mx.com.lania.oamtemplate.Repository.LessonRepository;
 import mx.com.lania.oamtemplate.Repository.QuestionRepository;
 import mx.com.lania.oamtemplate.Repository.ResultRepository;
-import mx.com.lania.oamtemplate.ViewModel.EvaluationViewModel;
 import mx.com.lania.oamtemplate.ViewModel.EvaluationViewModelFactory;
 import mx.com.lania.oamtemplate.ViewModel.ExerciseViewModelFactory;
 
@@ -58,7 +58,9 @@ public class AppModule {
     }
 
     @Provides
-    OAMApplication provideOamApplication() { return application; }
+    OAMApplication provideOamApplication() {
+        return application;
+    }
 
     @Provides
     Application provideApplication() {
@@ -67,64 +69,93 @@ public class AppModule {
 
     @Provides
     @Singleton
-    AppDatabase provideAppDatabase() { return database; }
+    AppDatabase provideAppDatabase() {
+        return database;
+    }
 
     @Provides
     @Singleton
-    LearningObjectDao provideLearningObjectDao(AppDatabase appDatabase) { return appDatabase.getLearningObjectDao(); }
+    LearningObjectDao provideLearningObjectDao(AppDatabase appDatabase) {
+        return appDatabase.getLearningObjectDao();
+    }
 
     @Provides
     @Singleton
-    LessonDao provideLessonDao(AppDatabase appDatabase) { return appDatabase.getLessonDao(); }
+    LessonDao provideLessonDao(AppDatabase appDatabase) {
+        return appDatabase.getLessonDao();
+    }
 
     @Provides
     @Singleton
-    ExampleDao provideExampleDao(AppDatabase appDatabase) {return appDatabase.getExampleDao(); }
+    ExampleDao provideExampleDao(AppDatabase appDatabase) {
+        return appDatabase.getExampleDao();
+    }
 
     @Provides
     @Singleton
-    ExerciseDao provideExerciseDao(AppDatabase appDatabase) { return appDatabase.getExerciseDao(); }
+    ExerciseDao provideExerciseDao(AppDatabase appDatabase) {
+        return appDatabase.getExerciseDao();
+    }
 
     @Provides
     @Singleton
-    ResultDao provideResultDao(AppDatabase appDatabase) { return appDatabase.getResultDao(); }
+    ResultDao provideResultDao(AppDatabase appDatabase) {
+        return appDatabase.getResultDao();
+    }
 
     @Provides
     @Singleton
-    EvaluationDao provideEvaluationDao(AppDatabase appDatabase) { return appDatabase.getEvaluationDao(); }
+    EvaluationDao provideEvaluationDao(AppDatabase appDatabase) {
+        return appDatabase.getEvaluationDao();
+    }
 
     @Provides
     @Singleton
-    QuestionDao provideQuestionDao(AppDatabase appDatabase) { return appDatabase.getQuestionDao(); }
+    QuestionDao provideQuestionDao(AppDatabase appDatabase) {
+        return appDatabase.getQuestionDao();
+    }
 
     @Provides
     @Singleton
-    LearningObjectRepository provideLearningObjectRepository(LearningObjectDao learningObjectDao) { return new LearningObjectRepository(learningObjectDao); }
+    LearningObjectRepository provideLearningObjectRepository(LearningObjectDao learningObjectDao) {
+        return new LearningObjectRepository(learningObjectDao);
+    }
 
     @Provides
     @Singleton
-    LessonRepository provideLessonRepository(LessonDao lessonDao) { return new LessonRepository(lessonDao); }
+    LessonRepository provideLessonRepository(LessonDao lessonDao) {
+        return new LessonRepository(lessonDao);
+    }
 
     @Provides
     @Singleton
-    ExampleRepository provideExampleRepository(ExampleDao exampleDao) { return new ExampleRepository(exampleDao); }
+    ExampleRepository provideExampleRepository(ExampleDao exampleDao) {
+        return new ExampleRepository(exampleDao);
+    }
 
     @Provides
     @Singleton
-    ExerciseRepository provideExerciseRepository(ExerciseDao exerciseDao) { return new ExerciseRepository(exerciseDao); }
+    ExerciseRepository provideExerciseRepository(ExerciseDao exerciseDao) {
+        return new ExerciseRepository(exerciseDao);
+    }
 
     @Provides
     @Singleton
-    ResultRepository provideResultRepository(ResultDao resultDao) { return new ResultRepository(resultDao); }
+    ResultRepository provideResultRepository(ResultDao resultDao) {
+        return new ResultRepository(resultDao);
+    }
 
     @Provides
     @Singleton
-    EvaluationRepository provideEvaluationRepository(EvaluationDao evaluationDao) { return new EvaluationRepository(evaluationDao); }
+    EvaluationRepository provideEvaluationRepository(EvaluationDao evaluationDao) {
+        return new EvaluationRepository(evaluationDao);
+    }
 
     @Provides
     @Singleton
-    QuestionRepository provideQuestionRepository(QuestionDao questionDao) { return new QuestionRepository(questionDao); }
-
+    QuestionRepository provideQuestionRepository(QuestionDao questionDao) {
+        return new QuestionRepository(questionDao);
+    }
 
 
     @Provides

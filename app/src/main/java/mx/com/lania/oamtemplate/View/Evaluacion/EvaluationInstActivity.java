@@ -25,8 +25,9 @@ public class EvaluationInstActivity extends AppCompatActivity {
         setLessonView();
 
     }
+
     @OnClick(R.id.btnSiguiente)
-    public void btnSiguiente(){
+    public void btnSiguiente() {
         Intent intent = new Intent(EvaluationInstActivity.this, EvaluationActivityUno.class);
         startActivity(intent);
     }
@@ -38,7 +39,7 @@ public class EvaluationInstActivity extends AppCompatActivity {
         lessonView.getSettings().setJavaScriptEnabled(true);
     }
 
-    private void showToolbar () {
+    private void showToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Información");

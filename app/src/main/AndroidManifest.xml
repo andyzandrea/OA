@@ -10,12 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.ejercicioParte2.PasoSeisActivity"></activity>
+        <activity android:name=".View.ejercicioParte2.PasoCuatroFinal"></activity>
+        <activity android:name=".View.ejercicioParte2.PasoCuatroContinuacionDos" />
+        <activity android:name=".View.ejercicioParte2.PasoCuatroContinuacionUno" />
+        <activity android:name=".View.ejercicioParte2.PasoSeisActivity" />
         <activity android:name=".View.ejercicioParte2.PasoCincoActivity" />
         <activity android:name=".View.ejercicioParte2.PasoCuatroActivity" />
-        <activity android:name=".View.EvaluacionParte2.ResultadoEvaluationActivity2" />
-        <activity android:name=".View.EvaluacionParte2.EvaluationInstActivity2" />
         <activity android:name=".View.EvaluacionParte2.EvaluationInfoActivity2" />
+        <activity android:name=".View.EvaluacionParte2.EvaluationInstActivity2" />
+        <activity android:name=".View.EvaluacionParte2.ResultadoEvaluationActivity2" />
         <activity android:name=".View.EvaluacionParte2.EvaluationActivityDos" />
         <activity android:name=".View.MenuActivity">
             <intent-filter>

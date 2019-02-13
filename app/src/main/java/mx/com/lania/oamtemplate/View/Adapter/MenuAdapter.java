@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import mx.com.lania.oamtemplate.R;
 
 /**
@@ -20,7 +21,7 @@ public class MenuAdapter extends BaseAdapter {
 
     private Context context;
     private String[] titleItemMenu;
-    private int[] iconItemMenu,cardColor;
+    private int[] iconItemMenu, cardColor;
 
     public MenuAdapter(Context context, String[] titleItemMenu, int[] iconItemMenu, int[] cardColor) {
         this.context = context;
@@ -48,12 +49,12 @@ public class MenuAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View gridView;
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        if(convertView == null) {
+        if (convertView == null) {
             gridView = new View(context);
 
             gridView = inflater.inflate(R.layout.menu_item, null);
             CardView cardView = gridView.findViewById(R.id.menu_item);
-            cardView.setCardBackgroundColor(ContextCompat.getColor(context,cardColor[position]));
+            cardView.setCardBackgroundColor(ContextCompat.getColor(context, cardColor[position]));
             ImageView imageView = gridView.findViewById(R.id.menu_item_icon);
             TextView textView = gridView.findViewById(R.id.menu_item_title);
             imageView.setImageResource(iconItemMenu[position]);

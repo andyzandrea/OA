@@ -7,7 +7,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 
-import mx.com.lania.oamtemplate.Database.Entity.Question;
+import mx.com.lania.oamtemplate.Database.Entities.Question;
 
 @Dao
 public interface QuestionDao {

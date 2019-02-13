@@ -15,11 +15,11 @@ public class MenuActivity extends AppCompatActivity {
     private GridView menu;
     private MenuAdapter menuAdapter;
     private String[] titleItemMenu;
-    private int[] iconItemMenu,cardColor;
+    private int[] iconItemMenu, cardColor;
 
     public MenuActivity() {
         iconItemMenu = new int[]{R.drawable.ic_lessons, R.drawable.ic_example, R.drawable.ic_exercise, R.drawable.ic_evaluation};
-        titleItemMenu = new String[]{"Lecciones","Ejemplos","Ejercicios","Evaluación"};
+        titleItemMenu = new String[]{"Lecciones", "Ejemplos", "Ejercicios", "Evaluación"};
         cardColor = new int[]{R.color.colorBlue, R.color.colorGreen, R.color.colorYellow, R.color.colorRed};
     }
 
@@ -33,7 +33,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     private void initMenu() {
-        menuAdapter = new MenuAdapter(this,titleItemMenu,iconItemMenu,cardColor);
+        menuAdapter = new MenuAdapter(this, titleItemMenu, iconItemMenu, cardColor);
         menu = findViewById(R.id.main_menu);
         menu.setAdapter(menuAdapter);
     }
@@ -42,10 +42,16 @@ public class MenuActivity extends AppCompatActivity {
         menu.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = null;
             switch (position) {
-                case 0: intent = new Intent(this,MenuLessonActivity.class); break;
+                case 0:
+                    intent = new Intent(this, MenuLessonActivity.class);
+                    break;
                 //case 1: intent = new Intent(this,UnityPlayerActivity.class);
-                case 2: intent = new Intent(this,MenuExerciseActivity.class); break;
-                case 3: intent = new Intent(this,MenuEvaluationActivity.class); break;
+                case 2:
+                    intent = new Intent(this, MenuExerciseActivity.class);
+                    break;
+                case 3:
+                    intent = new Intent(this, MenuEvaluationActivity.class);
+                    break;
             }
             if (intent != null)
                 startActivity(intent);

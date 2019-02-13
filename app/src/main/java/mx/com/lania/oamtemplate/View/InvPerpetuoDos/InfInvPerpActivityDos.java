@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.InvPerpetuoDos;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -10,8 +10,6 @@ import android.webkit.WebViewClient;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import mx.com.lania.oamtemplate.R;
-import mx.com.lania.oamtemplate.View.InvPerpetuo.InfInvPerpActivity;
-import mx.com.lania.oamtemplate.View.InvPerpetuo.InstrInvPerpActivity;
 
 public class InfInvPerpActivityDos extends AppCompatActivity {
     private WebView lessonView;
@@ -26,9 +24,10 @@ public class InfInvPerpActivityDos extends AppCompatActivity {
         showToolbar();
         setLessonView();
     }
+
     @OnClick(R.id.btnSiguiente)
-    public void btnSiguiente(){
-        Intent intent = new Intent(InfInvPerpActivityDos.this,InstrInvPerpActivityDos.class);
+    public void btnSiguiente() {
+        Intent intent = new Intent(InfInvPerpActivityDos.this, InstrInvPerpActivityDos.class);
         startActivity(intent);
     }
 
@@ -40,7 +39,7 @@ public class InfInvPerpActivityDos extends AppCompatActivity {
         lessonView.getSettings().setJavaScriptEnabled(true);
     }
 
-    private void showToolbar () {
+    private void showToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Información");

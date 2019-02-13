@@ -12,7 +12,7 @@ import mx.com.lania.oamtemplate.Repository.ExerciseRepository;
  * Created by macbook on 05/03/18.
  */
 
-public class ExerciseViewModelFactory implements ViewModelProvider.Factory{
+public class ExerciseViewModelFactory implements ViewModelProvider.Factory {
 
 
     @Inject

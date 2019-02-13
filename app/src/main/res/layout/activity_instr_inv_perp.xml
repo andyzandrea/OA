@@ -7,11 +7,11 @@
     tools:context=".View.InvPerpetuo.InstrInvPerpActivity">
 
     <include
-    android:id="@+id/include"
-    layout="@layout/actionbar_toolbar"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/include"
+        layout="@layout/actionbar_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <WebView
         android:id="@+id/lesson_view"

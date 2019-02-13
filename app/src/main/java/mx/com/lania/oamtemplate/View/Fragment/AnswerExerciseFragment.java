@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import mx.com.lania.oamtemplate.Database.Entity.Exercise;
+import mx.com.lania.oamtemplate.Database.Entities.Exercise;
 import mx.com.lania.oamtemplate.OAMApplication;
 import mx.com.lania.oamtemplate.R;
 import mx.com.lania.oamtemplate.ViewModel.ExerciseViewModel;
@@ -40,7 +40,7 @@ public class AnswerExerciseFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_anwer_exercise, container, false);
         showToolbar(view);
         ((OAMApplication) getActivity().getApplication()).getAppComponent().inject(this);
-        exerciseViewModel = ViewModelProviders.of(this,viewModelFactory).get(ExerciseViewModel.class);
+        exerciseViewModel = ViewModelProviders.of(this, viewModelFactory).get(ExerciseViewModel.class);
         exerciseViewModel.getExercise(exerciseId).observe(this, exercise -> {
             this.exercise = exercise;
         });

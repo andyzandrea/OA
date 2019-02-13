@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.EvaluacionParte2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.widget.Button;
@@ -17,12 +17,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import es.dmoral.toasty.Toasty;
 import mx.com.lania.oamtemplate.R;
-import mx.com.lania.oamtemplate.View.Evaluacion.EvaluationActivityUno;
-import mx.com.lania.oamtemplate.View.Evaluacion.ResultadoEvaluationActivity;
 
 public class EvaluationActivityDos extends AppCompatActivity {
-
-
 
 
     @BindView(R.id.btnGuardarDatos)

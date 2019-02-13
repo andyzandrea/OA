@@ -1,4 +1,4 @@
-package mx.com.lania.oamtemplate.Database.Entity;
+package mx.com.lania.oamtemplate.Database.Entities;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

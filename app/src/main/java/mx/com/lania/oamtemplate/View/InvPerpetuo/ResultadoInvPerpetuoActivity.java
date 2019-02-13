@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.InvPerpetuo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.EditText;
@@ -135,7 +135,7 @@ public class ResultadoInvPerpetuoActivity extends AppCompatActivity {
         }
 
         /*------------------------------------------------------------------------------------*/
-          if (editTexts.get(6).getText().toString().equals("Activo no circulante")
+        if (editTexts.get(6).getText().toString().equals("Activo no circulante")
                 || editTexts.get(6).getText().toString().equals("Activo No Circulante")
                 || editTexts.get(6).getText().toString().equals("activo no Circulante")
                 || editTexts.get(6).getText().toString().equals("activo No Circulante")
@@ -286,19 +286,19 @@ public class ResultadoInvPerpetuoActivity extends AppCompatActivity {
         }
         /*------------------------------------------------------------------------------------*/
 
-        }
-
-        @OnClick(R.id.btnGuardarDatos)
-        public void setBtnGuardarDatos () {
-            Intent returnHome = new Intent(ResultadoInvPerpetuoActivity.this, MenuExerciseActivity.class);
-            returnHome.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(returnHome);
-        }
-
-        private void showToolbar () {
-            Toolbar toolbar = findViewById(R.id.toolbar);
-            setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle("Inventario Perpetuo - Resultados");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
     }
+
+    @OnClick(R.id.btnGuardarDatos)
+    public void setBtnGuardarDatos() {
+        Intent returnHome = new Intent(ResultadoInvPerpetuoActivity.this, MenuExerciseActivity.class);
+        returnHome.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(returnHome);
+    }
+
+    private void showToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Inventario Perpetuo - Resultados");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+}

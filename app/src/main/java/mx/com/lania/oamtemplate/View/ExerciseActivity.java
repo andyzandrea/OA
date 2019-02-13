@@ -17,7 +17,7 @@ public class ExerciseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_exercise);
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.exercise_container,new IndicationExerciseFragment())
+                .replace(R.id.exercise_container, new IndicationExerciseFragment())
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .addToBackStack(null)
                 .commit();
@@ -26,7 +26,7 @@ public class ExerciseActivity extends AppCompatActivity {
     public void insertResult(View view) {
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.exercise_container,new AnswerExerciseFragment())
+                .replace(R.id.exercise_container, new AnswerExerciseFragment())
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .addToBackStack(null)
                 .commit();

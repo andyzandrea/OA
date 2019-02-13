@@ -5,7 +5,7 @@ import android.arch.lifecycle.LiveData;
 import javax.inject.Inject;
 
 import mx.com.lania.oamtemplate.Database.Dao.LearningObjectDao;
-import mx.com.lania.oamtemplate.Database.Entity.LearningObject;
+import mx.com.lania.oamtemplate.Database.Entities.LearningObject;
 
 public class LearningObjectRepository {
 
@@ -14,7 +14,9 @@ public class LearningObjectRepository {
     private LearningObjectDao learningObjectDao;
 
     @Inject
-    public LearningObjectRepository(LearningObjectDao learningObjectDao) { this.learningObjectDao = learningObjectDao; }
+    public LearningObjectRepository(LearningObjectDao learningObjectDao) {
+        this.learningObjectDao = learningObjectDao;
+    }
 
     public LiveData<LearningObject> selectLearningObject(int learningObjectId) {
         return learningObjectDao.selectLearningObject(learningObjectId);

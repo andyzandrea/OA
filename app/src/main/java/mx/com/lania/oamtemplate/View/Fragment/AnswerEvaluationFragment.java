@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import mx.com.lania.oamtemplate.Database.Entity.Evaluation;
+import mx.com.lania.oamtemplate.Database.Entities.Evaluation;
 import mx.com.lania.oamtemplate.OAMApplication;
 import mx.com.lania.oamtemplate.R;
 import mx.com.lania.oamtemplate.ViewModel.EvaluationViewModel;
@@ -40,7 +40,7 @@ public class AnswerEvaluationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_answer_evaluation, container, false);
         showToolbar(view);
         ((OAMApplication) getActivity().getApplication()).getAppComponent().inject(this);
-        evaluationViewModel = ViewModelProviders.of(this,viewModelFactory).get(EvaluationViewModel.class);
+        evaluationViewModel = ViewModelProviders.of(this, viewModelFactory).get(EvaluationViewModel.class);
         evaluationViewModel.getEvaluation(evaluationId).observe(this, evaluation -> {
             this.evaluation = evaluation;
         });

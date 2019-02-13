@@ -4,7 +4,7 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MediatorLiveData;
 import android.arch.lifecycle.ViewModel;
 
-import mx.com.lania.oamtemplate.Database.Entity.Evaluation;
+import mx.com.lania.oamtemplate.Database.Entities.Evaluation;
 import mx.com.lania.oamtemplate.Repository.EvaluationRepository;
 
 /**

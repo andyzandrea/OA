@@ -21,7 +21,7 @@ public class LessonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lesson);
         Bundle extras = getIntent().getExtras();
         lessonTitle = extras.getString("LESSON_TITLE");
-        String lessonHtml="file:///android_asset/"+extras.getString("LESSON_HTML");
+        String lessonHtml = "file:///android_asset/" + extras.getString("LESSON_HTML");
         showToolbar();
 
         tVTitle = findViewById(R.id.text_view_theme_title);

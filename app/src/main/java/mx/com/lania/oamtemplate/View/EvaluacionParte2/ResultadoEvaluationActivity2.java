@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.EvaluacionParte2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +14,6 @@ import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import mx.com.lania.oamtemplate.R;
-import mx.com.lania.oamtemplate.View.Evaluacion.ResultadoEvaluationActivity;
 import mx.com.lania.oamtemplate.View.MenuExerciseActivity;
 
 public class ResultadoEvaluationActivity2 extends AppCompatActivity {
@@ -290,13 +289,13 @@ public class ResultadoEvaluationActivity2 extends AppCompatActivity {
     }
 
     @OnClick(R.id.btnGuardarDatos)
-    public void setBtnGuardarDatos () {
+    public void setBtnGuardarDatos() {
         Intent returnHome = new Intent(ResultadoEvaluationActivity2.this, MenuExerciseActivity.class);
         returnHome.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(returnHome);
     }
 
-    private void showToolbar () {
+    private void showToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Resultados");

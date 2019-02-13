@@ -6,8 +6,10 @@ import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
+
 import java.util.List;
-import mx.com.lania.oamtemplate.Database.Entity.Result;
+
+import mx.com.lania.oamtemplate.Database.Entities.Result;
 
 
 /**

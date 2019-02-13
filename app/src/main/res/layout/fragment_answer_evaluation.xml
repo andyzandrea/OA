@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="mx.com.lania.oamtemplate.View.Fragment.AnswerEvaluationFragment">
 
-    <include layout="@layout/actionbar_toolbar"/>
+    <include layout="@layout/actionbar_toolbar" />
 
     <LinearLayout
         android:layout_width="match_parent"

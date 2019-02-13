@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.ejercicioParte2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,8 +14,6 @@ import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import mx.com.lania.oamtemplate.R;
-import mx.com.lania.oamtemplate.View.ejercicioParte2.Part2ResulActivity;
-import mx.com.lania.oamtemplate.View.MenuExerciseActivity;
 
 
 public class Part2ResulActivity extends AppCompatActivity {
@@ -50,21 +48,12 @@ public class Part2ResulActivity extends AppCompatActivity {
             R.id.etDebeDoce, R.id.etHaberDoce,
             R.id.etDebeTrece, R.id.etHaberTrece,
             R.id.etDebeCatorce, R.id.etHaberCatorce,
-            R.id.etDebeQuince, R.id.etHaberQuince,}
-
-           /* R.id.etSumaDebeUno, R.id.etSumaHaberUno,
-            R.id.etSumaDebeDos, R.id.etSumaHaberDos,
-            R.id.etSumaDebeTres, R.id.etSumaHaberTres,
-            R.id.etSumaDebeCuatro, R.id.etSumaHaberCuatro,
-            R.id.etSumaDebeCinco, R.id.etSumaHaberCinco*/
-
-           )
+            R.id.etDebeQuince, R.id.etHaberQuince,})
     List<EditText> editTexts;
 
     Bundle bundleInicial = new Bundle();
 
-
-    @BindViews({R.id.etSumaDebeUnoUno,R.id.etSumaHaberUnoUno,
+    @BindViews({R.id.etSumaDebeUnoUno, R.id.etSumaHaberUnoUno,
             R.id.etSumaDebeUnoUno2, R.id.etSumaHaberUnoUno2,
             R.id.etSumaDebeUnoUno3, R.id.etSumaHaberUnoUno3,
             R.id.etSumaDebeUnoUno7, R.id.etSumaHaberUnoUno7,
@@ -72,11 +61,11 @@ public class Part2ResulActivity extends AppCompatActivity {
             R.id.etSumaDebeUnoUno8, R.id.etSumaHaberUnoUno8})
     List<EditText> editTextsSumas;
 
-    @BindViews({R.id.etSumaDebeFinalUno,R.id.etSumaHaberFinalUno,
+    @BindViews({R.id.etSumaDebeFinalUno, R.id.etSumaHaberFinalUno,
             R.id.etSumaDebeFinalUno2, R.id.etSumaHaberFinalUno2,
             R.id.etSumaDebeFinalUno3, R.id.etSumaHaberFinalUno3,
-            R.id.etSumaDebeFinalUno7 ,R.id.etSumaHaberFinalUno7,
-            R.id.etSumaDebeFinalUno9 ,R.id.etSumaHaberFinalUno9,
+            R.id.etSumaDebeFinalUno7, R.id.etSumaHaberFinalUno7,
+            R.id.etSumaDebeFinalUno9, R.id.etSumaHaberFinalUno9,
             R.id.etSumaDebeFinalUno8, R.id.etSumaHaberFinalUno8})
     List<EditText> editTextsSumasFinales;
 
@@ -85,16 +74,13 @@ public class Part2ResulActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part2_resul);
         ButterKnife.bind(this);
-        ButterKnife.bind(this);
         showToolbar();
         bundleInicial = getIntent().getExtras();
-       cargarDatos();
-      //  cargarValidacion();
+        cargarDatos();
     }
 
     public void cargarDatos() {
-
-      editTexts.get(0).setText(bundleInicial.getString("etDebeUno"));
+        editTexts.get(0).setText(bundleInicial.getString("etDebeUno"));
         editTexts.get(1).setText(bundleInicial.getString("etHaberUno"));
         editTexts.get(2).setText(bundleInicial.getString("etDebeDos"));
         editTexts.get(3).setText(bundleInicial.getString("etHaberDos"));
@@ -134,7 +120,8 @@ public class Part2ResulActivity extends AppCompatActivity {
         editTexts.get(36).setText(bundleInicial.getString("etSumaDebeCuatro"));
         editTexts.get(37).setText(bundleInicial.getString("etSumaHaberCuatro"));
         editTexts.get(38).setText(bundleInicial.getString("etSumaDebeCinco"));
-        editTexts.get(39).setText(bundleInicial.getString("etSumaHaberCinco"))*/;
+        editTexts.get(39).setText(bundleInicial.getString("etSumaHaberCinco"))*/
+        ;
 
         /*editTexts.get(30).setText(bundleInicial.getString("etSumaDebeUnoUno"));
         editTexts.get(31).setText(bundleInicial.getString("etSumaHaberUnoUno"));
@@ -150,12 +137,8 @@ public class Part2ResulActivity extends AppCompatActivity {
         editTexts.get(41).setText(bundleInicial.getString("etSumaHaberUnoUno8"));*/
     }
 
-
     @OnClick(R.id.btnHacerSuma)
     public void setBtnHacerSuma() {
-
-        Bundle bundle = new Bundle();
-
         String etDebeUno = editTexts.get(0).getText().toString();
         String etHaberUno = editTexts.get(1).getText().toString();
         String etDebeDos = editTexts.get(2).getText().toString();
@@ -404,189 +387,170 @@ public class Part2ResulActivity extends AppCompatActivity {
         resultadoetSumaHaberCinco.setText(resuhaber5);
         resultadoetSumaDebeSeis.setText(resudebe6);
         resultadoetSumaHaberSeis.setText(resuhaber6);
-cargarValidacion();
+        cargarValidacion();
     }
 
 
+    public void cargarValidacion() {
+        String etSumaDebeUnoUno = editTextsSumas.get(0).getText().toString();
+        String etSumaHaberUnoUno = editTextsSumas.get(1).getText().toString();
+        String etSumaDebeUnoUno2 = editTextsSumas.get(2).getText().toString();
+        String etSumaHaberUnoUno2 = editTextsSumas.get(3).getText().toString();
+        String etSumaDebeUnoUno3 = editTextsSumas.get(4).getText().toString();
+        String etSumaHaberUnoUno3 = editTextsSumas.get(5).getText().toString();
+        String etSumaDebeUnoUno7 = editTextsSumas.get(6).getText().toString();
+        String etSumaHaberUnoUno7 = editTextsSumas.get(7).getText().toString();
+        String etSumaDebeUnoUno9 = editTextsSumas.get(8).getText().toString();
+        String etSumaHaberUnoUno9 = editTextsSumas.get(9).getText().toString();
+        String etSumaDebeUnoUno8 = editTextsSumas.get(10).getText().toString();
+        String etSumaHaberUnoUno8 = editTextsSumas.get(11).getText().toString();
 
-        public void cargarValidacion() {
-            String etSumaDebeUnoUno = editTextsSumas.get(0).getText().toString();
-            String etSumaHaberUnoUno = editTextsSumas.get(1).getText().toString();
-            String etSumaDebeUnoUno2 = editTextsSumas.get(2).getText().toString();
-            String etSumaHaberUnoUno2 = editTextsSumas.get(3).getText().toString();
-            String etSumaDebeUnoUno3 = editTextsSumas.get(4).getText().toString();
-            String etSumaHaberUnoUno3 = editTextsSumas.get(5).getText().toString();
-            String etSumaDebeUnoUno7 = editTextsSumas.get(6).getText().toString();
-            String etSumaHaberUnoUno7 = editTextsSumas.get(7).getText().toString();
-            String etSumaDebeUnoUno9 = editTextsSumas.get(8).getText().toString();
-            String etSumaHaberUnoUno9 = editTextsSumas.get(9).getText().toString();
-            String etSumaDebeUnoUno8 = editTextsSumas.get(10).getText().toString();
-            String etSumaHaberUnoUno8 = editTextsSumas.get(11).getText().toString();
-
-            long  etSumaDebeUnoUno1 = 0;
-            long  etSumaHaberUnoUno1 =0;
-            long  etSumaDebeUnoUno22 =0;
-            long  etSumaHaberUnoUno22 =0;
-            long  etSumaDebeUnoUno33 =0;
-            long  etSumaHaberUnoUno33 =0;
-            long  etSumaDebeUnoUno77 =0;
-            long  etSumaHaberUnoUno77 =0;
-            long  etSumaDebeUnoUno99 =0;
-            long  etSumaHaberUnoUno99 =0;
-            long  etSumaDebeUnoUno88 =0;
-            long  etSumaHaberUnoUno88 =0;
-
+        long etSumaDebeUnoUno1 = 0;
+        long etSumaHaberUnoUno1 = 0;
+        long etSumaDebeUnoUno22 = 0;
+        long etSumaHaberUnoUno22 = 0;
+        long etSumaDebeUnoUno33 = 0;
+        long etSumaHaberUnoUno33 = 0;
+        long etSumaDebeUnoUno77 = 0;
+        long etSumaHaberUnoUno77 = 0;
+        long etSumaDebeUnoUno99 = 0;
+        long etSumaHaberUnoUno99 = 0;
+        long etSumaDebeUnoUno88 = 0;
+        long etSumaHaberUnoUno88 = 0;
 
 
+        if (!etSumaDebeUnoUno.isEmpty()) {
+            etSumaDebeUnoUno1 = Long.parseLong(etSumaDebeUnoUno);
+        }
+        if (!etSumaHaberUnoUno.isEmpty()) {
+            etSumaHaberUnoUno1 = Long.parseLong(etSumaHaberUnoUno);
+        }
+        if (!etSumaDebeUnoUno2.isEmpty()) {
+            etSumaDebeUnoUno22 = Long.parseLong(etSumaDebeUnoUno2);
+        }
+        if (!etSumaHaberUnoUno2.isEmpty()) {
+            etSumaHaberUnoUno22 = Long.parseLong(etSumaHaberUnoUno2);
 
-            if(!etSumaDebeUnoUno.isEmpty()) {
-                etSumaDebeUnoUno1 = Long.parseLong(etSumaDebeUnoUno);
-            }
-            if(!etSumaHaberUnoUno.isEmpty()) {
-                etSumaHaberUnoUno1 = Long.parseLong(etSumaHaberUnoUno);
-            }
-            if(!etSumaDebeUnoUno2.isEmpty()) {
-                etSumaDebeUnoUno22 = Long.parseLong(etSumaDebeUnoUno2);
-            }
-            if(!etSumaHaberUnoUno2.isEmpty()) {
-                etSumaHaberUnoUno22 = Long.parseLong(etSumaHaberUnoUno2);
+        }
+        if (!etSumaDebeUnoUno3.isEmpty()) {
+            etSumaDebeUnoUno33 = Long.parseLong(etSumaDebeUnoUno3);
 
-            }
-            if(!etSumaDebeUnoUno3.isEmpty()) {
-                etSumaDebeUnoUno33 = Long.parseLong(etSumaDebeUnoUno3);
+        }
+        if (!etSumaHaberUnoUno3.isEmpty()) {
+            etSumaHaberUnoUno33 = Long.parseLong(etSumaHaberUnoUno3);
 
-            }
-            if(!etSumaHaberUnoUno3.isEmpty()) {
-                etSumaHaberUnoUno33 = Long.parseLong(etSumaHaberUnoUno3);
+        }
+        if (!etSumaDebeUnoUno7.isEmpty()) {
+            etSumaDebeUnoUno77 = Long.parseLong(etSumaDebeUnoUno7);
 
-            }
-            if(!etSumaDebeUnoUno7.isEmpty()) {
-                etSumaDebeUnoUno77 = Long.parseLong(etSumaDebeUnoUno7);
+        }
+        if (!etSumaHaberUnoUno7.isEmpty()) {
+            etSumaHaberUnoUno77 = Long.parseLong(etSumaHaberUnoUno7);
 
-            }
-            if(!etSumaHaberUnoUno7.isEmpty()) {
-                etSumaHaberUnoUno77 = Long.parseLong(etSumaHaberUnoUno7);
+        }
 
-            }
+        if (!etSumaDebeUnoUno9.isEmpty()) {
+            etSumaDebeUnoUno99 = Long.parseLong(etSumaDebeUnoUno9);
 
-            if(!etSumaDebeUnoUno9.isEmpty()) {
-                etSumaDebeUnoUno99 = Long.parseLong(etSumaDebeUnoUno9);
+        }
 
-            }
+        if (!etSumaHaberUnoUno9.isEmpty()) {
+            etSumaHaberUnoUno99 = Long.parseLong(etSumaHaberUnoUno9);
 
-            if(!etSumaHaberUnoUno9.isEmpty()) {
-                etSumaHaberUnoUno99 = Long.parseLong(etSumaHaberUnoUno9);
+        }
+        if (!etSumaDebeUnoUno8.isEmpty()) {
+            etSumaDebeUnoUno88 = Long.parseLong(etSumaDebeUnoUno8);
 
-            }
-            if(!etSumaDebeUnoUno8.isEmpty()) {
-                etSumaDebeUnoUno88 = Long.parseLong(etSumaDebeUnoUno8);
-
-            }
-            if(!etSumaHaberUnoUno8.isEmpty()) {
-                etSumaHaberUnoUno88 = Long.parseLong(etSumaHaberUnoUno8);
-
-            }
-
-
-
-
-            long diferenciaFinalDebeHaber1=Math.abs(etSumaDebeUnoUno1-etSumaHaberUnoUno1);
-            long diferenciaFinalDebeHaber2=Math.abs(etSumaDebeUnoUno22-etSumaHaberUnoUno22);
-            long diferenciaFinalDebeHaber3=Math.abs(etSumaDebeUnoUno33-etSumaHaberUnoUno33);
-            long diferenciaFinalDebeHaber4=Math.abs(etSumaDebeUnoUno77-etSumaHaberUnoUno77);
-            long diferenciaFinalDebeHaber5=Math.abs(etSumaDebeUnoUno99-etSumaHaberUnoUno99);
-            long diferenciaFinalDebeHaber6=Math.abs(etSumaDebeUnoUno88-etSumaHaberUnoUno88);
-
-            String diferencia1=String.valueOf(diferenciaFinalDebeHaber1);
-            String diferencia2=String.valueOf(diferenciaFinalDebeHaber2);
-            String diferencia3=String.valueOf(diferenciaFinalDebeHaber3);
-            String diferencia4=String.valueOf(diferenciaFinalDebeHaber4);
-            String diferencia5=String.valueOf(diferenciaFinalDebeHaber5);
-            String diferencia6=String.valueOf(diferenciaFinalDebeHaber6);
-
-
-
-
-
-
-
-            //*------------------------------------------------------------------------------------*//*
-            if (etSumaDebeUnoUno1 > etSumaHaberUnoUno1) {
-                editTextsSumasFinales.get(0).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(0).setText(diferencia1);
-            } else {
-                editTextsSumasFinales.get(1).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(1).setText(diferencia1);
-            }
-            //*------------------------------------------------------------------------------------*//*
-
-            if (etSumaDebeUnoUno22 > etSumaHaberUnoUno22) {
-
-                editTextsSumasFinales.get(2).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(2).setText(diferencia2);
-            } else {
-                editTextsSumasFinales.get(3).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(3).setText(diferencia2);
-            }
-            //*------------------------------------------------------------------------------------*//*
-
-            if (etSumaDebeUnoUno33 > etSumaHaberUnoUno33) {
-                editTextsSumasFinales.get(4).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(4).setText(diferencia3);
-            } else {
-                editTextsSumasFinales.get(5).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(5).setText(diferencia3);
-            }
-            //*------------------------------------------------------------------------------------*//*
-
-            if (etSumaDebeUnoUno77 > etSumaHaberUnoUno77) {
-                editTextsSumasFinales.get(6).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(6).setText(diferencia4);
-            } else {
-                editTextsSumasFinales.get(7).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(7).setText(diferencia4);
-            }
-            //*------------------------------------------------------------------------------------*//*
-
-            if (etSumaDebeUnoUno99 > etSumaHaberUnoUno99) {
-                editTextsSumasFinales.get(8).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(8).setText(diferencia5);
-            } else {
-                editTextsSumasFinales.get(9).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(9).setText(diferencia5);
-            }
-            //*------------------------------------------------------------------------------------*//*
-
-            if (etSumaDebeUnoUno88 > etSumaHaberUnoUno88) {
-                editTextsSumasFinales.get(10).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(10).setText(diferencia6);
-            } else {
-                editTextsSumasFinales.get(11).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
-                editTextsSumasFinales.get(11).setText(diferencia6);
-            }
-            //*------------------------------------------------------------------------------------*//*
-
-
-
-
+        }
+        if (!etSumaHaberUnoUno8.isEmpty()) {
+            etSumaHaberUnoUno88 = Long.parseLong(etSumaHaberUnoUno8);
 
         }
 
 
+        long diferenciaFinalDebeHaber1 = Math.abs(etSumaDebeUnoUno1 - etSumaHaberUnoUno1);
+        long diferenciaFinalDebeHaber2 = Math.abs(etSumaDebeUnoUno22 - etSumaHaberUnoUno22);
+        long diferenciaFinalDebeHaber3 = Math.abs(etSumaDebeUnoUno33 - etSumaHaberUnoUno33);
+        long diferenciaFinalDebeHaber4 = Math.abs(etSumaDebeUnoUno77 - etSumaHaberUnoUno77);
+        long diferenciaFinalDebeHaber5 = Math.abs(etSumaDebeUnoUno99 - etSumaHaberUnoUno99);
+        long diferenciaFinalDebeHaber6 = Math.abs(etSumaDebeUnoUno88 - etSumaHaberUnoUno88);
+
+        String diferencia1 = String.valueOf(diferenciaFinalDebeHaber1);
+        String diferencia2 = String.valueOf(diferenciaFinalDebeHaber2);
+        String diferencia3 = String.valueOf(diferenciaFinalDebeHaber3);
+        String diferencia4 = String.valueOf(diferenciaFinalDebeHaber4);
+        String diferencia5 = String.valueOf(diferenciaFinalDebeHaber5);
+        String diferencia6 = String.valueOf(diferenciaFinalDebeHaber6);
+        //*------------------------------------------------------------------------------------*//*
+        if (etSumaDebeUnoUno1 > etSumaHaberUnoUno1) {
+            editTextsSumasFinales.get(0).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(0).setText(diferencia1);
+        } else {
+            editTextsSumasFinales.get(1).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(1).setText(diferencia1);
+        }
+        //*------------------------------------------------------------------------------------*//*
+
+        if (etSumaDebeUnoUno22 > etSumaHaberUnoUno22) {
+
+            editTextsSumasFinales.get(2).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(2).setText(diferencia2);
+        } else {
+            editTextsSumasFinales.get(3).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(3).setText(diferencia2);
+        }
+        //*------------------------------------------------------------------------------------*//*
+
+        if (etSumaDebeUnoUno33 > etSumaHaberUnoUno33) {
+            editTextsSumasFinales.get(4).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(4).setText(diferencia3);
+        } else {
+            editTextsSumasFinales.get(5).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(5).setText(diferencia3);
+        }
+        //*------------------------------------------------------------------------------------*//*
+
+        if (etSumaDebeUnoUno77 > etSumaHaberUnoUno77) {
+            editTextsSumasFinales.get(6).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(6).setText(diferencia4);
+        } else {
+            editTextsSumasFinales.get(7).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(7).setText(diferencia4);
+        }
+        //*------------------------------------------------------------------------------------*//*
+
+        if (etSumaDebeUnoUno99 > etSumaHaberUnoUno99) {
+            editTextsSumasFinales.get(8).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(8).setText(diferencia5);
+        } else {
+            editTextsSumasFinales.get(9).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(9).setText(diferencia5);
+        }
+        //*------------------------------------------------------------------------------------*//*
+
+        if (etSumaDebeUnoUno88 > etSumaHaberUnoUno88) {
+            editTextsSumasFinales.get(10).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(10).setText(diferencia6);
+        } else {
+            editTextsSumasFinales.get(11).setBackgroundColor(getResources().getColor(R.color.colorGreenDark));
+            editTextsSumasFinales.get(11).setText(diferencia6);
+        }
+        //*------------------------------------------------------------------------------------*//*
 
 
-
-
+    }
 
 
     @OnClick(R.id.btnGuardarDatos)
-    public void setBtnGuardarDatos () {
-        Intent returnHome = new Intent(Part2ResulActivity.this, MenuExerciseActivity.class);
-        returnHome.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    public void setBtnGuardarDatos() {
+        Intent returnHome = new Intent(Part2ResulActivity.this, PasoCuatroActivity.class);
+        returnHome.putExtras(bundleInicial);
+        //returnHome.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(returnHome);
+        //TODO:GUARDAR DATOS EN BD
     }
 
-    private void showToolbar () {
+    private void showToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Resultados");

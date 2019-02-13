@@ -26,6 +26,7 @@
     <string name="name_account12">Ventas</string>
     <string name="name_account13">Equipo de oficina</string>
     <string name="name_account14">Depreciación de equipo oficina</string>
+    <string name="name_account15">Sumas Iguales</string>
     <string name="name_account_value1">50,000.00</string>
     <string name="name_account_value2">125,000.00</string>
     <string name="name_account_value3">65,000.00</string>
@@ -124,5 +125,6 @@
     <string name="name_account_value8_evaluation">65,000.00</string>
     <string name="name_account_value9_evaluation">150,000.00</string>
     <string name="name_account_value10_evaluation">197,000.00</string>
+    <string name="title_activity_paso_cuatro_continuacion_dos">PasoCuatroContinuacionDos</string>
 
 </resources>

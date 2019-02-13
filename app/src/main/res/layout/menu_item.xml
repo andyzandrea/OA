@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    android:id="@+id/menu_item"
+<android.support.v7.widget.CardView android:id="@+id/menu_item"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:carview="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -17,7 +16,7 @@
         <ImageView
             android:id="@+id/menu_item_icon"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/menu_item_title"
@@ -25,7 +24,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/cardview_text_size"
             android:textStyle="bold"
-            android:text="Lecciones"/>
+            android:text="Lecciones" />
 
     </LinearLayout>
 

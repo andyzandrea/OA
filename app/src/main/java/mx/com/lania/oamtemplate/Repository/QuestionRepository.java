@@ -5,7 +5,7 @@ import android.arch.lifecycle.LiveData;
 import javax.inject.Inject;
 
 import mx.com.lania.oamtemplate.Database.Dao.QuestionDao;
-import mx.com.lania.oamtemplate.Database.Entity.Question;
+import mx.com.lania.oamtemplate.Database.Entities.Question;
 
 public class QuestionRepository {
 
@@ -14,7 +14,9 @@ public class QuestionRepository {
     private QuestionDao questionDao;
 
     @Inject
-    public QuestionRepository(QuestionDao questionDao) { this.questionDao = questionDao; }
+    public QuestionRepository(QuestionDao questionDao) {
+        this.questionDao = questionDao;
+    }
 
     public LiveData<Question> selectQuestion(int questionId) {
         return questionDao.selectQuestion(questionId);

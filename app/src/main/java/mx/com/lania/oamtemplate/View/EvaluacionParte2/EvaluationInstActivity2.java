@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.EvaluacionParte2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -10,14 +10,11 @@ import android.webkit.WebViewClient;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import mx.com.lania.oamtemplate.R;
-import mx.com.lania.oamtemplate.View.Evaluacion.EvaluationActivityUno;
-import mx.com.lania.oamtemplate.View.Evaluacion.EvaluationInstActivity;
 
 public class EvaluationInstActivity2 extends AppCompatActivity {
     private WebView lessonView;
     private String lessonTitle;
     private String lessonUrl = "file:///android_asset/Evaluacion/datosProblema.html";
-
 
 
     @Override
@@ -29,8 +26,9 @@ public class EvaluationInstActivity2 extends AppCompatActivity {
         setLessonView();
 
     }
+
     @OnClick(R.id.btnSiguiente)
-    public void btnSiguiente(){
+    public void btnSiguiente() {
         Intent intent = new Intent(EvaluationInstActivity2.this, EvaluationActivityDos.class);
         startActivity(intent);
     }
@@ -42,7 +40,7 @@ public class EvaluationInstActivity2 extends AppCompatActivity {
         lessonView.getSettings().setJavaScriptEnabled(true);
     }
 
-    private void showToolbar () {
+    private void showToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Información");

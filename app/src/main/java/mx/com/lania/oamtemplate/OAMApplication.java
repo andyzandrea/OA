@@ -23,5 +23,9 @@ public class OAMApplication extends Application {
                 .build();
     }
 
-    public AppComponent getAppComponent() { return appComponent; };
+    public AppComponent getAppComponent() {
+        return appComponent;
+    }
+
+    ;
 }

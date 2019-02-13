@@ -1,9 +1,11 @@
 package mx.com.lania.oamtemplate.Repository;
 
 import android.arch.lifecycle.LiveData;
+
 import javax.inject.Inject;
+
 import mx.com.lania.oamtemplate.Database.Dao.ExerciseDao;
-import mx.com.lania.oamtemplate.Database.Entity.Exercise;
+import mx.com.lania.oamtemplate.Database.Entities.Exercise;
 
 /**
  * Created by macbook on 05/03/18.

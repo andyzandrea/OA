@@ -3,7 +3,8 @@ package mx.com.lania.oamtemplate.ViewModel;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MediatorLiveData;
 import android.arch.lifecycle.ViewModel;
-import mx.com.lania.oamtemplate.Database.Entity.Exercise;
+
+import mx.com.lania.oamtemplate.Database.Entities.Exercise;
 import mx.com.lania.oamtemplate.Repository.ExerciseRepository;
 
 /**

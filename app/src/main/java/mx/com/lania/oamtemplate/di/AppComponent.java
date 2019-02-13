@@ -20,8 +20,11 @@ import mx.com.lania.oamtemplate.View.Fragment.IndicationExerciseFragment;
 public interface AppComponent {
 
     void inject(IndicationExerciseFragment indicationExerciseFragment);
+
     void inject(IndicationEvaluationFragment indicationEvaluationFragment);
+
     void inject(AnswerExerciseFragment answerExerciseFragment);
+
     void inject(AnswerEvaluationFragment answerEvaluationFragment);
 
     Application application();

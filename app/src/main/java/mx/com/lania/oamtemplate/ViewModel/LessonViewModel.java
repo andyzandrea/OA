@@ -9,5 +9,4 @@ import android.arch.lifecycle.ViewModel;
 public class LessonViewModel extends ViewModel {
 
 
-
 }

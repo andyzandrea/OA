@@ -1,8 +1,8 @@
 package mx.com.lania.oamtemplate.View.ejercicioParte2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.widget.Button;
@@ -17,23 +17,9 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import es.dmoral.toasty.Toasty;
 import mx.com.lania.oamtemplate.R;
-import mx.com.lania.oamtemplate.View.ejercicioParte2.Part2Activity;
-import mx.com.lania.oamtemplate.View.ejercicioParte2.Part2ResulActivity;
 
 
 public class Part2Activity extends AppCompatActivity {
-
-    EditText resultadoetSumaDebeUno;
-    EditText resultadoetSumaHaberUno;
-    EditText resultadoetSumaDebeDos;
-    EditText resultadoetSumaHaberDos;
-    EditText resultadoetSumaDebeTres;
-    EditText resultadoetSumaHaberTres;
-    EditText resultadoetSumaDebeCuatro;
-    EditText resultadoetSumaHaberCuatro;
-    EditText resultadoetSumaDebeCinco;
-    EditText resultadoetSumaHaberCinco;
-
 
     @BindView(R.id.btnGuardarDatos)
     Button btnGuardarDatos;
@@ -65,7 +51,7 @@ public class Part2Activity extends AppCompatActivity {
             R.id.etSumaDebeCinco, R.id.etSumaHaberCinco})
     List<EditText> editTexts;
 
-    @BindViews({R.id.etSumaDebeUno,R.id.etSumaDebeDos})
+    @BindViews({R.id.etSumaDebeUno, R.id.etSumaDebeDos})
     List<EditText> editTextsSumas;
 
 
@@ -75,13 +61,46 @@ public class Part2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_part2);
         ButterKnife.bind(this);
         showToolbar();
+
+        //Bloquear edittexts de suma
+        for (int i = 30; i < editTexts.size(); i++) {
+            editTexts.get(i).setEnabled(false);
+        }
     }
 
 
     @OnClick(R.id.btnHacerSuma)
     public void setBtnHacerSuma() {
-
-        Bundle bundle = new Bundle();
+        long etDebeUno1 = 0;
+        long etDebeDos2 = 0;
+        long etDebeTres3 = 0;
+        long etHaberUno1 = 0;
+        long etHaberDos2 = 0;
+        long etHaberTres3 = 0;
+        long etDebeCuatro4 = 0;
+        long etDebeCinco5 = 0;
+        long etHaberCuatro4 = 0;
+        long etHaberCinco5 = 0;
+        long etDebeSeis6 = 0;
+        long etDebeSiete7 = 0;
+        long etHaberSeis6 = 0;
+        long etHaberSiete7 = 0;
+        long etDebeOcho8 = 0;
+        long etDebeNueve9 = 0;
+        long etDebeDiez10 = 0;
+        long etDebeOnce11 = 0;
+        long etHaberOcho8 = 0;
+        long etHaberNueve9 = 0;
+        long etHaberDiez10 = 0;
+        long etHaberOnce11 = 0;
+        long etDebeDoce12 = 0;
+        long etDebeTrece13 = 0;
+        long etDebeCatorce14 = 0;
+        long etDebeQuince15 = 0;
+        long etHaberDoce12 = 0;
+        long etHaberTrece13 = 0;
+        long etHaberCatorce14 = 0;
+        long etHaberQuince15 = 0;
 
         String etDebeUno = editTexts.get(0).getText().toString();
         String etHaberUno = editTexts.get(1).getText().toString();
@@ -114,141 +133,110 @@ public class Part2Activity extends AppCompatActivity {
         String etDebeQuince = editTexts.get(28).getText().toString();
         String etHaberQuince = editTexts.get(29).getText().toString();
 
-        long etDebeUno1=0;
-        long etDebeDos2=0;
-        long etDebeTres3=0;
-        long etHaberUno1=0;
-        long etHaberDos2=0;
-        long etHaberTres3=0;
-        long etDebeCuatro4=0;
-        long etDebeCinco5=0;
-        long etHaberCuatro4=0;
-        long etHaberCinco5=0;
-        long etDebeSeis6=0;
-        long etDebeSiete7=0;
-        long etHaberSeis6=0;
-        long etHaberSiete7=0;
-        long etDebeOcho8=0;
-        long etDebeNueve9=0;
-        long etDebeDiez10=0;
-        long etDebeOnce11=0;
-        long etHaberOcho8=0;
-        long etHaberNueve9=0;
-        long etHaberDiez10=0;
-        long etHaberOnce11=0;
-        long etDebeDoce12 =0;
-        long etDebeTrece13=0;
-        long etDebeCatorce14=0;
-        long etDebeQuince15=0;
-        long etHaberDoce12 =0;
-        long etHaberTrece13=0;
-        long etHaberCatorce14=0;
-        long etHaberQuince15=0;
-
 
         //suma1
-        if(!etDebeUno.isEmpty()) {
+        if (!etDebeUno.isEmpty()) {
             etDebeUno1 = Long.parseLong(etDebeUno);
         }
-        if(!etDebeDos.isEmpty()) {
+        if (!etDebeDos.isEmpty()) {
             etDebeDos2 = Long.parseLong(etDebeDos);
         }
-        if(!etDebeTres.isEmpty()) {
+        if (!etDebeTres.isEmpty()) {
             etDebeTres3 = Long.parseLong(etDebeTres);
         }
-        if(!etHaberUno.isEmpty()) {
+        if (!etHaberUno.isEmpty()) {
             etHaberUno1 = Long.parseLong(etHaberUno);
         }
-        if(!etHaberDos.isEmpty()) {
+        if (!etHaberDos.isEmpty()) {
             etHaberDos2 = Long.parseLong(etHaberDos);
         }
-        if(!etHaberTres.isEmpty()) {
+        if (!etHaberTres.isEmpty()) {
             etHaberTres3 = Long.parseLong(etHaberTres);
 
 
             //suma2
         }
-        if(!etDebeCuatro.isEmpty()) {
+        if (!etDebeCuatro.isEmpty()) {
             etDebeCuatro4 = Long.parseLong(etDebeCuatro);
         }
-        if(!etDebeCinco.isEmpty()) {
+        if (!etDebeCinco.isEmpty()) {
             etDebeCinco5 = Long.parseLong(etDebeCinco);
         }
-        if(!etHaberCuatro.isEmpty()) {
+        if (!etHaberCuatro.isEmpty()) {
             etHaberCuatro4 = Long.parseLong(etHaberCuatro);
         }
-        if(!etHaberCinco.isEmpty()) {
+        if (!etHaberCinco.isEmpty()) {
             etHaberCinco5 = Long.parseLong(etHaberCinco);
         }
 
 
         //suma3
-        if(!etDebeSeis.isEmpty()) {
+        if (!etDebeSeis.isEmpty()) {
             etDebeSeis6 = Long.parseLong(etDebeSeis);
         }
-        if(!etDebeSiete.isEmpty()) {
+        if (!etDebeSiete.isEmpty()) {
             etDebeSiete7 = Long.parseLong(etDebeSiete);
         }
-        if(!etHaberSeis.isEmpty()) {
+        if (!etHaberSeis.isEmpty()) {
             etHaberSeis6 = Long.parseLong(etHaberSeis);
         }
-        if(!etHaberSiete.isEmpty()) {
+        if (!etHaberSiete.isEmpty()) {
             etHaberSiete7 = Long.parseLong(etHaberSiete);
         }
 
         //suma4
-        if(!etDebeOcho.isEmpty()) {
+        if (!etDebeOcho.isEmpty()) {
             etDebeOcho8 = Long.parseLong(etDebeOcho);
         }
-        if(!etDebeNueve.isEmpty()) {
+        if (!etDebeNueve.isEmpty()) {
             etDebeNueve9 = Long.parseLong(etDebeNueve);
         }
-        if(!etDebeDiez.isEmpty()) {
+        if (!etDebeDiez.isEmpty()) {
             etDebeDiez10 = Long.parseLong(etDebeDiez);
         }
-        if(!etDebeOnce.isEmpty()) {
+        if (!etDebeOnce.isEmpty()) {
             etDebeOnce11 = Long.parseLong(etDebeOnce);
         }
-        if(!etHaberOcho.isEmpty()) {
+        if (!etHaberOcho.isEmpty()) {
             etHaberOcho8 = Long.parseLong(etHaberOcho);
-                 }
-        if(!etHaberNueve.isEmpty()) {
+        }
+        if (!etHaberNueve.isEmpty()) {
             etHaberNueve9 = Long.parseLong(etHaberNueve);
         }
-        if(!etHaberDiez.isEmpty()) {
+        if (!etHaberDiez.isEmpty()) {
             etHaberDiez10 = Long.parseLong(etHaberDiez);
         }
-        if(!etHaberOnce.isEmpty()) {
+        if (!etHaberOnce.isEmpty()) {
             etHaberOnce11 = Long.parseLong(etHaberOnce);
         }
 
 
         //suma5
-        if(!etDebeDoce.isEmpty()) {
+        if (!etDebeDoce.isEmpty()) {
             etDebeDoce12 = Long.parseLong(etDebeDoce);
-                    }
-        if(!etDebeTrece.isEmpty()) {
+        }
+        if (!etDebeTrece.isEmpty()) {
             etDebeTrece13 = Long.parseLong(etDebeTrece);
-                    }
-        if(!etDebeCatorce.isEmpty()) {
+        }
+        if (!etDebeCatorce.isEmpty()) {
             etDebeCatorce14 = Long.parseLong(etDebeCatorce);
-                    }
-        if(!etDebeQuince.isEmpty()) {
+        }
+        if (!etDebeQuince.isEmpty()) {
             etDebeQuince15 = Long.parseLong(etDebeQuince);
         }
-        if(!etHaberDoce.isEmpty()) {
+        if (!etHaberDoce.isEmpty()) {
             etHaberDoce12 = Long.parseLong(etHaberDoce);
 
         }
-        if(!etHaberTrece.isEmpty()) {
+        if (!etHaberTrece.isEmpty()) {
             etHaberTrece13 = Long.parseLong(etHaberTrece);
 
         }
-        if(!etHaberCatorce.isEmpty()) {
+        if (!etHaberCatorce.isEmpty()) {
             etHaberCatorce14 = Long.parseLong(etHaberCatorce);
 
         }
-        if(!etHaberQuince.isEmpty()) {
+        if (!etHaberQuince.isEmpty()) {
             etHaberQuince15 = Long.parseLong(etHaberQuince);
         }
 
@@ -335,7 +323,7 @@ public class Part2Activity extends AppCompatActivity {
             String etDebeQuince = editTexts.get(28).getText().toString();
             String etHaberQuince = editTexts.get(29).getText().toString();
 
-          /*  String etSumaDebeUno = editTexts.get(30).getText().toString();
+            String etSumaDebeUno = editTexts.get(30).getText().toString();
             String etSumaHaberUno = editTexts.get(31).getText().toString();
             String etSumaDebeDos = editTexts.get(32).getText().toString();
             String etSumaHaberDos = editTexts.get(33).getText().toString();
@@ -344,7 +332,7 @@ public class Part2Activity extends AppCompatActivity {
             String etSumaDebeCuatro = editTexts.get(36).getText().toString();
             String etSumaHaberCuatro = editTexts.get(37).getText().toString();
             String etSumaDebeCinco = editTexts.get(38).getText().toString();
-            String etSumaHaberCinco = editTexts.get(39).getText().toString();*/
+            String etSumaHaberCinco = editTexts.get(39).getText().toString();
 
 
             bundle.putString("etDebeUno", etDebeUno);
@@ -378,7 +366,7 @@ public class Part2Activity extends AppCompatActivity {
             bundle.putString("etDebeQuince", etDebeQuince);
             bundle.putString("etHaberQuince", etHaberQuince);
 
-            /*bundle.putString("etSumaDebeUno", etSumaDebeUno);
+            bundle.putString("etSumaDebeUno", etSumaDebeUno);
             bundle.putString("etSumaHaberUno", etSumaHaberUno);
             bundle.putString("etSumaDebeDos", etSumaDebeDos);
             bundle.putString("etSumaHaberDos", etSumaHaberDos);
@@ -388,7 +376,6 @@ public class Part2Activity extends AppCompatActivity {
             bundle.putString("etSumaHaberCuatro", etSumaHaberCuatro);
             bundle.putString("etSumaDebeCinco", etSumaDebeCinco);
             bundle.putString("etSumaHaberCinco", etSumaHaberCinco);
-*/
 
             Intent validacion = new Intent(Part2Activity.this, Part2ResulActivity.class);
             validacion.putExtras(bundle);
@@ -399,7 +386,6 @@ public class Part2Activity extends AppCompatActivity {
 
     public boolean validarDatos() {
         boolean estado;
-
 
         String etDebeUno = editTexts.get(0).getText().toString();
         String etHaberUno = editTexts.get(1).getText().toString();
@@ -466,11 +452,9 @@ public class Part2Activity extends AppCompatActivity {
 
 
         if ((a || b) && (c || d) && (e || f) && (g || h) && (i || j)
-                &&( k || l) && (m || n) && (o || p) && (q || r) && (s || t) && (u || w) && (x || y)
-                && (z || aa) &&(bb || cc) && (dd || ee)) {
+                && (k || l) && (m || n) && (o || p) && (q || r) && (s || t) && (u || w) && (x || y)
+                && (z || aa) && (bb || cc) && (dd || ee)) {
             estado = true;
-
-
 
 
         } else {
