@@ -2449,7 +2449,7 @@
 
 
         <TextView
-            android:id="@+id/tvDepreciacion"
+            android:id="@+id/tvAcreeDiversos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -2478,7 +2478,7 @@
             app:layout_constraintEnd_toEndOf="@+id/tvHaber3"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/etHaberTres"
-            app:layout_constraintTop_toBottomOf="@+id/tvDepreciacion" />
+            app:layout_constraintTop_toBottomOf="@+id/tvAcreeDiversos" />
 
         <EditText
             android:id="@+id/etVacioSumaDebe7"
@@ -2593,7 +2593,7 @@
             app:layout_constraintEnd_toEndOf="@+id/etSumaDebeFinalUno3"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/tvDebe3"
-            app:layout_constraintTop_toBottomOf="@+id/tvDepreciacion" />
+            app:layout_constraintTop_toBottomOf="@+id/tvAcreeDiversos" />
 
         <EditText
             android:id="@+id/etSumaHaberFinalUno7"
@@ -2658,7 +2658,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/tvHaber3"
-            app:layout_constraintTop_toBottomOf="@+id/tvDepreciacion" />
+            app:layout_constraintTop_toBottomOf="@+id/tvAcreeDiversos" />
 
         <View
             android:id="@+id/viewA16"

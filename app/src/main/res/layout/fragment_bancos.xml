@@ -180,7 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etHaberMovValor" />
 
     <TextView
-        android:id="@+id/tvDepreciacion"
+        android:id="@+id/tvAcreeDiversos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -210,7 +210,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDepreciacion" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAcreeDiversos" />
 
     <TextView
         android:id="@+id/tvdeudorSI"
@@ -289,7 +289,7 @@
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvDepreciacion"
-        app:layout_constraintTop_toBottomOf="@+id/tvDepreciacion" />
+        app:layout_constraintStart_toStartOf="@+id/tvAcreeDiversos"
+        app:layout_constraintTop_toBottomOf="@+id/tvAcreeDiversos" />
 
 </android.support.constraint.ConstraintLayout>
