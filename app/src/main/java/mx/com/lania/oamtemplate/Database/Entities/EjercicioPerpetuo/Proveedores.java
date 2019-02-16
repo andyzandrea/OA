@@ -21,6 +21,8 @@ public class Proveedores {
     @ColumnInfo(name = "acreedorSaldoFinal")
     long acreedorSaldoFinal;
 
+    public Proveedores() {
+    }
 
     @Ignore
     public Proveedores(long debeMovimientos, long haberMovimientos, long deudorSaldoInicial, long acreedorSaldoInicial, long deudorSaldoFinal, long acreedorSaldoFinal) {

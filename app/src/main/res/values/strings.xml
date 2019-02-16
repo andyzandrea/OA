@@ -27,6 +27,7 @@
     <string name="name_account13">Equipo de oficina</string>
     <string name="name_account14">Depreciación de equipo oficina</string>
     <string name="name_account15">Sumas Iguales</string>
+    <string name="name_account16">Utilidad bruta</string>
     <string name="name_account_value1">50,000.00</string>
     <string name="name_account_value2">125,000.00</string>
     <string name="name_account_value3">65,000.00</string>
@@ -47,7 +48,10 @@
     <string name="name_account_type1">Activo circulante</string>
     <string name="name_account_type2">Activo no circulante</string>
     <string name="name_account_type3">Pasivo a corto plazo</string>
+    <string name="name_account_type33">Suma pasivo a corto plazo</string>
     <string name="name_account_type4">Capital contable</string>
+    <string name="name_account_type44">Suma capital contable</string>
+    <string name="name_account_type55">Suma pasivo mas capital contable</string>
     <string name="name_nature_type1">Deudor</string>
     <string name="name_nature_type2">Acreedor</string>
     <string name="exercise_represents0">Registra los aumentos y disminuciones que tiene el efectivo de la entidad.</string>

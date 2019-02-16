@@ -21,6 +21,8 @@ public class Resultado {
     @ColumnInfo(name = "acreedorSaldoFinal")
     long acreedorSaldoFinal;
 
+    public Resultado() {
+    }
 
     @Ignore
     public Resultado(long debeMovimientos, long haberMovimientos, long deudorSaldoInicial, long acreedorSaldoInicial, long deudorSaldoFinal, long acreedorSaldoFinal) {

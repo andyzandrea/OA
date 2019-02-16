@@ -20,7 +20,9 @@ public class Almacen {
     long deudorSaldoFinal;
     @ColumnInfo(name = "acreedorSaldoFinal")
     long acreedorSaldoFinal;
+    public Almacen(){
 
+    }
 
     @Ignore
     public Almacen(long debeMovimientos, long haberMovimientos, long deudorSaldoInicial, long acreedorSaldoInicial, long deudorSaldoFinal, long acreedorSaldoFinal) {

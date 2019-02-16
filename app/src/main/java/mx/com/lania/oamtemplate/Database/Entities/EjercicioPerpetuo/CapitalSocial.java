@@ -22,6 +22,8 @@ public class CapitalSocial {
     @ColumnInfo(name = "acreedorSaldoFinal")
     long acreedorSaldoFinal;
 
+    public CapitalSocial() {
+    }
 
     @Ignore
     public CapitalSocial(long debeMovimientos, long haberMovimientos, long deudorSaldoInicial, long acreedorSaldoInicial, long deudorSaldoFinal, long acreedorSaldoFinal) {

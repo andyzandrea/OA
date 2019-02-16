@@ -1,5 +1,7 @@
 package mx.com.lania.oamtemplate.View.ejercicioParte2;
 
+import android.arch.lifecycle.ViewModelProvider;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,14 +11,102 @@ import android.widget.EditText;
 
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Acreedores;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Almacen;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Bancos;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.CapitalSocial;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Clientes;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.CostoDeVentas;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Depreciacion;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Edificios;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Maquinaria;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Proveedores;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Resultado;
+import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Ventas;
+import mx.com.lania.oamtemplate.OAMApplication;
 import mx.com.lania.oamtemplate.R;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.AcreedoresViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.AlmacenViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.BancosViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.CapitalSocialViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.ClientesViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.CostoDeVentasViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.DepreciacionViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.EdificiosViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.MaquinariaViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.ProveedoresViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.ResultadoViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.VentasViewModel;
 
 
 public class Part2ResulActivity extends AppCompatActivity {
+    @Inject
+    @Named("AcreedoresFactory")
+    ViewModelProvider.Factory viewModelAcreedores;
+    private AcreedoresViewModel acreedoresViewModel;
+
+    @Inject
+    @Named("AlmacenFactory")
+    ViewModelProvider.Factory viewModelAlmacen;
+    private AlmacenViewModel almacenViewModel;
+
+    @Inject
+    @Named("BancosFactory")
+    ViewModelProvider.Factory viewModelBancos;
+    private BancosViewModel bancosViewModel;
+
+    @Inject
+    @Named("CapitalSocialFactory")
+    ViewModelProvider.Factory viewModelCapitalSocial;
+    private CapitalSocialViewModel capitalSocialViewModel;
+
+    @Inject
+    @Named("ClientesFactory")
+    ViewModelProvider.Factory viewModelClientes;
+    private ClientesViewModel clientesViewModel;
+
+    @Inject
+    @Named("CostoDeVentasFactory")
+    ViewModelProvider.Factory viewModelCostoDeVentas;
+    private CostoDeVentasViewModel costoDeVentasViewModel;
+
+    @Inject
+    @Named("DepreciacionFactory")
+    ViewModelProvider.Factory viewModelDepreciacion;
+    private DepreciacionViewModel depreciacionViewModel;
+
+    @Inject
+    @Named("EdificiosFactory")
+    ViewModelProvider.Factory viewModelEdificios;
+    private EdificiosViewModel edificiosViewModel;
+
+    @Inject
+    @Named("MaquinariaFactory")
+    ViewModelProvider.Factory viewModelMaquinaria;
+    private MaquinariaViewModel maquinariaViewModel;
+
+    @Inject
+    @Named("ProveedoresFactory")
+    ViewModelProvider.Factory viewModelProveedores;
+    private ProveedoresViewModel proveedoresViewModel;
+
+    @Inject
+    @Named("ResultadoFactory")
+    ViewModelProvider.Factory viewModelResultado;
+    private ResultadoViewModel resultadoViewModel;
+
+    @Inject
+    @Named("VentasFactory")
+    ViewModelProvider.Factory viewModelVentas;
+    private VentasViewModel ventasViewModel;
+
     @BindView(R.id.btnGuardarDatos)
     Button btnGuardarDatos;
 
@@ -74,6 +164,24 @@ public class Part2ResulActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part2_resul);
         ButterKnife.bind(this);
+
+
+        //Inicializar Dagger2
+        ((OAMApplication) getApplication()).getAppComponent().inject(this);
+        //Cargar ViewModel
+        acreedoresViewModel = ViewModelProviders.of(this, viewModelAcreedores).get(AcreedoresViewModel.class);
+        almacenViewModel = ViewModelProviders.of(this, viewModelAlmacen).get(AlmacenViewModel.class);
+        bancosViewModel = ViewModelProviders.of(this, viewModelBancos).get(BancosViewModel.class);
+        capitalSocialViewModel = ViewModelProviders.of(this, viewModelCapitalSocial).get(CapitalSocialViewModel.class);
+        clientesViewModel = ViewModelProviders.of(this, viewModelClientes).get(ClientesViewModel.class);
+        costoDeVentasViewModel = ViewModelProviders.of(this, viewModelCostoDeVentas).get(CostoDeVentasViewModel.class);
+        depreciacionViewModel = ViewModelProviders.of(this, viewModelDepreciacion).get(DepreciacionViewModel.class);
+        edificiosViewModel = ViewModelProviders.of(this, viewModelEdificios).get(EdificiosViewModel.class);
+        maquinariaViewModel = ViewModelProviders.of(this, viewModelMaquinaria).get(MaquinariaViewModel.class);
+        proveedoresViewModel = ViewModelProviders.of(this, viewModelProveedores).get(ProveedoresViewModel.class);
+        resultadoViewModel = ViewModelProviders.of(this, viewModelResultado).get(ResultadoViewModel.class);
+        ventasViewModel = ViewModelProviders.of(this, viewModelVentas).get(VentasViewModel.class);
+
         showToolbar();
         bundleInicial = getIntent().getExtras();
         cargarDatos();
@@ -387,9 +495,53 @@ public class Part2ResulActivity extends AppCompatActivity {
         resultadoetSumaHaberCinco.setText(resuhaber5);
         resultadoetSumaDebeSeis.setText(resudebe6);
         resultadoetSumaHaberSeis.setText(resuhaber6);
+
+        bancosViewModel.insertarBancos(new Bancos(sumadebe2, sumahaber2, 50000, 0,
+                saldosFinalesDeudor(50000, sumadebe2, sumahaber2), 0));
+
+        clientesViewModel.insertarClientes(new Clientes(sumadebe4, sumahaber4, 125000, 0,
+                saldosFinalesDeudor(125000, sumadebe4, sumahaber4), 0));
+
+        almacenViewModel.insertarAlmacen(new Almacen(sumadebe1, sumahaber1, 65000, 0,
+                saldosFinalesDeudor(65000, sumadebe1, sumahaber1), 0));
+
+        edificiosViewModel.insertarEdificios(new Edificios(0, 0, 100000,
+                0, saldosFinalesDeudor(100000, 0, 0), 0));
+
+        maquinariaViewModel.insertarMaquinaria(new Maquinaria(0, 0, 45000,
+                0, saldosFinalesDeudor(45000, 0, 0), 0));
+
+        depreciacionViewModel.insertarDepreciacion(new Depreciacion(0, 0, 0,
+                11250, 0, saldosFinalesAcreedores(11250, 0, 0)));
+
+        proveedoresViewModel.insertarProveedores(new Proveedores(sumadebe3, sumahaber3, 0,
+                100000, 0, saldosFinalesAcreedores(100000, sumadebe3, sumahaber3)));
+
+        acreedoresViewModel.insertarAcreedores(new Acreedores(0, 0, 0,
+                63750, 0, saldosFinalesAcreedores(63750, 0, 0)));
+
+        capitalSocialViewModel.insertarCapitalSocial(new CapitalSocial(0, 0, 0,
+                200000, 0, saldosFinalesAcreedores(200000, 0, 0)));
+
+        resultadoViewModel.insertarResultado(new Resultado(0, 0, 0,
+                10000, 0, saldosFinalesAcreedores(10000, 0, 0)));
+
+        ventasViewModel.insertarVentas(new Ventas(sumadebe6, sumahaber6, 0,
+                0, 0, saldosFinalesAcreedores(0, sumadebe6, sumahaber6)));
+
+        costoDeVentasViewModel.insertarCostoDeVentas(new CostoDeVentas(sumadebe5, sumahaber5, 0,
+                0, saldosFinalesAcreedores(0, sumadebe5, sumahaber5), 0));
+
         cargarValidacion();
     }
 
+    public long saldosFinalesDeudor(long deudor, long debe, long haber) {
+        return (deudor + debe) - haber;
+    }
+
+    public long saldosFinalesAcreedores(long acreedor, long debe, long haber) {
+        return (acreedor - debe) + haber;
+    }
 
     public void cargarValidacion() {
         String etSumaDebeUnoUno = editTextsSumas.get(0).getText().toString();

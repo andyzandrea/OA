@@ -22,6 +22,9 @@ public class Depreciacion {
     @ColumnInfo(name = "acreedorSaldoFinal")
     long acreedorSaldoFinal;
 
+    public Depreciacion() {
+    }
+
     @Ignore
     public Depreciacion(long debeMovimientos, long haberMovimientos, long deudorSaldoInicial, long acreedorSaldoInicial, long deudorSaldoFinal, long acreedorSaldoFinal) {
         this.debeMovimientos = debeMovimientos;

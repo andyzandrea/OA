@@ -1,5 +1,6 @@
 package mx.com.lania.oamtemplate.View.ejercicioParte2;
 
+import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,16 +12,30 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import es.dmoral.toasty.Toasty;
 import mx.com.lania.oamtemplate.R;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.AcreedoresViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.AlmacenViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.BancosViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.CapitalSocialViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.ClientesViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.CostoDeVentasViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.DepreciacionViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.EdificiosViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.MaquinariaViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.ProveedoresViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.ResultadoViewModel;
+import mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo.VentasViewModel;
 
 
 public class Part2Activity extends AppCompatActivity {
-
     @BindView(R.id.btnGuardarDatos)
     Button btnGuardarDatos;
 

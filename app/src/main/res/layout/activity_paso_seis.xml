@@ -16,7 +16,10 @@
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -26,19 +29,27 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
         </android.support.design.widget.AppBarLayout>
 
-        <include layout="@layout/fragment_answer_evaluation" />
+        <include
+            layout="@layout/fragment_answer_evaluation"
+            android:layout_height="508dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnHacerSuma"
             style="@style/Base.TextAppearance.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="800dp"
+            android:layout_marginTop="656dp"
+            android:layout_marginBottom="16dp"
             android:background="@color/colorBlue"
             android:text="Hacer sumas"
             android:textColor="@android:color/white"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnGuardarDatos"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

@@ -3,6 +3,18 @@ package mx.com.lania.oamtemplate;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.RoomDatabase;
 
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.AcreedoresDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.AlmacenDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.BancosDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.CapitalSocialDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.ClientesDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.CostoDeVentasDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.DepreciacionDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.EdificiosDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.MaquinariaDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.ProveedoresDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.ResultadoDao;
+import mx.com.lania.oamtemplate.Database.Dao.EjercicioPerpetuo.VentasDao;
 import mx.com.lania.oamtemplate.Database.Dao.EvaluationDao;
 import mx.com.lania.oamtemplate.Database.Dao.ExampleDao;
 import mx.com.lania.oamtemplate.Database.Dao.ExerciseDao;
@@ -60,6 +72,33 @@ import mx.com.lania.oamtemplate.Database.Entities.Result;
 public abstract class AppDatabase extends RoomDatabase {
 
     public static final String DB_NAME = "app_db";
+
+    //----------------- Ejercicio Perpetuo -------------------
+
+    public abstract AcreedoresDao getAcreedoresDao();
+
+    public abstract AlmacenDao getAlmacenDao();
+
+    public abstract BancosDao getBancosDao();
+
+    public abstract CapitalSocialDao getCapitalSocialDao();
+
+    public abstract ClientesDao getClientesDao();
+
+    public abstract CostoDeVentasDao getCostoDeVentasDao();
+
+    public abstract DepreciacionDao getDepreciacionDao();
+
+    public abstract EdificiosDao getEdificiosDao();
+
+    public abstract MaquinariaDao getMaquinariaDao();
+
+    public abstract ProveedoresDao getProveedoresDao();
+
+    public abstract ResultadoDao getResultadoDao();
+
+    public abstract VentasDao getVentasDao();
+    //--------------------------------------------------------
 
     public abstract LearningObjectDao getLearningObjectDao();
 

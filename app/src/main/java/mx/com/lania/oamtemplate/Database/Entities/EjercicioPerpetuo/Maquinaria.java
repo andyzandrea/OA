@@ -21,6 +21,8 @@ public class Maquinaria {
     @ColumnInfo(name = "acreedorSaldoFinal")
     long acreedorSaldoFinal;
 
+    public Maquinaria() {
+    }
 
     @Ignore
     public Maquinaria(long debeMovimientos, long haberMovimientos, long deudorSaldoInicial, long acreedorSaldoInicial, long deudorSaldoFinal, long acreedorSaldoFinal) {

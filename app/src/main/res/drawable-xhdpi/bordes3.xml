@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
+    android:shape="rectangle">
+
+    <!-- View background color -->
+    <solid android:color="#9DD2E1">
+        <!--android:color="@color/colorRed" >-->
+    </solid>
+
+    <!-- View border color and width -->
     <stroke
-        android:width="10dp"
-        android:color="#cdcdcd" />
+        android:width="3dp"
+        android:color="#9DD2E1">
+
+    </stroke>
+
+    <!-- The radius makes the corners rounded -->
+    <corners android:radius="0dp"></corners>
+
 </shape>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+        &lt;!&ndash; Lower rectangle (border color) &ndash;&gt;
+       <item>
+            <shape android:shape="rectangle">
+              <solid android:color="@color/colorRed" />
+            </shape>
+        </item>
+
+        &lt;!&ndash; Upper rectangle (background color) &ndash;&gt;
+        <item android:top="2dp">
+            <shape android:shape="ring">
+                <solid android:color="@color/colorBlue" />
+            </shape>
+        </item>
+    </layer-list>-->
+
+

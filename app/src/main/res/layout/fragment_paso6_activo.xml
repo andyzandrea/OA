@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvSumaNoCirculante"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bordes"
+        android:text="Suma activo no circulante"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etSumaNoCirculante"
+        app:layout_constraintEnd_toStartOf="@+id/etSumaNoCirculante"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDepre"
+        app:layout_constraintTop_toTopOf="@+id/etSumaNoCirculante"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etSumaNoCirculante"
+        android:layout_width="199dp"
+        android:layout_height="43dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/tvSumaActivo"
+        app:layout_constraintEnd_toEndOf="@+id/etDepre"
+        app:layout_constraintStart_toStartOf="@+id/etDepre"
+        app:layout_constraintTop_toBottomOf="@+id/etDepre" />
+
+    <TextView
+        android:id="@+id/tvSumaActivo"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:background="@drawable/bordes"
+        android:text="Suma activo"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etSumaActivo"
+        app:layout_constraintEnd_toStartOf="@+id/etSumaActivo"
+        app:layout_constraintStart_toStartOf="@+id/tvSumaNoCirculante"
+        app:layout_constraintTop_toBottomOf="@+id/etSumaNoCirculante"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etSumaActivo"
+        android:layout_width="199dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etSumaNoCirculante"
+        app:layout_constraintStart_toStartOf="@+id/etSumaNoCirculante"
+        app:layout_constraintTop_toBottomOf="@+id/etSumaNoCirculante" />
+
+    <TextView
+        android:id="@+id/tvtittle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Step_tittle"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/tvpaso1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Step_6"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtittle" />
+
+    <TextView
+        android:id="@+id/tvActivo"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bordes2"
+        android:text="Activo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/tcActivoCircuante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpaso1" />
+
+    <TextView
+        android:id="@+id/tcActivoCircuante"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bordes3"
+        android:text="@string/name_account_type1"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etActivoCircuante"
+        app:layout_constraintEnd_toStartOf="@+id/etActivoCircuante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivo" />
+
+    <TextView
+        android:id="@+id/tvBan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:text="@string/name_account1"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etBan"
+        app:layout_constraintEnd_toStartOf="@+id/etBan"
+        app:layout_constraintStart_toStartOf="@+id/tcActivoCircuante"
+        app:layout_constraintTop_toTopOf="@+id/etBan" />
+
+    <TextView
+        android:id="@+id/tvCli"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:text="@string/name_account2"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etCli"
+        app:layout_constraintEnd_toStartOf="@+id/etCli"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvBan"
+        app:layout_constraintTop_toTopOf="@+id/etCli" />
+
+    <TextView
+        android:id="@+id/tvAlma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:text="@string/name_account3"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etAlma"
+        app:layout_constraintEnd_toStartOf="@+id/etAlma"
+        app:layout_constraintStart_toStartOf="@+id/tvCli"
+        app:layout_constraintTop_toTopOf="@+id/etAlma" />
+
+    <TextView
+        android:id="@+id/tvNoCirculante"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes3"
+        android:text="@string/name_account_type2"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/etNoCirculante"
+        app:layout_constraintEnd_toStartOf="@+id/etNoCirculante"
+        app:layout_constraintStart_toStartOf="@+id/tvVaciopaso6"
+        app:layout_constraintTop_toTopOf="@+id/etNoCirculante"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tvedi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:text="@string/name_account4"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etEdi"
+        app:layout_constraintEnd_toStartOf="@+id/etEdi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNoCirculante"
+        app:layout_constraintTop_toTopOf="@+id/etEdi"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/tvMaqui"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:text="@string/name_account5"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etMaqui"
+        app:layout_constraintEnd_toStartOf="@+id/etMaqui"
+        app:layout_constraintStart_toStartOf="@+id/tvedi"
+        app:layout_constraintTop_toTopOf="@+id/etMaqui" />
+
+    <TextView
+        android:id="@+id/tvDepre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:text="@string/name_account6"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etDepre"
+        app:layout_constraintEnd_toStartOf="@+id/etDepre"
+        app:layout_constraintStart_toStartOf="@+id/tvMaqui"
+        app:layout_constraintTop_toTopOf="@+id/etDepre" />
+
+    <TextView
+        android:id="@+id/tvVaciopaso6"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@drawable/bordes"
+        android:text=" "
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/etVacioPaso6"
+        app:layout_constraintEnd_toStartOf="@+id/etVacioPaso6"
+        app:layout_constraintStart_toStartOf="@+id/tvCli"
+        app:layout_constraintTop_toTopOf="@+id/etVacioPaso6" />
+
+    <EditText
+        android:id="@+id/etActivoCircuante"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bordes3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etBan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvActivo"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivo" />
+
+    <EditText
+        android:id="@+id/etBan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etCli"
+        app:layout_constraintEnd_toEndOf="@+id/etActivoCircuante"
+        app:layout_constraintStart_toStartOf="@+id/etActivoCircuante"
+        app:layout_constraintTop_toBottomOf="@+id/etActivoCircuante" />
+
+    <EditText
+        android:id="@+id/etCli"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etAlma"
+        app:layout_constraintEnd_toEndOf="@+id/etBan"
+        app:layout_constraintStart_toStartOf="@+id/etBan"
+        app:layout_constraintTop_toBottomOf="@+id/etBan" />
+
+    <EditText
+        android:id="@+id/etAlma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etVacioPaso6"
+        app:layout_constraintEnd_toEndOf="@+id/etCli"
+        app:layout_constraintStart_toStartOf="@+id/etCli"
+        app:layout_constraintTop_toBottomOf="@+id/etCli" />
+
+    <EditText
+        android:id="@+id/etVacioPaso6"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etNoCirculante"
+        app:layout_constraintEnd_toEndOf="@+id/etAlma"
+        app:layout_constraintStart_toStartOf="@+id/etAlma"
+        app:layout_constraintTop_toBottomOf="@+id/etAlma" />
+
+    <EditText
+        android:id="@+id/etNoCirculante"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etEdi"
+        app:layout_constraintEnd_toEndOf="@+id/etVacioPaso6"
+        app:layout_constraintStart_toStartOf="@+id/etVacioPaso6"
+        app:layout_constraintTop_toBottomOf="@+id/etVacioPaso6" />
+
+    <EditText
+        android:id="@+id/etEdi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etMaqui"
+        app:layout_constraintEnd_toEndOf="@+id/etNoCirculante"
+        app:layout_constraintStart_toStartOf="@+id/etNoCirculante"
+        app:layout_constraintTop_toBottomOf="@+id/etNoCirculante" />
+
+    <EditText
+        android:id="@+id/etMaqui"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etDepre"
+        app:layout_constraintEnd_toEndOf="@+id/etEdi"
+        app:layout_constraintStart_toStartOf="@+id/etEdi"
+        app:layout_constraintTop_toBottomOf="@+id/etEdi" />
+
+    <EditText
+        android:id="@+id/etDepre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bordes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/etSumaNoCirculante"
+        app:layout_constraintEnd_toEndOf="@+id/etMaqui"
+        app:layout_constraintStart_toStartOf="@+id/etMaqui"
+        app:layout_constraintTop_toBottomOf="@+id/etMaqui" />
+</android.support.constraint.ConstraintLayout>
