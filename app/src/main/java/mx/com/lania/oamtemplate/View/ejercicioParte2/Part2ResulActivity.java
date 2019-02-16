@@ -539,7 +539,7 @@ public class Part2ResulActivity extends AppCompatActivity {
     }
 
     public long saldosFinalesAcreedores(long acreedor, long debe, long haber) {
-        return (acreedor - debe) + haber;
+        return acreedor - (debe + haber);
     }
 
     public void cargarValidacion() {
