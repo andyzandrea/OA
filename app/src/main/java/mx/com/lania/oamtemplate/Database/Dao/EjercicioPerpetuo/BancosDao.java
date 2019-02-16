@@ -14,4 +14,7 @@ public interface BancosDao {
 
     @Query("SELECT * FROM Bancos")
     Bancos getBanco();
+
+    @Query("DELETE FROM Bancos")
+    void borrarDatosTabla();
 }

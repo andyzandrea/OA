@@ -81,16 +81,20 @@ public class AppModule {
 
     public AppModule(OAMApplication application) {
         this.application = application;
-        database = Room.databaseBuilder(application, AppDatabase.class, AppDatabase.DB_NAME).fallbackToDestructiveMigration().addCallback(new RoomDatabase.Callback() {
-            @Override
-            public void onCreate(@NonNull SupportSQLiteDatabase db) {
-                super.onCreate(db);
-                Executors.newSingleThreadScheduledExecutor().execute(() -> {
-                    //Perform initial database operations
-                    //provideAppDatabase().getXXXXDao().insertXXXX(new XXXX());
-                });
-            }
-        }).build();
+        database = Room
+                .databaseBuilder(application, AppDatabase.class, AppDatabase.DB_NAME)
+                .fallbackToDestructiveMigration()
+                .allowMainThreadQueries()
+                .addCallback(new RoomDatabase.Callback() {
+                    @Override
+                    public void onCreate(@NonNull SupportSQLiteDatabase db) {
+                        super.onCreate(db);
+                        Executors.newSingleThreadScheduledExecutor().execute(() -> {
+                            //Perform initial database operations
+                            //provideAppDatabase().getXXXXDao().insertXXXX(new XXXX());
+                        });
+                    }
+                }).build();
     }
 
     @Provides
@@ -152,18 +156,6 @@ public class AppModule {
     }
 
     //----------------- Ejercicio Perpetuo -------------------
-    @Provides
-    @Singleton
-    AcreedoresDao provideAcreedoresDao(AppDatabase appDatabase) {
-        return appDatabase.getAcreedoresDao();
-    }
-
-    @Provides
-    @Singleton
-    AcreedoresRepository provideAcreedoresRepository(AcreedoresDao acreedoresDao) {
-        return new AcreedoresRepository(acreedoresDao);
-    }
-
     @Provides
     @Singleton
     @Named("AcreedoresFactory")
@@ -246,6 +238,18 @@ public class AppModule {
     @Named("VentasFactory")
     ViewModelProvider.Factory provideVentasFactory(VentasRepository ventasRepository) {
         return new VentasViewModelFactory(ventasRepository);
+    }
+
+    @Provides
+    @Singleton
+    AcreedoresDao provideAcreedoresDao(AppDatabase appDatabase) {
+        return appDatabase.getAcreedoresDao();
+    }
+
+    @Provides
+    @Singleton
+    AcreedoresRepository provideAcreedoresRepository(AcreedoresDao acreedoresDao) {
+        return new AcreedoresRepository(acreedoresDao);
     }
 
     @Provides

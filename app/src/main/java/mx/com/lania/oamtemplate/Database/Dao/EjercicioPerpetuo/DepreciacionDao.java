@@ -14,4 +14,7 @@ public interface DepreciacionDao {
 
     @Query("SELECT * FROM Depreciacion")
     Depreciacion getDepreciacion();
+
+    @Query("DELETE FROM Depreciacion")
+    void borrarDatosTabla();
 }

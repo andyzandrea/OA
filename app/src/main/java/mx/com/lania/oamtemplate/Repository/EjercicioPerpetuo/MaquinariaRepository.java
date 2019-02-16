@@ -20,4 +20,8 @@ public class MaquinariaRepository {
     public Maquinaria getMaquinaria() {
         return maquinariaDao.getMaquinaria();
     }
+
+    public void borrarDatosTabla() {
+        maquinariaDao.borrarDatosTabla();
+    }
 }

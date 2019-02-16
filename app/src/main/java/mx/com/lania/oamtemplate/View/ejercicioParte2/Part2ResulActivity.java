@@ -165,7 +165,6 @@ public class Part2ResulActivity extends AppCompatActivity {
         setContentView(R.layout.activity_part2_resul);
         ButterKnife.bind(this);
 
-
         //Inicializar Dagger2
         ((OAMApplication) getApplication()).getAppComponent().inject(this);
         //Cargar ViewModel

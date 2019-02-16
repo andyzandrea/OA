@@ -23,4 +23,9 @@ public class MaquinariaViewModel extends ViewModel {
     public Maquinaria getMaquinaria() {
         return maquinariaRepository.getMaquinaria();
     }
+
+    public void borrarDatosTabla() {
+        maquinariaRepository.borrarDatosTabla();
+    }
+
 }

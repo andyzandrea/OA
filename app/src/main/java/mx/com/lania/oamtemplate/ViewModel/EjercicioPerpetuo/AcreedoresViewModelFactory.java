@@ -7,7 +7,6 @@ import android.support.annotation.NonNull;
 import javax.inject.Inject;
 
 import mx.com.lania.oamtemplate.Repository.EjercicioPerpetuo.AcreedoresRepository;
-import mx.com.lania.oamtemplate.ViewModel.EvaluationViewModel;
 
 public class AcreedoresViewModelFactory implements ViewModelProvider.Factory {
     @Inject

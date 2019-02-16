@@ -20,7 +20,11 @@ public class CapitalSocialViewModel extends ViewModel {
         myExecutor.execute(() -> capitalSocialRepository.insertarCapitalSocial(capitalSocial));
     }
 
-    public CapitalSocial getRepository() {
+    public CapitalSocial getCapitalSocial() {
         return capitalSocialRepository.getCapitalSocial();
+    }
+
+    public void borrarDatosTabla() {
+        capitalSocialRepository.borrarDatosTabla();
     }
 }

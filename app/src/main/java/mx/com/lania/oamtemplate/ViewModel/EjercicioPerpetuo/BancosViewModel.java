@@ -1,6 +1,5 @@
 package mx.com.lania.oamtemplate.ViewModel.EjercicioPerpetuo;
 
-import android.arch.lifecycle.MediatorLiveData;
 import android.arch.lifecycle.ViewModel;
 
 import java.util.concurrent.Executor;
@@ -23,5 +22,9 @@ public class BancosViewModel extends ViewModel {
 
     public Bancos getBanco() {
         return bancosRepository.getBanco();
+    }
+
+    public void borrarDatosTabla() {
+        bancosRepository.borrarDatosTabla();
     }
 }

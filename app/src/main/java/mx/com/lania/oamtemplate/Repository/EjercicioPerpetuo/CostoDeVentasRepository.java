@@ -20,4 +20,8 @@ public class CostoDeVentasRepository {
     public CostoDeVentas getCostoDeVentas() {
         return costoDeVentasDao.getCostoDeVentas();
     }
+
+    public void borrarDatosTabla() {
+        costoDeVentasDao.borrarDatosTabla();
+    }
 }

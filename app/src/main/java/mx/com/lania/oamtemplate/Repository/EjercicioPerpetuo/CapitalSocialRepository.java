@@ -20,4 +20,8 @@ public class CapitalSocialRepository {
     public CapitalSocial getCapitalSocial() {
         return capitalSocialDao.getCapitalSocial();
     }
+
+    public void borrarDatosTabla() {
+        capitalSocialDao.borrarDatosTabla();
+    }
 }

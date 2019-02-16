@@ -20,4 +20,8 @@ public class AcreedoresRepository {
     public Acreedores getAcreedores() {
         return acreedoresDao.getAcreedor();
     }
+
+    public void borrarDatosTabla() {
+        acreedoresDao.borrarDatosTabla();
+    }
 }

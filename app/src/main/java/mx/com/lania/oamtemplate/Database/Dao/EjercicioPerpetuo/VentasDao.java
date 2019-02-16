@@ -14,4 +14,7 @@ public interface VentasDao {
 
     @Query("SELECT * FROM Ventas")
     Ventas getVentas();
+
+    @Query("DELETE FROM Ventas")
+    void borrarDatosTabla();
 }

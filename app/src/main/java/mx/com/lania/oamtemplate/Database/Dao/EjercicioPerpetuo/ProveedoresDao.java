@@ -14,4 +14,7 @@ public interface ProveedoresDao {
 
     @Query("SELECT * FROM Proveedores")
     Proveedores getProveedores();
+
+    @Query("DELETE FROM Proveedores")
+    void borrarDatosTabla();
 }

@@ -14,9 +14,10 @@ public class PasoCincoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paso_cinco);
     }
+
     @OnClick(R.id.btnGuardarDatos)
     public void onClick() {
-        Intent siguiente = new Intent(PasoCincoActivity.this,PasoSeisActivity.class);
+        Intent siguiente = new Intent(PasoCincoActivity.this, PasoSeisActivity.class);
         startActivity(siguiente);
     }
 }

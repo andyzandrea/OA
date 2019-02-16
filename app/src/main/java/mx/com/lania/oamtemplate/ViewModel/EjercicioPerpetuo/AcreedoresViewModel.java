@@ -23,4 +23,8 @@ public class AcreedoresViewModel extends ViewModel {
     public Acreedores getAcreedor() {
         return acreedoresRepository.getAcreedores();
     }
+
+    public void borrarDatosTabla() {
+        acreedoresRepository.borrarDatosTabla();
+    }
 }

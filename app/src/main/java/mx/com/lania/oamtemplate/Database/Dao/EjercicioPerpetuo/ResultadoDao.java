@@ -14,4 +14,7 @@ public interface ResultadoDao {
 
     @Query("SELECT * FROM Resultado")
     Resultado getResultado();
+
+    @Query("DELETE FROM Resultado")
+    void borrarDatosTabla();
 }

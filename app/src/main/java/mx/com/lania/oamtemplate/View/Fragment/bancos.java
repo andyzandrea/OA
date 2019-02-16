@@ -27,8 +27,8 @@ public class bancos extends Fragment {
     ViewModelProvider.Factory viewModelBancos;
     private BancosViewModel bancosViewModel;
 
-    @BindViews({R.id.etDeudorSIValor,R.id.etAcreedorSIValor,R.id.etDebeMovValor,R.id.etHaberMovValor,
-            R.id.etdeudorSFValor,R.id.etAcreedorSFValor})
+    @BindViews({R.id.etDeudorSIValor, R.id.etAcreedorSIValor, R.id.etDebeMovValor, R.id.etHaberMovValor,
+            R.id.etdeudorSFValor, R.id.etAcreedorSFValor})
     List<EditText> editTexts;
 
     @Override

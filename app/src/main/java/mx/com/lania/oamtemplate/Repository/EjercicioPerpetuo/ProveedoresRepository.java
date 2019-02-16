@@ -20,4 +20,8 @@ public class ProveedoresRepository {
     public Proveedores getProveedores() {
         return proveedoresDao.getProveedores();
     }
+
+    public void borrarDatosTabla() {
+        proveedoresDao.borrarDatosTabla();
+    }
 }

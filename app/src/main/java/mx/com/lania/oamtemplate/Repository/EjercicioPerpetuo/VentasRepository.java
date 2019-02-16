@@ -20,4 +20,8 @@ public class VentasRepository {
     public Ventas getVentas() {
         return ventasDao.getVentas();
     }
+
+    public void borrarDatosTabla() {
+        ventasDao.borrarDatosTabla();
+    }
 }

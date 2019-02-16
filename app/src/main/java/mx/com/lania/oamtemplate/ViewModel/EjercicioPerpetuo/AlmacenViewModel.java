@@ -9,7 +9,8 @@ import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Almacen;
 import mx.com.lania.oamtemplate.Repository.EjercicioPerpetuo.AlmacenRepository;
 
 public class AlmacenViewModel extends ViewModel {
-    private AlmacenRepository almacenRepository;
+    AlmacenRepository almacenRepository;
+
 
     public AlmacenViewModel(AlmacenRepository almacenRepository) {
         this.almacenRepository = almacenRepository;
@@ -22,5 +23,9 @@ public class AlmacenViewModel extends ViewModel {
 
     public Almacen getAlmacen() {
         return almacenRepository.getAlmacen();
+    }
+
+    public void borrarDatosTabla() {
+        almacenRepository.borrarDatosTabla();
     }
 }

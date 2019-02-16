@@ -20,4 +20,8 @@ public class EdificiosRepository {
     public Edificios getEdificios() {
         return edificiosDao.getEdificios();
     }
+
+    public void borrarDatosTabla() {
+        edificiosDao.borrarDatosTabla();
+    }
 }

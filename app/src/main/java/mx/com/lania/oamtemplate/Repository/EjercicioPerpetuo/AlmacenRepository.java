@@ -20,4 +20,8 @@ public class AlmacenRepository {
     public Almacen getAlmacen() {
         return almacenDao.getAlmacen();
     }
+
+    public void borrarDatosTabla() {
+        almacenDao.borrarDatosTabla();
+    }
 }

@@ -22,4 +22,4 @@ public class PasoSeisActivity extends AppCompatActivity {
         returnHome.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(returnHome);
     }
-    }
+}

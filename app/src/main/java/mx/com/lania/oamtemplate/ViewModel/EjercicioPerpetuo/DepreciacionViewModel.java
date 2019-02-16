@@ -23,4 +23,8 @@ public class DepreciacionViewModel extends ViewModel {
     public Depreciacion getDepreciacion() {
         return depreciacionRepository.getDepreciacion();
     }
+
+    public void borrarDatosTabla() {
+        depreciacionRepository.borrarDatosTabla();
+    }
 }

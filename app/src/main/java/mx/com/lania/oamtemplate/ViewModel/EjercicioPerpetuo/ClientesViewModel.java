@@ -23,4 +23,8 @@ public class ClientesViewModel extends ViewModel {
     public Clientes getCliente() {
         return clientesRepository.getClientes();
     }
+
+    public void borrarDatosTabla() {
+        clientesRepository.borrarDatosTabla();
+    }
 }

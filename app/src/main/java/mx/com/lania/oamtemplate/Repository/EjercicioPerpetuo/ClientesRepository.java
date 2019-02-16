@@ -20,4 +20,8 @@ public class ClientesRepository {
     public Clientes getClientes() {
         return clientesDao.getClientes();
     }
+
+    public void borrarDatosTabla() {
+        clientesDao.borrarDatosTabla();
+    }
 }

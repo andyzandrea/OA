@@ -23,4 +23,8 @@ public class ProveedoresViewModel extends ViewModel {
     public Proveedores getProveedores() {
         return proveedoresRepository.getProveedores();
     }
+
+    public void borrarDatosTabla() {
+        proveedoresRepository.borrarDatosTabla();
+    }
 }

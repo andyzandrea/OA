@@ -14,4 +14,7 @@ public interface AlmacenDao {
 
     @Query("SELECT * FROM Almacen")
     Almacen getAlmacen();
+
+    @Query("DELETE FROM Almacen")
+    void borrarDatosTabla();
 }

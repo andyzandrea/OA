@@ -21,7 +21,7 @@ public class Acreedores {
     @ColumnInfo(name = "acreedorSaldoFinal")
     long acreedorSaldoFinal;
 
-    public Acreedores(){
+    public Acreedores() {
 
     }
 

@@ -20,4 +20,8 @@ public class ResultadoRepository {
     public Resultado getResultado() {
         return resultadoDao.getResultado();
     }
+
+    public void borrarDatosTabla() {
+        resultadoDao.borrarDatosTabla();
+    }
 }

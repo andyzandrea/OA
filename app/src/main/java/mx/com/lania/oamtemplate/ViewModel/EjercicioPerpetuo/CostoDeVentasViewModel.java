@@ -6,7 +6,6 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.CostoDeVentas;
-import mx.com.lania.oamtemplate.Database.Entities.EjercicioPerpetuo.Depreciacion;
 import mx.com.lania.oamtemplate.Repository.EjercicioPerpetuo.CostoDeVentasRepository;
 
 public class CostoDeVentasViewModel extends ViewModel {
@@ -23,5 +22,9 @@ public class CostoDeVentasViewModel extends ViewModel {
 
     public CostoDeVentas getCostoDeVentas() {
         return costoDeVentasRepository.getCostoDeVentas();
+    }
+
+    public void borrarDatosTabla() {
+        costoDeVentasRepository.borrarDatosTabla();
     }
 }

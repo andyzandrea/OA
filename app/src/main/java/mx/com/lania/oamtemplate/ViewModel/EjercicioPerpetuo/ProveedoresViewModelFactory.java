@@ -8,7 +8,7 @@ import javax.inject.Inject;
 
 import mx.com.lania.oamtemplate.Repository.EjercicioPerpetuo.ProveedoresRepository;
 
-public class ProveedoresViewModelFactory  implements ViewModelProvider.Factory {
+public class ProveedoresViewModelFactory implements ViewModelProvider.Factory {
     @Inject
     ProveedoresRepository proveedoresRepository;
 

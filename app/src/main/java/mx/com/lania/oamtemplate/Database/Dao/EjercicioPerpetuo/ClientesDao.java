@@ -14,4 +14,7 @@ public interface ClientesDao {
 
     @Query("SELECT * FROM Clientes")
     Clientes getClientes();
+
+    @Query("DELETE FROM Clientes")
+    void borrarDatosTabla();
 }

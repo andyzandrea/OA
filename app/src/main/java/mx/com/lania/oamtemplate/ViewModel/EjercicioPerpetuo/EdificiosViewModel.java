@@ -23,4 +23,8 @@ public class EdificiosViewModel extends ViewModel {
     public Edificios getEdificios() {
         return edificiosRepository.getEdificios();
     }
+
+    public void borrarDatosTabla() {
+        edificiosRepository.borrarDatosTabla();
+    }
 }

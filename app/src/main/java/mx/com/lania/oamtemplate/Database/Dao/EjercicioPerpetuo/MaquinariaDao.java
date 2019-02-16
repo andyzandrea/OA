@@ -14,4 +14,7 @@ public interface MaquinariaDao {
 
     @Query("SELECT * FROM Maquinaria")
     Maquinaria getMaquinaria();
+
+    @Query("DELETE FROM Maquinaria")
+    void borrarDatosTabla();
 }

@@ -14,4 +14,8 @@ public interface CapitalSocialDao {
 
     @Query("SELECT * FROM CapitalSocial")
     CapitalSocial getCapitalSocial();
+
+    @Query("DELETE FROM CapitalSocial")
+    void borrarDatosTabla();
 }
+

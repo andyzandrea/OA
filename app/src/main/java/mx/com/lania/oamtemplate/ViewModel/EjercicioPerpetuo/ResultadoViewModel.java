@@ -23,4 +23,8 @@ public class ResultadoViewModel extends ViewModel {
     public Resultado getResultado() {
         return resultadoRepository.getResultado();
     }
+
+    public void borrarDatosTabla() {
+        resultadoRepository.borrarDatosTabla();
+    }
 }

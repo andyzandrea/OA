@@ -20,4 +20,8 @@ public class DepreciacionRepository {
     public Depreciacion getDepreciacion() {
         return depreciacionDao.getDepreciacion();
     }
+
+    public void borrarDatosTabla() {
+        depreciacionDao.borrarDatosTabla();
+    }
 }

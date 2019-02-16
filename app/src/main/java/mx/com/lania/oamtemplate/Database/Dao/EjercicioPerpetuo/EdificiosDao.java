@@ -14,4 +14,7 @@ public interface EdificiosDao {
 
     @Query("SELECT * FROM Edificios")
     Edificios getEdificios();
+
+    @Query("DELETE FROM Edificios")
+    void borrarDatosTabla();
 }

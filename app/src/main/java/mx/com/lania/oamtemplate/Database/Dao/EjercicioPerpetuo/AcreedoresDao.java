@@ -14,4 +14,7 @@ public interface AcreedoresDao {
 
     @Query("SELECT * FROM Acreedores")
     Acreedores getAcreedor();
+
+    @Query("DELETE FROM Acreedores")
+    void borrarDatosTabla();
 }

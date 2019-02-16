@@ -14,4 +14,7 @@ public interface CostoDeVentasDao {
 
     @Query("SELECT * FROM CostoDeVentas")
     CostoDeVentas getCostoDeVentas();
+
+    @Query("DELETE FROM CostoDeVentas")
+    void borrarDatosTabla();
 }
